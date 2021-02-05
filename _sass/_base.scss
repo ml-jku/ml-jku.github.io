@@ -38,11 +38,14 @@ a, table.table a {
 
 // Profile
 
+.about-text{
+  text-align: justify;
+  text-justify: inter-word;
+}
 
 .profile {
   margin-left: 0;
   width: 90%;
-
   .address {
     margin-bottom: 5px;
     margin-top: 5px;

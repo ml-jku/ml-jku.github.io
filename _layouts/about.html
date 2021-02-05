@@ -19,15 +19,17 @@ layout: default
     {% endif %}
 
     <div class="clearfix">
+      <div class="about-text">
       {{ content }}
     </div>
+    </div>
     <div class="row mt-3">
-        <div class="col-sm-4 col-xs-6 mt-3 mt-md-0">
+        <div class="col-sm-4 col-xs-6 mt-3 mt-md-0 about-text">
             {% if page.news %}
               {% include news.html %}
               {% endif %}
         </div>
-        <div class="col-sm-8 col-xs-6 mt-3 mt-md-0">
+        <div class="col-sm-8 col-xs-6 mt-3 mt-md-0 about-text">
             {% if page.selected_papers %}
               {% include selected_papers.html %}
               {% endif %}
