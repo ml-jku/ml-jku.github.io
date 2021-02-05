@@ -1,70 +1,454 @@
----
----
 
-@string{aps = {American Physical Society,}}
-
-@book{einstein1956investigations,
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation,}
+@online{ramsauerHopfieldNetworksAll2020,
+ abbr={arXiv},
+ abstract = {We show that the transformer attention mechanism is the update rule of a modern Hopfield network with continuous states. This new Hopfield network can store exponentially (with the dimension) many patterns, converges with one update, and has exponentially small retrieval errors. The number of stored patterns is traded off against convergence speed and retrieval error. The new Hopfield network has three types of energy minima (fixed points of the update): (1) global fixed point averaging over all patterns, (2) metastable states averaging over a subset of patterns, and (3) fixed points which store a single pattern. Transformer and BERT models operate in their first layers preferably in the global averaging regime, while they operate in higher layers in metastable states. The gradient in transformers is maximal for metastable states, is uniformly distributed for global averaging, and vanishes for a fixed point near a stored pattern. Using the Hopfield network interpretation, we analyzed learning of transformer and BERT models. Learning starts with attention heads that average and then most of them switch to metastable states. However, the majority of heads in the first layers still averages and can be replaced by averaging, e.g. our proposed Gaussian weighting. In contrast, heads in the last layers steadily learn and seem to use metastable states to collect information created in lower layers. These heads seem to be a promising target for improving transformers. Neural networks with Hopfield networks outperform other methods on immune repertoire classification, where the Hopfield net stores several hundreds of thousands of patterns. We provide a new PyTorch layer called "Hopfield", which allows to equip deep learning architectures with modern Hopfield networks as a new powerful concept comprising pooling, memory, and attention. GitHub: https://github.com/ml-jku/hopfield-layers},
+ author = {Ramsauer, Hubert and Schäfl, Bernhard and Lehner, Johannes and Seidl, Philipp and Widrich, Michael and Gruber, Lukas and Holzleitner, Markus and Pavlović, Milena and Sandve, Geir Kjetil and Greiff, Victor and Kreil, David and Kopp, Michael and Klambauer, Günter and Brandstetter, Johannes and Hochreiter, Sepp},
+ date = {2020-07-16},
+ eprint = {2008.02217},
+ eprinttype = {arxiv},
+ selected = {true},
+ title = {Hopfield {{Networks}} Is {{All You Need}}},
+ url = {http://arxiv.org/abs/2008.02217},
+ year = {2020},
+ blog = {https://ml-jku.github.io/hopfield-layers/},
+ software = {true},
+ code = {https://github.com/ml-jku/hopfield-layers}
 }
 
-@article{einstein1950meaning,
-  abbr={AJP},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics,},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers,}
+
+@Article{adler2020cross,
+  abbr={arXiv},
+  author        = {Adler, Thomas and Brandstetter, Johannes and Widrich, Michael and Mayr, Andreas and Kreil, David and Kopp, Michael and Klambauer, G{\"u}nter and Hochreiter, Sepp},
+  title         = {Cross-Domain Few-Shot Learning by Representation Fusion},
+  abstract      = {In order to quickly adapt to new data, few-shot learning aims at learning from few examples, often by using already acquired knowledge. The new data often differs from the previously seen data due to a domain shift, that is, a change of the input-target distribution. While several methods perform well on small domain shifts like new target classes with similar inputs, larger domain shifts are still challenging. Large domain shifts may result in high-level concepts that are not shared between the original and the new domain. However, low-level concepts like edges in images might still be shared and useful. For cross-domain few-shot learning, we suggest representation fusion to unify different abstraction levels of a deep neural network into one representation. We propose Cross-domain Hebbian Ensemble Few-shot learning (CHEF), which achieves representation fusion by an ensemble of Hebbian learners acting on different layers of a deep neural network that was trained on the original domain. On the few-shot datasets miniImagenet and tieredImagenet, where the domain shift is small, CHEF is competitive with state-of-the-art methods. On cross-domain few-shot benchmark challenges with larger domain shifts, CHEF establishes novel state-of-the-art results in all categories. We further apply CHEF on a real-world cross-domain application in drug discovery. We consider a domain shift from bioactive molecules to environmental chemicals and drugs with twelve associated toxicity prediction tasks. On these tasks, that are highly relevant for computational drug discovery, CHEF significantly outperforms all its competitors.},
+  journal       = {arXiv preprint arXiv:2010.06498},
+  url           = {https://arxiv.org/abs/2010.06498},
+  year          = {2020},
+  __markedentry = {[gk:6]},
+  blog = {https://ml-jku.github.io/chef/},
+  selected={true},
+  software = {true},
+  code = {https://github.com/ml-jku/chef}
 }
 
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein, A. and Podolsky, B. and Rosen, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.,},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  selected={true}
+
+@Article{patil2020alignrudder,
+  abbr          = {arXiv},
+  title         = {Align-RUDDER: Learning From Few Demonstrations by Reward Redistribution},
+  author        = {Vihang P. Patil and Markus Hofmarcher and Marius-Constantin Dinu and Matthias Dorfer and Patrick M. Blies and Johannes Brandstetter and Jose A. Arjona-Medina and Sepp Hochreiter},
+  year          = {2020},
+  abstract      = {Reinforcement Learning algorithms require a large number of samples to solve complex tasks with sparse and delayed rewards. Complex tasks can often be hierarchically decomposed into sub-tasks. A step in the Q-function can be associated with solving a sub-task, where the expectation of the return increases. RUDDER has been introduced to identify these steps and then redistribute reward to them, thus immediately giving reward if sub-tasks are solved. Since the problem of delayed rewards is mitigated, learning is considerably sped up. However, for complex tasks, current exploration strategies as deployed in RUDDER struggle with discovering episodes with high rewards. Therefore, we assume that episodes with high rewards are given as demonstrations and do not have to be discovered by exploration. Typically the number of demonstrations is small and RUDDER's LSTM model as a deep learning method does not learn well. Hence, we introduce Align-RUDDER, which is RUDDER with two major modifications. First, Align-RUDDER assumes that episodes with high rewards are given as demonstrations, replacing RUDDER's safe exploration and lessons replay buffer. Second, we replace RUDDER's LSTM model by a profile model that is obtained from multiple sequence alignment of demonstrations. Profile models can be constructed from as few as two demonstrations as known from bioinformatics. Align-RUDDER inherits the concept of reward redistribution, which considerably reduces the delay of rewards, thus speeding up learning. Align-RUDDER outperforms competitors on complex artificial tasks with delayed reward and few demonstrations. On the MineCraft ObtainDiamond task, Align-RUDDER is able to mine a diamond, though not frequently.},
+  journal       = {arXiv preprint arXiv:2009.14108},
+  url           = {https://arxiv.org/abs/2009.14108},
+  primaryClass  = {cs.LG},
+  selected      = {true},
+  software      = {true},
+  code        = {https://github.com/ml-jku/align-rudder}
 }
 
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik,},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
+@Article{widrich2020modern,
+  abbr={NeurIPS},
+  author        = {Widrich, Michael and Sch{\"a}fl, Bernhard and Ramsauer, Hubert and Pavlovi{\'c}, Milena and Gruber, Lukas and Holzleitner, Markus and Brandstetter, Johannes and Sandve, Geir Kjetil and Greiff, Victor and Hochreiter, Sepp and others},
+  title         = {Modern Hopfield networks and attention for immune repertoire classification},
+  journal       = {arXiv preprint arXiv:2007.13505},
+  arxiv         = {2007.13505},
+  year          = {2020},
+  __markedentry = {[gk:6]},
+  selected={true},
+  software = {true},
+  code = {https://github.com/ml-jku/DeepRC}
 }
 
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.,},
-  volume={17},
-  pages={549--560},
-  year={1905}
+
+@inproceedings{Arjona:19,
+  abbr={NeurIPS},
+  title = {RUDDER: Return Decomposition for Delayed Rewards},
+  author = {J. A. Arjona-Medina and M. Gillhofer and M. Widrich and
+          T. Unterthiner and J. Brandstetter and S. Hochreiter},
+  booktitle = {Advances in Neural Information Processing Systems 32},
+  abstract = {We propose RUDDER, a novel reinforcement learning approach for delayed rewards in finite Markov decision processes (MDPs). In MDPs the Q-values are equal to the expected immediate reward plus the expected future rewards. The latter are related to bias problems in temporal difference (TD) learning and to high variance problems in Monte Carlo (MC) learning. Both problems are even more severe when rewards are delayed. RUDDER aims at making the expected future rewards zero, which simplifies Q-value estimation to computing the mean of the immediate reward. We propose the following two new concepts to push the expected future rewards toward zero. (i) Reward redistribution that leads to return-equivalent decision processes with the same optimal policies and, when optimal, zero expected future rewards. (ii) Return decomposition via contribution analysis which transforms the reinforcement learning task into a regression task at which deep learning excels. On artificial tasks with delayed rewards, RUDDER is significantly faster than MC and exponentially faster than Monte Carlo Tree Search (MCTS), TD(\{\textbackslash lambda\}), and reward shaping approaches. At Atari games, RUDDER on top of a Proximal Policy Optimization (PPO) baseline improves the scores, which is most prominent at games with delayed rewards. Source code is available at \textbackslash url\{https://github.com/ml-jku/rudder\} and demonstration videos at \textbackslash url\{https://goo.gl/EQerZV\}.},
+  url = {https://arxiv.org/abs/2009.14108},
+  pages = {13566-13577},
+  year = {2019},
+  blog = {https://ml-jku.github.io/rudder/}
 }
 
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
+@incollection{arrasExplainingInterpretingLSTMs2019,
+ abstract = {While neural networks have acted as a strong unifying force in the design of modern AI systems, the neural network architectures themselves remain highly heterogeneous due to the variety of tasks to be solved. In this chapter, we explore how to adapt the Layer-wise Relevance Propagation (LRP) technique used for explaining the predictions of feed-forward networks to the LSTM architecture used for sequential data modeling and forecasting. The special accumulators and gated interactions present in the LSTM require both a new propagation scheme and an extension of the underlying theoretical framework to deliver faithful explanations.},
+ author = {Arras, Leila and Arjona-Medina, José and Widrich, Michael and Montavon, Grégoire and Gillhofer, Michael and Müller, Klaus-Robert and Hochreiter, Sepp and Samek, Wojciech},
+ date = {2019},
+ pages = {211--238},
+ publisher = {{Springer International Publishing}},
+ selected = {false},
+ title = {Explaining and {{Interpreting LSTMs}}},
+ url = {https://doi.org/10.1007/978-3-030-28954-6_11},
+ year = {2019}
+}
+
+@article{clevertRectifiedFactorNetworks2017,
+ abstract = {Biclustering has become a major tool for analyzing large datasets given as matrix of samples times features and has been successfully applied in life sciences and e-commerce for drug design and recommender systems, respectively. Factor Analysis for Bicluster Acquisition (FABIA), one of the most successful biclustering methods, is a generative model that represents each bicluster by two sparse membership vectors: one for the samples and one for the features. However, FABIA is restricted to about 20 code units because of the high computational complexity of computing the posterior. Furthermore, code units are sometimes insufficiently decorrelated and sample membership is difficult to determine. We propose to use the recently introduced unsupervised Deep Learning approach Rectified Factor Networks (RFNs) to overcome the drawbacks of existing biclustering methods. RFNs efficiently construct very sparse, non-linear, high-dimensional representations of the input via their posterior means. RFN learning is a generalized alternating minimization algorithm based on the posterior regularization method which enforces non-negative and normalized posterior means. Each code unit represents a bicluster, where samples for which the code unit is active belong to the bicluster and features that have activating weights to the code unit belong to the bicluster.On 400 benchmark datasets and on three gene expression datasets with known clusters, RFN outperformed 13 other biclustering methods including FABIA. On data of the 1000 Genomes Project, RFN could identify DNA segments which indicate, that interbreeding with other hominins starting already before ancestors of modern humans left Africa.https://github.com/bioinf-jku/librfn},
+ author = {Clevert, Djork-Arné and Unterthiner, Thomas and Povysil, Gundula and Hochreiter, Sepp},
+ date = {2017-07-15},
+ journaltitle = {Bioinformatics},
+ number = {14},
+ pages = {i59-i66},
+ selected = {false},
+ title = {Rectified Factor Networks for Biclustering of Omics Data},
+ url = {https://doi.org/10.1093/bioinformatics/btx226},
+ volume = {33},
+ year = {2017}
+}
+
+@article{fischerDefiningObjectiveClusters2018,
+ abstract = {Rabies is caused by lyssaviruses, and is one of the oldest known zoonoses. In recent years, more than 21,000 nucleotide sequences of rabies viruses (RABV), from the prototype species rabies lyssavirus, have been deposited in public databases. Subsequent phylogenetic analyses in combination with metadata suggest geographic distributions of RABV. However, these analyses somewhat experience technical difficulties in defining verifiable criteria for cluster allocations in phylogenetic trees inviting for a more rational approach. Therefore, we applied a relatively new mathematical clustering algorythm named ‘affinity propagation clustering’ (AP) to propose a standardized sub-species classification utilizing full-genome RABV sequences. Because AP has the advantage that it is computationally fast and works for any meaningful measure of similarity between data samples, it has previously been applied successfully in bioinformatics, for analysis of microarray and gene expression data, however, cluster analysis of sequences is still in its infancy. Existing (516) and original (46) full genome RABV sequences were used to demonstrate the application of AP for RABV clustering. On a global scale, AP proposed four clusters, i.e. New World cluster, Arctic/Arctic-like, Cosmopolitan, and Asian as previously assigned by phylogenetic studies. By combining AP with established phylogenetic analyses, it is possible to resolve phylogenetic relationships between verifiably determined clusters and sequences. This workflow will be useful in confirming cluster distributions in a uniform transparent manner, not only for RABV, but also for other comparative sequence analyses.},
+ author = {Fischer, Susanne and Freuling, Conrad M. and Müller, Thomas and Pfaff, Florian and Bodenhofer, Ulrich and Höper, Dirk and Fischer, Mareike and Marston, Denise A. and Fooks, Anthony R. and Mettenleiter, Thomas C. and Conraths, Franz J. and Homeier-Bachmann, Timo},
+ date = {2018-01-22},
+ journaltitle = {PLOS Neglected Tropical Diseases},
+ number = {1},
+ pages = {e0006182},
+ publisher = {{Public Library of Science}},
+ selected = {false},
+ title = {Defining Objective Clusters for Rabies Virus Sequences Using Affinity Propagation Clustering},
+ url = {https://doi.org/10.1371/journal.pntd.0006182},
+ volume = {12},
+ year = {2018}
+}
+
+@article{greiffLearningHighDimensionalImmunogenomic2017,
+ abstract = {Recent studies have revealed that immune repertoires contain a substantial fraction of public clones, which may be defined as Ab or TCR clonal sequences shared across individuals. It has remained unclear whether public clones possess predictable sequence features that differentiate them from private clones, which are believed to be generated largely stochastically. This knowledge gap represents a lack of insight into the shaping of immune repertoire diversity. Leveraging a machine learning approach capable of capturing the high-dimensional compositional information of each clonal sequence (defined by CDR3), we detected predictive public clone and private clone–specific immunogenomic differences concentrated in CDR3’s N1–D–N2 region, which allowed the prediction of public and private status with 80\% accuracy in humans and mice. Our results unexpectedly demonstrate that public, as well as private, clones possess predictable high-dimensional immunogenomic features. Our support vector machine model could be trained effectively on large published datasets (3 million clonal sequences) and was sufficiently robust for public clone prediction across individuals and studies prepared with different library preparation and high-throughput sequencing protocols. In summary, we have uncovered the existence of high-dimensional immunogenomic rules that shape immune repertoire diversity in a predictable fashion. Our approach may pave the way for the construction of a comprehensive atlas of public mouse and human immune repertoires with potential applications in rational vaccine design and immunotherapeutics.},
+ author = {Greiff, Victor and Weber, Cédric R. and Palme, Johannes and Bodenhofer, Ulrich and Miho, Enkelejda and Menzel, Ulrike and Reddy, Sai T.},
+ date = {2017-10-15},
+ journaltitle = {The Journal of Immunology},
+ number = {8},
+ pages = {2985--2997},
+ publisher = {{American Association of Immunologists}},
+ selected = {false},
+ title = {Learning the {{High}}-{{Dimensional Immunogenomic Features That Predict Public}} and {{Private Antibody Repertoires}}},
+ url = {https://doi.org/10.4049/jimmunol.1700594},
+ volume = {199},
+ year = {2017}
+}
+
+@online{heuselGANsTrainedTwo2017,
+ abstract = {Generative Adversarial Networks (GANs) excel at creating realistic images with complex models for which maximum likelihood is infeasible. However, the convergence of GAN training has still not been proved. We propose a two time-scale update rule (TTUR) for training GANs with stochastic gradient descent on arbitrary GAN loss functions. TTUR has an individual learning rate for both the discriminator and the generator. Using the theory of stochastic approximation, we prove that the TTUR converges under mild assumptions to a stationary local Nash equilibrium. The convergence carries over to the popular Adam optimization, for which we prove that it follows the dynamics of a heavy ball with friction and thus prefers flat minima in the objective landscape. For the evaluation of the performance of GANs at image generation, we introduce the "Fr\textbackslash 'echet Inception Distance" (FID) which captures the similarity of generated images to real ones better than the Inception Score. In experiments, TTUR improves learning for DCGANs and Improved Wasserstein GANs (WGAN-GP) outperforming conventional GAN training on CelebA, CIFAR-10, SVHN, LSUN Bedrooms, and the One Billion Word Benchmark.},
+ author = {Heusel, Martin and Ramsauer, Hubert and Unterthiner, Thomas and Nessler, Bernhard and Hochreiter, Sepp},
+ date = {2017-06-26},
+ eprint = {1706.08500},
+ eprinttype = {arxiv},
+ pdf = {https://arxiv.org/pdf/1706.08500.pdf},
+ selected = {false},
+ title = {{{GANs Trained}} by a {{Two Time}}-{{Scale Update Rule Converge}} to a {{Local Nash Equilibrium}}},
+ url = {http://arxiv.org/abs/1706.08500},
+ year = {2017}
+}
+
+@article{hochreiterMachineLearningDrug2018,
+ author = {Hochreiter, Sepp and Klambauer, Guenter and Rarey, Matthias},
+ date = {2018-09-24},
+ journaltitle = {Journal of Chemical Information and Modeling},
+ number = {9},
+ pages = {1723--1724},
+ publisher = {{American Chemical Society}},
+ selected = {false},
+ title = {Machine {{Learning}} in {{Drug Discovery}}},
+ url = {https://doi.org/10.1021/acs.jcim.8b00478},
+ volume = {58},
+ year = {2018}
+}
+
+@online{hofmarcherLargescaleLigandbasedVirtual2020,
+ abbr={arXiv},
+ abstract = {Due to the current severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) pandemic, there is an urgent need for novel therapies and drugs. We conducted a large-scale virtual screening for small molecules that are potential CoV-2 inhibitors. To this end, we utilized "ChemAI", a deep neural network trained on more than 220M data points across 3.6M molecules from three public drug-discovery databases. With ChemAI, we screened and ranked one billion molecules from the ZINC database for favourable effects against CoV-2. We then reduced the result to the 30,000 top-ranked compounds, which are readily accessible and purchasable via the ZINC database. Additionally, we screened the DrugBank using ChemAI to allow for drug repurposing, which would be a fast way towards a therapy. We provide these top-ranked compounds of ZINC and DrugBank as a library for further screening with bioassays at https://github.com/ml-jku/sars-cov-inhibitors-chemai.},
+ author = {Hofmarcher, Markus and Mayr, Andreas and Rumetshofer, Elisabeth and Ruch, Peter and Renz, Philipp and Schimunek, Johannes and Seidl, Philipp and Vall, Andreu and Widrich, Michael and Hochreiter, Sepp and Klambauer, Günter},
+ date = {2020-08-17},
+ eprint = {2004.00979},
+ eprinttype = {arxiv},
+ selected = {true},
+ title = {Large-Scale Ligand-Based Virtual Screening for {{SARS}}-{{CoV}}-2 Inhibitors Using Deep Neural Networks},
+ url = {http://arxiv.org/abs/2004.00979},
+ year = {2020}
+}
+
+@incollection{hofmarcherVisualSceneUnderstanding2019,
+ abbr={Springer},
+ abstract = {Deep neural networks are an increasingly important technique for autonomous driving, especially as a visual perception component. Deployment in a real environment necessitates the explainability and inspectability of the algorithms controlling the vehicle. Such insightful explanations are relevant not only for legal issues and insurance matters but also for engineers and developers in order to achieve provable functional quality guarantees. This applies to all scenarios where the results of deep networks control potentially life threatening machines. We suggest the use of a tiered approach, whose main component is a semantic segmentation model, over an end-to-end approach for an autonomous driving system. In order for a system to provide meaningful explanations for its decisions it is necessary to give an explanation about the semantics that it attributes to the complex sensory inputs that it perceives. In the context of high-dimensional visual input this attribution is done as a pixel-wise classification process that assigns an object class to every pixel in the image. This process is called semantic segmentation.We propose an architecture that delivers real-time viable segmentation performance and which conforms to the limitations in computational power that is available in production vehicles. The output of such a semantic segmentation model can be used as an input for an interpretable autonomous driving system.},
+ author = {Hofmarcher, Markus and Unterthiner, Thomas and Arjona-Medina, José and Klambauer, Günter and Hochreiter, Sepp and Nessler, Bernhard},
+ date = {2019},
+ pages = {285--296},
+ publisher = {{Springer International Publishing}},
+ selected = {false},
+ title = {Visual {{Scene Understanding}} for {{Autonomous Driving Using Semantic Segmentation}}},
+ url = {https://doi.org/10.1007/978-3-030-28954-6_15},
+ year = {2019}
+}
+
+@online{kimeswengerDetectingCutaneousBasal2019,
+ abstract = {Diagnosing basal cell carcinomas (BCC), one of the most common cutaneous malignancies in humans, is a task regularly performed by pathologists and dermato-pathologists. Improving histological diagnosis by providing diagnosis suggestions, i.e. computer-assisted diagnoses is actively researched to improve safety, quality and efficiency. Increasingly, machine learning methods are applied due to their superior performance. However, typical images obtained by scanning histological sections often have a resolution that is prohibitive for processing with current state-of-the-art neural networks. Furthermore, the data pose a problem of weak labels, since only a tiny fraction of the image is indicative of the disease class, whereas a large fraction of the image is highly similar to the non-disease class. The aim of this study is to evaluate whether it is possible to detect basal cell carcinomas in histological sections using attention-based deep learning models and to overcome the ultra-high resolution and the weak labels of whole slide images. We demonstrate that attention-based models can indeed yield almost perfect classification performance with an AUC of 0.99.},
+ author = {Kimeswenger, Susanne and Rumetshofer, Elisabeth and Hofmarcher, Markus and Tschandl, Philipp and Kittler, Harald and Hochreiter, Sepp and Hötzenecker, Wolfram and Klambauer, Günter},
+ date = {2019-12-02},
+ eprint = {1911.06616},
+ eprinttype = {arxiv},
+ pdf = {https://arxiv.org/pdf/1911.06616.pdf},
+ selected = {false},
+ title = {Detecting Cutaneous Basal Cell Carcinomas in Ultra-High Resolution and Weakly Labelled Histopathological Images},
+ url = {http://arxiv.org/abs/1911.06616},
+ year = {2019}
+}
+
+@article{klambauerMachineLearningDrug2019,
+ author = {Klambauer, Günter and Hochreiter, Sepp and Rarey, Matthias},
+ date = {2019-03-25},
+ journaltitle = {Journal of Chemical Information and Modeling},
+ number = {3},
+ pages = {945--946},
+ publisher = {{American Chemical Society}},
+ selected = {false},
+ title = {Machine {{Learning}} in {{Drug Discovery}}},
+ url = {https://doi.org/10.1021/acs.jcim.9b00136},
+ volume = {59},
+ year = {2019}
+}
+
+@online{klambauerSelfNormalizingNeuralNetworks2017,
+ abbr={NeurIPS},
+ abstract = {Deep Learning has revolutionized vision via convolutional neural networks (CNNs) and natural language processing via recurrent neural networks (RNNs). However, success stories of Deep Learning with standard feed-forward neural networks (FNNs) are rare. FNNs that perform well are typically shallow and, therefore cannot exploit many levels of abstract representations. We introduce self-normalizing neural networks (SNNs) to enable high-level abstract representations. While batch normalization requires explicit normalization, neuron activations of SNNs automatically converge towards zero mean and unit variance. The activation function of SNNs are "scaled exponential linear units" (SELUs), which induce self-normalizing properties. Using the Banach fixed-point theorem, we prove that activations close to zero mean and unit variance that are propagated through many network layers will converge towards zero mean and unit variance -- even under the presence of noise and perturbations. This convergence property of SNNs allows to (1) train deep networks with many layers, (2) employ strong regularization, and (3) to make learning highly robust. Furthermore, for activations not close to unit variance, we prove an upper and lower bound on the variance, thus, vanishing and exploding gradients are impossible. We compared SNNs on (a) 121 tasks from the UCI machine learning repository, on (b) drug discovery benchmarks, and on (c) astronomy tasks with standard FNNs and other machine learning methods such as random forests and support vector machines. SNNs significantly outperformed all competing FNN methods at 121 UCI tasks, outperformed all competing methods at the Tox21 dataset, and set a new record at an astronomy data set. The winning SNN architectures are often very deep. Implementations are available at: github.com/bioinf-jku/SNNs.},
+ author = {Klambauer, Günter and Unterthiner, Thomas and Mayr, Andreas and Hochreiter, Sepp},
+ date = {2017-06-08},
+ eprint = {1706.02515},
+ eprinttype = {arxiv},
+ pdf = {https://arxiv.org/pdf/1706.02515.pdf},
+ selected = {false},
+ title = {Self-{{Normalizing Neural Networks}}},
+ url = {http://arxiv.org/abs/1706.02515},
+ year = {2017}
+}
+
+@article{kratzertImprovedPredictionsUngauged2019,
+ abstract = {Long short-term memory (LSTM) networks offer unprecedented accuracy for prediction in ungauged basins. We trained and tested several LSTMs on 531 basins from the CAMELS data set using k-fold validation, so that predictions were made in basins that supplied no training data. The training and test data set included ∼30 years of daily rainfall-runoff data from catchments in the United States ranging in size from 4 to 2,000 km2 with aridity index from 0.22 to 5.20, and including 12 of the 13 IGPB vegetated land cover classifications. This effectively “ungauged” model was benchmarked over a 15-year validation period against the Sacramento Soil Moisture Accounting (SAC-SMA) model and also against the NOAA National Water Model reanalysis. SAC-SMA was calibrated separately for each basin using 15 years of daily data. The out-of-sample LSTM had higher median Nash-Sutcliffe Efficiencies across the 531 basins (0.69) than either the calibrated SAC-SMA (0.64) or the National Water Model (0.58). This indicates that there is (typically) sufficient information in available catchment attributes data about similarities and differences between catchment-level rainfall-runoff behaviors to provide out-of-sample simulations that are generally more accurate than current models under ideal (i.e., calibrated) conditions. We found evidence that adding physical constraints to the LSTM models might improve simulations, which we suggest motivates future research related to physics-guided machine learning.},
+ author = {Kratzert, Frederik and Klotz, Daniel and Herrnegger, Mathew and Sampson, Alden K. and Hochreiter, Sepp and Nearing, Grey S.},
+ date = {2019},
+ journaltitle = {Water Resources Research},
+ number = {12},
+ pages = {11344--11354},
+ selected = {false},
+ shorttitle = {Toward {{Improved Predictions}} in {{Ungauged Basins}}},
+ title = {Toward {{Improved Predictions}} in {{Ungauged Basins}}: {{Exploiting}} the {{Power}} of {{Machine Learning}}},
+ url = {https://doi.org/10.1029/2019WR026065},
+ volume = {55},
+ year = {2019}
+}
+
+@article{kratzertLearningUniversalRegional2019,
+ abstract = {{$<$}p{$><$}strong{$>$}Abstract.{$<$}/strong{$>$} Regional rainfall–runoff modeling is an old but still mostly outstanding problem in the hydrological sciences. The problem currently is that traditional hydrological models degrade significantly in performance when calibrated for multiple basins together instead of for a single basin alone. In this paper, we propose a novel, data-driven approach using Long Short-Term Memory networks (LSTMs) and demonstrate that under a “big data” paradigm, this is not necessarily the case. By training a single LSTM model on 531 basins from the CAMELS dataset using meteorological time series data and static catchment attributes, we were able to significantly improve performance compared to a set of several different hydrological benchmark models. Our proposed approach not only significantly outperforms hydrological models that were calibrated regionally, but also achieves better performance than hydrological models that were calibrated for each basin individually. Furthermore, we propose an adaption to the standard LSTM architecture, which we call an Entity-Aware-LSTM (EA-LSTM), that allows for learning catchment similarities as a feature layer in a deep learning model. We show that these learned catchment similarities correspond well to what we would expect from prior hydrological understanding.{$<$}/p{$>$}},
+ author = {Kratzert, Frederik and Klotz, Daniel and Shalev, Guy and Klambauer, Günter and Hochreiter, Sepp and Nearing, Grey},
+ date = {2019-12-17},
+ journaltitle = {Hydrology and Earth System Sciences},
+ number = {12},
+ pages = {5089--5110},
+ publisher = {{Copernicus GmbH}},
+ selected = {false},
+ title = {Towards Learning Universal, Regional, and Local Hydrological Behaviors via Machine Learning Applied to Large-Sample Datasets},
+ url = {https://doi.org/10.5194/hess-23-5089-2019},
+ volume = {23},
+ year = {2019}
+}
+
+@incollection{kratzertNeuralHydrologyInterpretingLSTMs2019,
+ abstract = {Despite the huge success of Long Short-Term Memory networks, their applications in environmental sciences are scarce. We argue that one reason is the difficulty to interpret the internals of trained networks. In this study, we look at the application of LSTMs for rainfall-runoff forecasting, one of the central tasks in the field of hydrology, in which the river discharge has to be predicted from meteorological observations. LSTMs are particularly well-suited for this problem since memory cells can represent dynamic reservoirs and storages, which are essential components in state-space modelling approaches of the hydrological system. On basis of two different catchments, one with snow influence and one without, we demonstrate how the trained model can be analyzed and interpreted. In the process, we show that the network internally learns to represent patterns that are consistent with our qualitative understanding of the hydrological system.},
+ author = {Kratzert, Frederik and Herrnegger, Mathew and Klotz, Daniel and Hochreiter, Sepp and Klambauer, Günter},
+ date = {2019},
+ pages = {347--362},
+ publisher = {{Springer International Publishing}},
+ selected = {false},
+ title = {{{NeuralHydrology}} – {{Interpreting LSTMs}} in {{Hydrology}}},
+ url = {https://doi.org/10.1007/978-3-030-28954-6_19},
+ year = {2019}
+}
+
+@article{mayrLargescaleComparisonMachine2018,
+ abstract = {Deep learning is currently the most successful machine learning technique in a wide range of application areas and has recently been applied successfully in drug discovery research to predict potential drug targets and to screen for active molecules. However, due to (1) the lack of large-scale studies, (2) the compound series bias that is characteristic of drug discovery datasets and (3) the hyperparameter selection bias that comes with the high number of potential deep learning architectures, it remains unclear whether deep learning can indeed outperform existing computational methods in drug discovery tasks. We therefore assessed the performance of several deep learning methods on a large-scale drug discovery dataset and compared the results with those of other machine learning and target prediction methods. To avoid potential biases from hyperparameter selection or compound series, we used a nested cluster-cross-validation strategy. We found (1) that deep learning methods significantly outperform all competing methods and (2) that the predictive performance of deep learning is in many cases comparable to that of tests performed in wet labs (i.e., in vitro assays).},
+ author = {Mayr, Andreas and Klambauer, Günter and Unterthiner, Thomas and Steijaert, Marvin and Wegner, Jörg K. and Ceulemans, Hugo and Clevert, Djork-Arné and Hochreiter, Sepp},
+ date = {2018-06-06},
+ journaltitle = {Chemical Science},
+ selected = {false},
+ title = {Large-Scale Comparison of Machine Learning Methods for Drug Target Prediction on {{ChEMBL}}},
+ url = {https://doi.org/10.1039/C8SC00148K},
+ year = {2018}
+}
+
+@article{mendenCommunityAssessmentAdvance2019,
+ abstract = {The effectiveness of most cancer targeted therapies is short-lived. Tumors often develop resistance that might be overcome with drug combinations. However, the number of possible combinations is vast, necessitating data-driven approaches to find optimal patient-specific treatments. Here we report AstraZeneca’s large drug combination dataset, consisting of 11,576 experiments from 910 combinations across 85 molecularly characterized cancer cell lines, and results of a DREAM Challenge to evaluate computational strategies for predicting synergistic drug pairs and biomarkers. 160 teams participated to provide a comprehensive methodological development and benchmarking. Winning methods incorporate prior knowledge of drug-target interactions. Synergy is predicted with an accuracy matching biological replicates for {$>$}60\% of combinations. However, 20\% of drug combinations are poorly predicted by all methods. Genomic rationale for synergy predictions are identified, including ADAM17 inhibitor antagonism when combined with PIK3CB/D inhibition contrasting to synergy when combined with other PI3K-pathway inhibitors in PIK3CA mutant cells.},
+ author = {Menden, Michael P. and Wang, Dennis and Mason, Mike J. and Szalai, Bence and Bulusu, Krishna C. and Guan, Yuanfang and Yu, Thomas and Kang, Jaewoo and Jeon, Minji and Wolfinger, Russ and Nguyen, Tin and Zaslavskiy, Mikhail and Jang, In Sock and Ghazoui, Zara and Ahsen, Mehmet Eren and Vogel, Robert and Neto, Elias Chaibub and Norman, Thea and Tang, Eric K. Y. and Garnett, Mathew J. and Veroli, Giovanni Y. Di and Fawell, Stephen and Stolovitzky, Gustavo and Guinney, Justin and Dry, Jonathan R. and Saez-Rodriguez, Julio},
+ date = {2019-06-17},
+ journaltitle = {Nature Communications},
+ number = {1},
+ pages = {2674},
+ publisher = {{Nature Publishing Group}},
+ selected = {false},
+ title = {Community Assessment to Advance Computational Prediction of Cancer Drug Combinations in a Pharmacogenomic Screen},
+ url = {https://doi.org/10.1038/s41467-019-09799-2},
+ volume = {10},
+ year = {2019}
+}
+
+@article{povysilPanelcnMOPSCopynumber2017,
+ abstract = {Targeted next-generation-sequencing (NGS) panels have largely replaced Sanger sequencing in clinical diagnostics. They allow for the detection of copy-number variations (CNVs) in addition to single-nucleotide variants and small insertions/deletions. However, existing computational CNV detection methods have shortcomings regarding accuracy, quality control (QC), incidental findings, and user-friendliness. We developed panelcn.MOPS, a novel pipeline for detecting CNVs in targeted NGS panel data. Using data from 180 samples, we compared panelcn.MOPS with five state-of-the-art methods. With panelcn.MOPS leading the field, most methods achieved comparably high accuracy. panelcn.MOPS reliably detected CNVs ranging in size from part of a region of interest (ROI), to whole genes, which may comprise all ROIs investigated in a given sample. The latter is enabled by analyzing reads from all ROIs of the panel, but presenting results exclusively for user-selected genes, thus avoiding incidental findings. Additionally, panelcn.MOPS offers QC criteria not only for samples, but also for individual ROIs within a sample, which increases the confidence in called CNVs. panelcn.MOPS is freely available both as R package and standalone software with graphical user interface that is easy to use for clinical geneticists without any programming experience. panelcn.MOPS combines high sensitivity and specificity with user-friendliness rendering it highly suitable for routine clinical diagnostics.},
+ author = {Povysil, Gundula and Tzika, Antigoni and Vogt, Julia and Haunschmid, Verena and Messiaen, Ludwine and Zschocke, Johannes and Klambauer, Günter and Hochreiter, Sepp and Wimmer, Katharina},
+ date = {2017},
+ journaltitle = {Human Mutation},
+ number = {7},
+ pages = {889--897},
+ selected = {false},
+ shorttitle = {Panelcn.{{MOPS}}},
+ title = {Panelcn.{{MOPS}}: {{Copy}}-Number Detection in Targeted {{NGS}} Panel Data for Clinical Diagnostics},
+ url = {https://doi.org/10.1002/humu.23237},
+ volume = {38},
+ year = {2017}
+}
+
+@article{preuerDeepSynergyPredictingAnticancer2018,
+ abstract = {While drug combination therapies are a well-established concept in cancer treatment, identifying novel synergistic combinations is challenging due to the size of combinatorial space. However, computational approaches have emerged as a time- and cost-efficient way to prioritize combinations to test, based on recently available large-scale combination screening data. Recently, Deep Learning has had an impact in many research areas by achieving new state-of-the-art model performance. However, Deep Learning has not yet been applied to drug synergy prediction, which is the approach we present here, termed DeepSynergy. DeepSynergy uses chemical and genomic information as input information, a normalization strategy to account for input data heterogeneity, and conical layers to model drug synergies.DeepSynergy was compared to other machine learning methods such as Gradient Boosting Machines, Random Forests, Support Vector Machines and Elastic Nets on the largest publicly available synergy dataset with respect to mean squared error. DeepSynergy significantly outperformed the other methods with an improvement of 7.2\% over the second best method at the prediction of novel drug combinations within the space of explored drugs and cell lines. At this task, the mean Pearson correlation coefficient between the measured and the predicted values of DeepSynergy was 0.73. Applying DeepSynergy for classification of these novel drug combinations resulted in a high predictive performance of an AUC of 0.90. Furthermore, we found that all compared methods exhibit low predictive performance when extrapolating to unexplored drugs or cell lines, which we suggest is due to limitations in the size and diversity of the dataset. We envision that DeepSynergy could be a valuable tool for selecting novel synergistic drug combinations.DeepSynergy is available via www.bioinf.jku.at/software/DeepSynergy.Supplementary data are available at Bioinformatics online.},
+ author = {Preuer, Kristina and Lewis, Richard P I and Hochreiter, Sepp and Bender, Andreas and Bulusu, Krishna C and Klambauer, Günter},
+ date = {2018-05-01},
+ journaltitle = {Bioinformatics},
+ number = {9},
+ pages = {1538--1546},
+ selected = {false},
+ shorttitle = {{{DeepSynergy}}},
+ title = {{{DeepSynergy}}: Predicting Anti-Cancer Drug Synergy with {{Deep Learning}}},
+ url = {https://doi.org/10.1093/bioinformatics/btx806},
+ volume = {34},
+ year = {2018}
+}
+
+@article{preuerFrechetChemNetDistance2018,
+ abstract = {The new wave of successful generative models in machine learning has increased the interest in deep learning driven de novo drug design. However, method comparison is difficult because of various flaws of the currently employed evaluation metrics. We propose an evaluation metric for generative models called Fréchet ChemNet distance (FCD). The advantage of the FCD over previous metrics is that it can detect whether generated molecules are diverse and have similar chemical and biological properties as real molecules.},
+ author = {Preuer, Kristina and Renz, Philipp and Unterthiner, Thomas and Hochreiter, Sepp and Klambauer, Günter},
+ date = {2018-09-24},
+ journaltitle = {Journal of Chemical Information and Modeling},
+ number = {9},
+ pages = {1736--1741},
+ publisher = {{American Chemical Society}},
+ selected = {false},
+ shorttitle = {Fréchet {{ChemNet Distance}}},
+ title = {Fréchet {{ChemNet Distance}}: {{A Metric}} for {{Generative Models}} for {{Molecules}} in {{Drug Discovery}}},
+ url = {https://doi.org/10.1021/acs.jcim.8b00234},
+ volume = {58},
+ year = {2018}
+}
+
+@incollection{preuerInterpretableDeepLearning2019,
+ abstract = {Without any means of interpretation, neural networks that predict molecular properties and bioactivities are merely black boxes. We will unravel these black boxes and will demonstrate approaches to understand the learned representations which are hidden inside these models. We show how single neurons can be interpreted as classifiers which determine the presence or absence of pharmacophore- or toxicophore-like structures, thereby generating new insights and relevant knowledge for chemistry, pharmacology and biochemistry. We further discuss how these novel pharmacophores/toxicophores can be determined from the network by identifying the most relevant components of a compound for the prediction of the network. Additionally, we propose a method which can be used to extract new pharmacophores from a model and will show that these extracted structures are consistent with literature findings. We envision that having access to such interpretable knowledge is a crucial aid in the development and design of new pharmaceutically active molecules, and helps to investigate and understand failures and successes of current methods.},
+ author = {Preuer, Kristina and Klambauer, Günter and Rippmann, Friedrich and Hochreiter, Sepp and Unterthiner, Thomas},
+ date = {2019},
+ pages = {331--345},
+ publisher = {{Springer International Publishing}},
+ selected = {false},
+ title = {Interpretable {{Deep Learning}} in {{Drug Discovery}}},
+ url = {https://doi.org/10.1007/978-3-030-28954-6_18},
+ year = {2019}
+}
+
+@article{renzFailureModesMolecule2020a,
+ abstract = {There has been a wave of generative models for molecules triggered by advances in the field of Deep Learning. These generative models are often used to optimize chemical compounds towards particular properties or a desired biological activity. The evaluation of generative models remains challenging and suggested performance metrics or scoring functions often do not cover all relevant aspects of drug design projects. In this work, we highlight some unintended failure modes in molecular generation and optimization and how these evade detection by current performance metrics.},
+ author = {Renz, Philipp and Van Rompaey, Dries and Wegner, Jörg Kurt and Hochreiter, Sepp and Klambauer, Günter},
+ date = {2020-10-24},
+ journaltitle = {Drug Discovery Today: Technologies},
+ selected = {true},
+ title = {On Failure Modes in Molecule Generation and Optimization},
+ url = {https://doi.org/10.1016/j.ddtec.2020.09.003},
+ year = {2020},
+ code = {https://github.com/ml-jku/mgenerators-failure-modes},
+ software = {true}
+}
+
+@article{renzUncertaintyEstimationMethods2019,
+ abstract = {It takes about a decade to develop a new drug by a process in which a large number of decisions have to be made. Those decisions are critical for the success or failure of a multi-million dollar drug discovery project, which could save many lives or increase life quality. Decisions in early phases of drug discovery, such as the selection of certain series of chemical compounds, are particularly impactful on the success rate. Machine learning models are increasingly used to inform the decision making process by predicting desired effects, undesired effects, such as toxicity, molecular properties, or which wet-lab test to perform next. Thus, accurately quantifying the uncertainties of the models’ outputs is critical, for example, in order to calculate expected utilities, to estimate the risk and the potential gain. In this work, we review, assess and compare recent uncertainty estimation methods with respect to their use in drug discovery projects. We test both, which methods give well calibrated prediction and which ones perform well at misclassification detection. For the latter, we find the entropy of the predictive distribution performs best. Finally, we discuss the problem of defining out-of-distribution samples for prediction tasks on chemical compounds.},
+ author = {Renz, Philipp and Hochreiter, Sepp and Klambauer, Günter},
+ date = {2019},
+ journaltitle = {NeurIPS-2019 Workshop on  Safety and Robustness in Decision Making},
+ selected = {false},
+ title = {Uncertainty {{Estimation Methods}} to {{Support Decision}}-{{Making}} in {{Early Phases}} of {{Drug Discovery}}},
+ year = {2019}
+}
+
+@inproceedings{rumetshoferHumanlevelProteinLocalization2018,
+ abbr={ICLR},
+ abstract = {Localizing a specific protein in a human cell is essential for understanding cellular functions and biological processes of underlying diseases. A promising, low-cost,and time-efficient...},
+ author = {Rumetshofer, Elisabeth and Hofmarcher, Markus and Röhrl, Clemens and Hochreiter, Sepp and Klambauer, Günter},
+ date = {2018-09-27},
+ eventtitle = {International Conference on Learning Representations},
+ selected = {false},
+ title = {Human-Level {{Protein Localization}} with {{Convolutional Neural Networks}}},
+ url = {https://openreview.net/forum?id=ryl5khRcKm},
+ year = {2018}
+}
+
+@online{sewardFirstOrderGenerative2018,
+ abstract = {GANs excel at learning high dimensional distributions, but they can update generator parameters in directions that do not correspond to the steepest descent direction of the objective. Prominent examples of problematic update directions include those used in both Goodfellow's original GAN and the WGAN-GP. To formally describe an optimal update direction, we introduce a theoretical framework which allows the derivation of requirements on both the divergence and corresponding method for determining an update direction, with these requirements guaranteeing unbiased mini-batch updates in the direction of steepest descent. We propose a novel divergence which approximates the Wasserstein distance while regularizing the critic's first order information. Together with an accompanying update direction, this divergence fulfills the requirements for unbiased steepest descent updates. We verify our method, the First Order GAN, with image generation on CelebA, LSUN and CIFAR-10 and set a new state of the art on the One Billion Word language generation task. Code to reproduce experiments is available.},
+ author = {Seward, Calvin and Unterthiner, Thomas and Bergmann, Urs and Jetchev, Nikolay and Hochreiter, Sepp},
+ date = {2018-06-07},
+ eprint = {1802.04591},
+ eprinttype = {arxiv},
+ pdf = {https://arxiv.org/pdf/1802.04591.pdf},
+ selected = {false},
+ title = {First {{Order Generative Adversarial Networks}}},
+ url = {http://arxiv.org/abs/1802.04591},
+ year = {2018}
+}
+
+@article{steinwandterMultivariateAnalyticsChromatographic2018,
+ abstract = {Chromatography is one of the most versatile unit operations in the biotechnological industry. Regulatory initiatives like Process Analytical Technology and Quality by Design led to the implementation of new chromatographic devices. Those represent an almost inexhaustible source of data. However, the analysis of large datasets is complicated, and significant amounts of information stay hidden in big data. Here we present a new, top-down approach for the systematic analysis of chromatographic datasets. It is the goal of this approach to analyze the dataset as a whole, starting with the most important, global information. The workflow should highlight interesting regions (outliers, drifts, data inconsistencies), and help to localize those regions within a multi-dimensional space in a straightforward way. Moving window factor models were used to extract the most important information, focusing on the differences between samples. The prototype was implemented as an interactive visualization tool for the explorative analysis of complex datasets. We found that the tool makes it convenient to localize variances in a multidimensional dataset and allows to differentiate between explainable and unexplainable variance. Starting with one global difference descriptor per sample, the analysis ends up with highly resolute temporally dependent difference descriptor values, thought as a starting point for the detailed analysis of the underlying raw data.},
+ author = {Steinwandter, Valentin and Šišmiš, Michal and Sagmeister, Patrick and Bodenhofer, Ulrich and Herwig, Christoph},
+ date = {2018-08-15},
+ journaltitle = {Journal of Chromatography B},
+ pages = {179--190},
+ selected = {false},
+ shorttitle = {Multivariate Analytics of Chromatographic Data},
+ title = {Multivariate Analytics of Chromatographic Data: {{Visual}} Computing Based on Moving Window Factor Models},
+ url = {https://doi.org/10.1016/j.jchromb.2018.06.010},
+ volume = {1092},
+ year = {2018}
+}
+
+@article{sturmIndustryscaleApplicationEvaluation2020,
+ abstract = {Artificial intelligence (AI) is undergoing a revolution thanks to the breakthroughs of machine learning algorithms in computer vision, speech recognition, natural language processing and generative modelling. Recent works on publicly available pharmaceutical data showed that AI methods are highly promising for Drug Target prediction. However, the quality of public data might be different than that of industry data due to different labs reporting measurements, different measurement techniques, fewer samples and less diverse and specialized assays. As part of a European funded project (ExCAPE), that brought together expertise from pharmaceutical industry, machine learning, and high-performance computing, we investigated how well machine learning models obtained from public data can be transferred to internal pharmaceutical industry data. Our results show that machine learning models trained on public data can indeed maintain their predictive power to a large degree when applied to industry data. Moreover, we observed that deep learning derived machine learning models outperformed comparable models, which were trained by other machine learning algorithms, when applied to internal pharmaceutical company datasets. To our knowledge, this is the first large-scale study evaluating the potential of machine learning and especially deep learning directly at the level of industry-scale settings and moreover investigating the transferability of publicly learned target prediction models towards industrial bioactivity prediction pipelines.},
+ author = {Sturm, Noé and Mayr, Andreas and Le Van, Thanh and Chupakhin, Vladimir and Ceulemans, Hugo and Wegner, Joerg and Golib-Dzib, Jose-Felipe and Jeliazkova, Nina and Vandriessche, Yves and Böhm, Stanislav and Cima, Vojtech and Martinovic, Jan and Greene, Nigel and Vander Aa, Tom and Ashby, Thomas J. and Hochreiter, Sepp and Engkvist, Ola and Klambauer, Günter and Chen, Hongming},
+ date = {2020-04-19},
+ journaltitle = {Journal of Cheminformatics},
+ number = {1},
+ pages = {26},
+ selected = {false},
+ title = {Industry-Scale Application and Evaluation of Deep Learning for Drug Target Prediction},
+ url = {https://doi.org/10.1186/s13321-020-00428-5},
+ volume = {12},
+ year = {2020}
+}
+
+@online{unterthinerCoulombGANsProvably2018,
+ abstract = {Generative adversarial networks (GANs) evolved into one of the most successful unsupervised techniques for generating realistic images. Even though it has recently been shown that GAN training converges, GAN models often end up in local Nash equilibria that are associated with mode collapse or otherwise fail to model the target distribution. We introduce Coulomb GANs, which pose the GAN learning problem as a potential field of charged particles, where generated samples are attracted to training set samples but repel each other. The discriminator learns a potential field while the generator decreases the energy by moving its samples along the vector (force) field determined by the gradient of the potential field. Through decreasing the energy, the GAN model learns to generate samples according to the whole target distribution and does not only cover some of its modes. We prove that Coulomb GANs possess only one Nash equilibrium which is optimal in the sense that the model distribution equals the target distribution. We show the efficacy of Coulomb GANs on a variety of image datasets. On LSUN and celebA, Coulomb GANs set a new state of the art and produce a previously unseen variety of different samples.},
+ author = {Unterthiner, Thomas and Nessler, Bernhard and Seward, Calvin and Klambauer, Günter and Heusel, Martin and Ramsauer, Hubert and Hochreiter, Sepp},
+ date = {2018-01-30},
+ eprint = {1708.08819},
+ eprinttype = {arxiv},
+ selected = {false},
+ shorttitle = {Coulomb {{GANs}}},
+ title = {Coulomb {{GANs}}: {{Provably Optimal Nash Equilibria}} via {{Potential Fields}}},
+ url = {http://arxiv.org/abs/1708.08819},
+ year = {2018}
+}
+
+@article{widrichDeepRCImmuneRepertoire2020,
+  abbr={bioarXiv},
+ abstract = {{$<$}h3{$>$}Abstract{$<$}/h3{$>$} {$<$}p{$>$}High-throughput immunosequencing allows reconstructing the immune repertoire of an individual, which is a unique opportunity for new immunotherapies, immunodiagnostics, and vaccine design. Since immune repertoires are shaped by past and current immune events, such as infection and disease, and thus record an individual’s state of health, immune repertoire sequencing data may enable the prediction of health and disease using machine learning. However, finding the connections between an individual’s repertoire and the individual’s disease class, with potentially hundreds of thousands to millions of short sequences per individual, poses a difficult and unique challenge for machine learning methods. In this work, we present our method DeepRC that combines a Deep Learning architecture with attentionbased multiple instance learning. To validate that DeepRC accurately predicts an individual’s disease class based on its immune repertoire and determines the associated class-specific sequence motifs, we applied DeepRC in four large-scale experiments encompassing ground-truth simulated as well as real-world virus infection data. We demonstrate that DeepRC outperforms all tested methods with respect to predictive performance and enables the extraction of those sequence motifs that are connected to a given disease class.{$<$}/p{$>$}},
+ author = {Widrich, Michael and Schäfl, Bernhard and Pavlović, Milena and Sandve, Geir Kjetil and Hochreiter, Sepp and Greiff, Victor and Klambauer, Günter},
+ date = {2020-04-13},
+ journaltitle = {bioRxiv},
+ pages = {2020.04.12.038158},
+ publisher = {{Cold Spring Harbor Laboratory}},
+ selected = {false},
+ shorttitle = {{{DeepRC}}},
+ title = {{{DeepRC}}: {{Immune}} Repertoire Classification with Attention-Based Deep Massive Multiple Instance Learning},
+ url = {https://doi.org/10.1101/2020.04.12.038158},
+ year = {2020}
 }

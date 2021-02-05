@@ -37,29 +37,29 @@
           
           {% if forloop.length == 1 %}
             {% if author_is_self %}
-              <em>{{author.last}}, {{author.first}}</em>
+              <em>{{author.last}}, {{author.first|slice:"0"}}</em>.
             {% else %}
-              {{author.last}}, {{author.first}}
+              {{author.last}}, {{author.first|slice:"0"}}.
             {% endif %}
           {% else %}
             {% unless forloop.last %}
               {% if author_is_self %}
-                <em>{{author.last}}, {{author.first}}</em>,
+                <em>{{author.last}}, {{author.first|slice:"0"}}</em>.,
               {% else %}
                 {% if coauthor_url %}
-                  <a href="{{coauthor_url}}" target="_blank">{{author.last}}, {{author.first}}</a>,
+                  <a href="{{coauthor_url}}" target="_blank">{{author.last}}, {{author.first|slice:"0"}}</a>.,
                 {% else %}
-                  {{author.last}}, {{author.first}},
+                  {{author.last}}, {{author.first|slice:"0"}}.,
                 {% endif %}
               {% endif %}
             {% else %}
               {% if author_is_self %}
-                and <em>{{author.last}}, {{author.first}}</em>
+                and <em>{{author.last}}, {{author.first|slice:"0"}}</em>
               {% else %}
                 {% if coauthor_url %}
-                  and <a href="{{coauthor_url}}" target="_blank">{{author.last}}, {{author.first}}</a>
+                  and <a href="{{coauthor_url}}" target="_blank">{{author.last}}, {{author.first|slice:"0"}}</a>.
                 {% else %}
-                  and {{author.last}}, {{author.first}}
+                  and {{author.last}}, {{author.first|slice:"0"}}.
                 {% endif %}
               {% endif %}
             {% endunless %}
@@ -85,6 +85,9 @@
     {% endif %}
     {% if entry.arxiv %}
       <a href="http://arxiv.org/abs/{{ entry.arxiv }}" class="btn btn-sm z-depth-0" role="button" target="_blank">arXiv</a>
+    {% endif %}
+    {% if entry.url %}
+      <a href="{{ entry.url }}" class="btn btn-sm z-depth-0" role="button" target="_blank">url</a>
     {% endif %}
     {% if entry.html %}
       <a href="{{ entry.html }}" class="btn btn-sm z-depth-0" role="button" target="_blank">HTML</a>

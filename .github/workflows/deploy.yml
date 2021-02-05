@@ -1,14 +1,7 @@
 name: Deploy
 
 on:
-  push:
-    branches:
-      - master
-      - source
-  pull_request:
-    branches:
-      - master
-      - source
+  workflow_dispatch:
 
 jobs:
   deploy:
@@ -44,9 +37,9 @@ jobs:
           echo "::set-output name=SRC_BRANCH::${GITHUB_REF#refs/heads/}"
         fi
         if [[ ${{ github.repository }} = *.github.io ]]; then # user/org repo
-          echo "::set-output name=DEPLOY_BRANCH::master"
+          echo "::set-output name=DEPLOY_BRANCH::devel"
         else
-          echo "::set-output name=DEPLOY_BRANCH::gh-pages"
+          echo "::set-output name=DEPLOY_BRANCH::dev-pages"
         fi
     - name: Deploy website 
       run:  yes | bin/deploy --verbose ${{ steps.setup.outputs.NO_PUSH }}
