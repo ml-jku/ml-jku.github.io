@@ -2,12 +2,13 @@
 
     <!-- Nav Bar -->
     <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}">
-    <div class="container">
-      {% if page.title != "about" %}
       <a class="navbar-brand title font-weight-lighter" href="{{ site.baseurl | prepend: site.url }}/">
-       {% if site.title == blank %}{{ site.title }}{% else %}<span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}  {{ site.last_name }}{% endif %}
+       <!-- {% if site.title == blank %}{{ site.title }}{% else %}<span>{{ site.first_name }}</span> {{ site.middle_name }}  {{ site.last_name }}{% endif %} -->
+       <img class="rounded" src="{{ site.jku_logo | prepend: site.baseurl }}" width=100px height=45px>
+       <img class="rounded" src="{{ site.ellis_logo | prepend: site.baseurl }}" width=200px height=45px>
       </a>
-      {% elsif site.show_social_icons %}
+    <div class="container">
+      {% if site.show_social_icons %}
         <!-- Social Icons -->
         <div class="row ml-1 ml-sm-0">
           {% include social.html %}
@@ -46,14 +47,46 @@
           {% assign sorted_pages = site.pages | sort: "title" %}
           {% for p in sorted_pages %}
           {% if p.nav and p.autogen == nil %}
+          {% if p.forward %}
           <li class="nav-item {% if page.title == p.title %}active{% endif %}">
-              <a class="nav-link" href="{{ p.url | relative_url }}">
+              <a class="nav-link" href="{{ p.forward_url }}" target="_blank" rel="noopener noreferrer">
                 {{ p.title }}
                 {% if page.title == p.title %}
                 <span class="sr-only">(current)</span>
                 {% endif %}
               </a>
           </li>
+          {% else %}
+          <li class="nav-item {% if page.title == p.title %}active{% endif %}">
+                {% if p.title == "research" %}
+                    <div class="dropdown">
+                      <a class="nav-link" href="{{ p.url | relative_url }}">
+                        {{ p.title }}
+                        {% if page.title == p.title %}
+                        <span class="sr-only">(current)</span>
+                        {% endif %}
+                      </a>
+                        <div class="dropdown-content">
+                          <a href="{{ p.url | relative_url }}deep_learning">Deep Learning</a>
+                          <a href="{{ p.url | relative_url }}ails">AI Life Science</a>
+                          <a href="{{ p.url | relative_url }}reinforcement_learning">Reinforcement Learning</a>
+                          <a href="{{ p.url | relative_url }}ml_theory">ML Theory</a>
+                          <a href="{{ p.url | relative_url }}ml_earth_science">ML for Earth Science</a>
+                        </div>
+                      </div>
+                    {% if page.title == p.title %}
+                    <span class="sr-only">(current)</span>
+                    {% endif %}
+                {% else %}
+                <a class="nav-link" href="{{ p.url | relative_url }}">
+                  {{ p.title }}
+                  {% if page.title == p.title %}
+                  <span class="sr-only">(current)</span>
+                  {% endif %}
+                </a>
+                {% endif %}
+          </li>
+          {% endif %}
           {% endif %}
           {% endfor %}
           {% if site.enable_darkmode %}
