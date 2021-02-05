@@ -32,6 +32,8 @@ a:hover:after, table.table a:hover:after { width: 100%; }
 
 .caption { font-size: 0.875rem; margin-top: 0.75rem; margin-bottom: 1.5rem; text-align: center; }
 
+.about-text { text-align: justify; text-justify: inter-word; }
+
 .profile { margin-left: 0; width: 90%; }
 .profile .address { margin-bottom: 5px; margin-top: 5px; font-family: monospace; font-size: 1.2rem; }
 .profile .address p { display: inline-block; margin: 0; }
