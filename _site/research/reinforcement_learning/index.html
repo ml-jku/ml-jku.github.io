@@ -252,7 +252,366 @@
 
   <article>
     <div class="about-text">
+    <p>Sequential decision making and credit assignment under uncertainty and partial observability is central to developing Intelligent Systems. Reinforcement Learning (RL) provides a general and powerful computational framework for sequential decision making. It involves an agent interacting with the environment to maximize a reward function by selecting actions.</p>
+
+<div class="row justify-content-sm-center">
+    <div class="col-sm-5 mt-3 mt-md-0">
+        <img class="img-fluid z-depth-1 research-img" src="/assets/img/research/reinforcement_learning/rudder_1.png" alt="" title="example image" />
+    </div>
+<p>
+
+Our research at the Institute of Machine Learning focuses on developing new algorithms and theory required to improve the state of the art in Reinforcement Learning. Credit assignment under delayed reward has been central to our work in recent years. We also actively pursue developing new function approximation methods for scaling Reinforcement Learning to high dimensional problems. Learning to take decisions based on stored data is another area of interest.
+
+We actively apply Reinforcement Learning to various applications including robotics, logistics, natural language processing and others.
+
+
+<div class="publications">
+<h4>recent publications in Reinforcement Learning:</h4>
+  <ol class="bibliography"><li><div class="row">
+  <div class="col-sm-2 abbr">
+  
     
+    <abbr class="badge">arXiv</abbr>
+    
+  
+  </div>
+
+  <div id="holzleitner2020convergence" class="col-sm-8">
+    
+      <div class="title">Convergence Proof for Actor-Critic Methods Applied to PPO and RUDDER</div>
+      <div class="author">
+        
+          
+            
+              
+                
+                  Holzleitner, M.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Gruber, L.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Arjona-Medina, J.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Brandstetter, J.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  and Hochreiter, S.
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+      
+        2020
+      
+      </div>
+    
+
+    <div class="links">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+  </div>
+</div>
+</li>
+<li><div class="row">
+  <div class="col-sm-2 abbr">
+  
+    
+    <abbr class="badge">arXiv</abbr>
+    
+  
+  </div>
+
+  <div id="patil2020alignrudder" class="col-sm-8">
+    
+      <div class="title">Align-RUDDER: Learning From Few Demonstrations by Reward Redistribution</div>
+      <div class="author">
+        
+          
+            
+              
+                
+                  Patil, V.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Hofmarcher, M.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Dinu, M.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Dorfer, M.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Blies, P.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Brandstetter, J.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Arjona-Medina, J.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  and Hochreiter, S.
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+        <em>arXiv preprint arXiv:2009.14108</em>
+      
+      
+        2020
+      
+      </div>
+    
+
+    <div class="links">
+    
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+    
+    
+    
+      <a href="https://arxiv.org/abs/2009.14108" class="btn btn-sm z-depth-0" role="button" target="_blank">url</a>
+    
+    
+    
+    
+    
+    
+      <a href="https://github.com/ml-jku/align-rudder" class="btn btn-sm z-depth-0" role="button" target="_blank">Code</a>
+    
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+    <div class="abstract hidden">
+      <p>Reinforcement Learning algorithms require a large number of samples to solve complex tasks with sparse and delayed rewards. Complex tasks can often be hierarchically decomposed into sub-tasks. A step in the Q-function can be associated with solving a sub-task, where the expectation of the return increases. RUDDER has been introduced to identify these steps and then redistribute reward to them, thus immediately giving reward if sub-tasks are solved. Since the problem of delayed rewards is mitigated, learning is considerably sped up. However, for complex tasks, current exploration strategies as deployed in RUDDER struggle with discovering episodes with high rewards. Therefore, we assume that episodes with high rewards are given as demonstrations and do not have to be discovered by exploration. Typically the number of demonstrations is small and RUDDER’s LSTM model as a deep learning method does not learn well. Hence, we introduce Align-RUDDER, which is RUDDER with two major modifications. First, Align-RUDDER assumes that episodes with high rewards are given as demonstrations, replacing RUDDER’s safe exploration and lessons replay buffer. Second, we replace RUDDER’s LSTM model by a profile model that is obtained from multiple sequence alignment of demonstrations. Profile models can be constructed from as few as two demonstrations as known from bioinformatics. Align-RUDDER inherits the concept of reward redistribution, which considerably reduces the delay of rewards, thus speeding up learning. Align-RUDDER outperforms competitors on complex artificial tasks with delayed reward and few demonstrations. On the MineCraft ObtainDiamond task, Align-RUDDER is able to mine a diamond, though not frequently.</p>
+    </div>
+    
+  </div>
+</div>
+</li>
+<li><div class="row">
+  <div class="col-sm-2 abbr">
+  
+    
+    <abbr class="badge">NeurIPS</abbr>
+    
+  
+  </div>
+
+  <div id="Arjona:19" class="col-sm-8">
+    
+      <div class="title">RUDDER: Return Decomposition for Delayed Rewards</div>
+      <div class="author">
+        
+          
+            
+              
+                
+                  Arjona-Medina, J.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Gillhofer, M.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Widrich, M.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Unterthiner, T.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Brandstetter, J.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  and Hochreiter, S.
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+        <em>In Advances in Neural Information Processing Systems 32</em>
+      
+      
+        2019
+      
+      </div>
+    
+
+    <div class="links">
+    
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+    
+    
+    
+      <a href="https://arxiv.org/abs/2009.14108" class="btn btn-sm z-depth-0" role="button" target="_blank">url</a>
+    
+    
+    
+    
+    
+      <a href="https://ml-jku.github.io/rudder/" class="btn btn-sm z-depth-0" role="button" target="_blank">Blog</a>
+    
+    
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+    <div class="abstract hidden">
+      <p>We propose RUDDER, a novel reinforcement learning approach for delayed rewards in finite Markov decision processes (MDPs). In MDPs the Q-values are equal to the expected immediate reward plus the expected future rewards. The latter are related to bias problems in temporal difference (TD) learning and to high variance problems in Monte Carlo (MC) learning. Both problems are even more severe when rewards are delayed. RUDDER aims at making the expected future rewards zero, which simplifies Q-value estimation to computing the mean of the immediate reward. We propose the following two new concepts to push the expected future rewards toward zero. (i) Reward redistribution that leads to return-equivalent decision processes with the same optimal policies and, when optimal, zero expected future rewards. (ii) Return decomposition via contribution analysis which transforms the reinforcement learning task into a regression task at which deep learning excels. On artificial tasks with delayed rewards, RUDDER is significantly faster than MC and exponentially faster than Monte Carlo Tree Search (MCTS), TD({λ}), and reward shaping approaches. At Atari games, RUDDER on top of a Proximal Policy Optimization (PPO) baseline improves the scores, which is most prominent at games with delayed rewards. Source code is available at \url{https://github.com/ml-jku/rudder} and demonstration videos at \url{https://goo.gl/EQerZV}.</p>
+    </div>
+    
+  </div>
+</div>
+</li></ol>
+</div>
+</p></div>
 
   </div>
   </article>
