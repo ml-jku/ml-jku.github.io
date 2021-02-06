@@ -5,6 +5,7 @@ title: publications
 description: publications in reverse chronological order.
 years: [2020, 2019, 2018, 2017]
 nav: true
+importance: 3
 ---
 
 

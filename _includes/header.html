@@ -52,7 +52,7 @@
           </li>
           {% endif %}
           <!-- Other pages -->
-          {% assign sorted_pages = site.pages | sort: "title" %}
+          {% assign sorted_pages = site.pages | sort: "importance" %}
           {% for p in sorted_pages %}
           {% if p.nav and p.autogen == nil %}
           {% if p.forward %}
@@ -81,7 +81,7 @@
                           <a href="{{ p.url | relative_url }}reinforcement_learning">Reinforcement Learning</a>
                           <a href="{{ p.url | relative_url }}hopfield_networks">Modern Hopfield Networks</a>
                           <a href="{{ p.url | relative_url }}ai4earth">AI 4 Earth</a>
-                          <a href="{{ p.url | relative_url }}ai4drive">AI 4 Drive</a>
+                          <a href="{{ p.url | relative_url }}ai4drive">AI 4 Driving</a>
                         </div>
                       </div>
                     {% if page.title == p.title %}

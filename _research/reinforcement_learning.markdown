@@ -2,6 +2,6 @@
 layout: page
 title: Reinforcement Learning
 description:
-img: /assets/img/7.jpg
+img: /assets/img/research/reinforcement_learning/rudder_1.png
 importance: 3
 ---

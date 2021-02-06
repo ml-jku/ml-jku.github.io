@@ -3,6 +3,7 @@ layout: page
 title: research
 permalink: /research/
 nav: true
+importance: 2
 ---
 
 <div class="projects grid">

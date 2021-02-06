@@ -1,6 +1,6 @@
 ---
 layout: page
-title: AI 4 Drive
+title: AI 4 Driving
 description:
 img: /assets/img/research/ai4drive/audi_car.jpg
 importance: 3
@@ -17,6 +17,6 @@ The goal of autonomous driving ist to develop the capacity of sensing and moving
 Current self-driving systems already work well in simple scenarios (e.g. highways). However, driving in complex environments is still difficult. New challenges arise when the system has to consider the potentially combined occurrence of elaborate traffic conditions, pedestrian behavior, and unusual driving situations. The self-driving vehicles of the future need to be able to work under diverse environments and a wide variety of conditions (e.g. varying weather, uncontrollable behavior of other road users, movable traffic lights, etc.). Advancing the state of the art in autonomous driving lies at the heart of the research problem that our team at JKU investigates.</p>
 
 <div class="publications">
-<h4>recent publications in AI 4 Earth:</h4>
+<h4>recent publications in AI 4 Driving:</h4>
   {% bibliography -f papers -q @*[category=ai4drive]*%}
 </div>
