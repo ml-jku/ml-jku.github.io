@@ -10,7 +10,7 @@ Sequential decision making and credit assignment under uncertainty and partial o
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-5 mt-3 mt-md-0">
-        <img class="img-fluid z-depth-1 research-img" src="/assets/img/research/reinforcement_learning/rudder_1.png" alt="" title="example image"/>
+        <img class="img-fluid research-img" src="/assets/img/research/reinforcement_learning/rudder_1.png" alt="" title="example image"/>
     </div>
 <p>
 
