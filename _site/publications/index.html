@@ -189,10 +189,12 @@
                       </a>
                         <div class="dropdown-content">
                           <a href="/research/deep_learning">Deep Learning</a>
-                          <a href="/research/ails">AI Life Science</a>
+                          <a href="/research/ai_healthcare">AI in Health Care</a>
+                          <a href="/research/ai_drug">AI in Drug Discovery</a>
                           <a href="/research/reinforcement_learning">Reinforcement Learning</a>
-                          <a href="/research/ml_theory">ML Theory</a>
-                          <a href="/research/ml_earth_science">ML for Earth Science</a>
+                          <a href="/research/hopfield_networks">Modern Hopfield Networks</a>
+                          <a href="/research/ai4earth">AI 4 Earth</a>
+                          <a href="/research/ai4drive">AI 4 Drive</a>
                         </div>
                       </div>
                     
@@ -251,6 +253,7 @@
   </header>
 
   <article>
+    <div class="about-text">
     <div class="publications">
 
 
@@ -259,55 +262,15 @@
   <div class="col-sm-2 abbr">
   
     
-    <abbr class="badge">ICLR</abbr>
+    <abbr class="badge">bioarXiv</abbr>
     
   
   </div>
 
-  <div id="ramsauerHopfieldNetworksAll2020" class="col-sm-8">
+  <div id="widrichDeepRCImmuneRepertoire2020" class="col-sm-8">
     
-      <div class="title">Hopfield Networks Is All You Need</div>
+      <div class="title">DeepRC: Immune Repertoire Classification with Attention-Based Deep Massive Multiple Instance Learning</div>
       <div class="author">
-        
-          
-            
-              
-                
-                  Ramsauer, H.,
-                
-              
-            
-          
-        
-          
-            
-              
-                
-                  Schäfl, B.,
-                
-              
-            
-          
-        
-          
-            
-              
-                
-                  Lehner, J.,
-                
-              
-            
-          
-        
-          
-            
-              
-                
-                  Seidl, P.,
-                
-              
-            
-          
         
           
             
@@ -323,17 +286,7 @@
             
               
                 
-                  Gruber, L.,
-                
-              
-            
-          
-        
-          
-            
-              
-                
-                  Holzleitner, M.,
+                  Schäfl, B.,
                 
               
             
@@ -363,6 +316,16 @@
             
               
                 
+                  Hochreiter, S.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
                   Greiff, V.,
                 
               
@@ -373,47 +336,7 @@
             
               
                 
-                  Kreil, D.,
-                
-              
-            
-          
-        
-          
-            
-              
-                
-                  Kopp, M.,
-                
-              
-            
-          
-        
-          
-            
-              
-                
-                  Klambauer, G.,
-                
-              
-            
-          
-        
-          
-            
-              
-                
-                  Brandstetter, J.,
-                
-              
-            
-          
-        
-          
-            
-              
-                
-                  and Hochreiter, S.
+                  and Klambauer, G.
                 
               
             
@@ -422,6 +345,8 @@
       </div>
 
       <div class="periodical">
+      
+        <em></em>
       
       
         2020
@@ -435,16 +360,12 @@
     
     
     
-      <a href="http://arxiv.org/abs/2008.02217" class="btn btn-sm z-depth-0" role="button" target="_blank">url</a>
+      <a href="https://doi.org/10.1101/2020.04.12.038158" class="btn btn-sm z-depth-0" role="button" target="_blank">url</a>
     
     
     
     
     
-      <a href="https://ml-jku.github.io/hopfield-layers/" class="btn btn-sm z-depth-0" role="button" target="_blank">Blog</a>
-    
-    
-      <a href="https://github.com/ml-jku/hopfield-layers" class="btn btn-sm z-depth-0" role="button" target="_blank">Code</a>
     
     
     
@@ -454,7 +375,7 @@
     <!-- Hidden abstract block -->
     
     <div class="abstract hidden">
-      <p>We show that the transformer attention mechanism is the update rule of a modern Hopfield network with continuous states. This new Hopfield network can store exponentially (with the dimension) many patterns, converges with one update, and has exponentially small retrieval errors. The number of stored patterns is traded off against convergence speed and retrieval error. The new Hopfield network has three types of energy minima (fixed points of the update): (1) global fixed point averaging over all patterns, (2) metastable states averaging over a subset of patterns, and (3) fixed points which store a single pattern. Transformer and BERT models operate in their first layers preferably in the global averaging regime, while they operate in higher layers in metastable states. The gradient in transformers is maximal for metastable states, is uniformly distributed for global averaging, and vanishes for a fixed point near a stored pattern. Using the Hopfield network interpretation, we analyzed learning of transformer and BERT models. Learning starts with attention heads that average and then most of them switch to metastable states. However, the majority of heads in the first layers still averages and can be replaced by averaging, e.g. our proposed Gaussian weighting. In contrast, heads in the last layers steadily learn and seem to use metastable states to collect information created in lower layers. These heads seem to be a promising target for improving transformers. Neural networks with Hopfield networks outperform other methods on immune repertoire classification, where the Hopfield net stores several hundreds of thousands of patterns. We provide a new PyTorch layer called "Hopfield", which allows to equip deep learning architectures with modern Hopfield networks as a new powerful concept comprising pooling, memory, and attention. GitHub: https://github.com/ml-jku/hopfield-layers</p>
+      <p><h3>Abstract</h3> <p>High-throughput immunosequencing allows reconstructing the immune repertoire of an individual, which is a unique opportunity for new immunotherapies, immunodiagnostics, and vaccine design. Since immune repertoires are shaped by past and current immune events, such as infection and disease, and thus record an individual’s state of health, immune repertoire sequencing data may enable the prediction of health and disease using machine learning. However, finding the connections between an individual’s repertoire and the individual’s disease class, with potentially hundreds of thousands to millions of short sequences per individual, poses a difficult and unique challenge for machine learning methods. In this work, we present our method DeepRC that combines a Deep Learning architecture with attentionbased multiple instance learning. To validate that DeepRC accurately predicts an individual’s disease class based on its immune repertoire and determines the associated class-specific sequence motifs, we applied DeepRC in four large-scale experiments encompassing ground-truth simulated as well as real-world virus infection data. We demonstrate that DeepRC outperforms all tested methods with respect to predictive performance and enables the extraction of those sequence motifs that are connected to a given disease class.</p></p>
     </div>
     
   </div>
@@ -1396,15 +1317,55 @@
   <div class="col-sm-2 abbr">
   
     
-    <abbr class="badge">bioarXiv</abbr>
+    <abbr class="badge">ICLR</abbr>
     
   
   </div>
 
-  <div id="widrichDeepRCImmuneRepertoire2020" class="col-sm-8">
+  <div id="ramsauerHopfieldNetworksAll2020" class="col-sm-8">
     
-      <div class="title">DeepRC: Immune Repertoire Classification with Attention-Based Deep Massive Multiple Instance Learning</div>
+      <div class="title">Hopfield Networks Is All You Need</div>
       <div class="author">
+        
+          
+            
+              
+                
+                  Ramsauer, H.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Schäfl, B.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Lehner, J.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Seidl, P.,
+                
+              
+            
+          
         
           
             
@@ -1420,7 +1381,17 @@
             
               
                 
-                  Schäfl, B.,
+                  Gruber, L.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Holzleitner, M.,
                 
               
             
@@ -1450,16 +1421,6 @@
             
               
                 
-                  Hochreiter, S.,
-                
-              
-            
-          
-        
-          
-            
-              
-                
                   Greiff, V.,
                 
               
@@ -1470,72 +1431,7 @@
             
               
                 
-                  and Klambauer, G.
-                
-              
-            
-          
-        
-      </div>
-
-      <div class="periodical">
-      
-        <em></em>
-      
-      
-        2020
-      
-      </div>
-    
-
-    <div class="links">
-    
-      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-    
-    
-    
-      <a href="https://doi.org/10.1101/2020.04.12.038158" class="btn btn-sm z-depth-0" role="button" target="_blank">url</a>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    </div>
-
-    <!-- Hidden abstract block -->
-    
-    <div class="abstract hidden">
-      <p><h3>Abstract</h3> <p>High-throughput immunosequencing allows reconstructing the immune repertoire of an individual, which is a unique opportunity for new immunotherapies, immunodiagnostics, and vaccine design. Since immune repertoires are shaped by past and current immune events, such as infection and disease, and thus record an individual’s state of health, immune repertoire sequencing data may enable the prediction of health and disease using machine learning. However, finding the connections between an individual’s repertoire and the individual’s disease class, with potentially hundreds of thousands to millions of short sequences per individual, poses a difficult and unique challenge for machine learning methods. In this work, we present our method DeepRC that combines a Deep Learning architecture with attentionbased multiple instance learning. To validate that DeepRC accurately predicts an individual’s disease class based on its immune repertoire and determines the associated class-specific sequence motifs, we applied DeepRC in four large-scale experiments encompassing ground-truth simulated as well as real-world virus infection data. We demonstrate that DeepRC outperforms all tested methods with respect to predictive performance and enables the extraction of those sequence motifs that are connected to a given disease class.</p></p>
-    </div>
-    
-  </div>
-</div>
-</li></ol>
-
-  <h2 class="year">2019</h2>
-  <ol class="bibliography"><li><div class="row">
-  <div class="col-sm-2 abbr">
-  
-    
-    <abbr class="badge">NeurIPS</abbr>
-    
-  
-  </div>
-
-  <div id="Arjona:19" class="col-sm-8">
-    
-      <div class="title">RUDDER: Return Decomposition for Delayed Rewards</div>
-      <div class="author">
-        
-          
-            
-              
-                
-                  Arjona-Medina, J.,
+                  Kreil, D.,
                 
               
             
@@ -1545,7 +1441,7 @@
             
               
                 
-                  Gillhofer, M.,
+                  Kopp, M.,
                 
               
             
@@ -1555,17 +1451,7 @@
             
               
                 
-                  Widrich, M.,
-                
-              
-            
-          
-        
-          
-            
-              
-                
-                  Unterthiner, T.,
+                  Klambauer, G.,
                 
               
             
@@ -1595,7 +1481,90 @@
 
       <div class="periodical">
       
-        <em>In Advances in Neural Information Processing Systems 32</em>
+      
+        2020
+      
+      </div>
+    
+
+    <div class="links">
+    
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+    
+    
+    
+      <a href="http://arxiv.org/abs/2008.02217" class="btn btn-sm z-depth-0" role="button" target="_blank">url</a>
+    
+    
+    
+    
+    
+      <a href="https://ml-jku.github.io/hopfield-layers/" class="btn btn-sm z-depth-0" role="button" target="_blank">Blog</a>
+    
+    
+      <a href="https://github.com/ml-jku/hopfield-layers" class="btn btn-sm z-depth-0" role="button" target="_blank">Code</a>
+    
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+    <div class="abstract hidden">
+      <p>We show that the transformer attention mechanism is the update rule of a modern Hopfield network with continuous states. This new Hopfield network can store exponentially (with the dimension) many patterns, converges with one update, and has exponentially small retrieval errors. The number of stored patterns is traded off against convergence speed and retrieval error. The new Hopfield network has three types of energy minima (fixed points of the update): (1) global fixed point averaging over all patterns, (2) metastable states averaging over a subset of patterns, and (3) fixed points which store a single pattern. Transformer and BERT models operate in their first layers preferably in the global averaging regime, while they operate in higher layers in metastable states. The gradient in transformers is maximal for metastable states, is uniformly distributed for global averaging, and vanishes for a fixed point near a stored pattern. Using the Hopfield network interpretation, we analyzed learning of transformer and BERT models. Learning starts with attention heads that average and then most of them switch to metastable states. However, the majority of heads in the first layers still averages and can be replaced by averaging, e.g. our proposed Gaussian weighting. In contrast, heads in the last layers steadily learn and seem to use metastable states to collect information created in lower layers. These heads seem to be a promising target for improving transformers. Neural networks with Hopfield networks outperform other methods on immune repertoire classification, where the Hopfield net stores several hundreds of thousands of patterns. We provide a new PyTorch layer called "Hopfield", which allows to equip deep learning architectures with modern Hopfield networks as a new powerful concept comprising pooling, memory, and attention. GitHub: https://github.com/ml-jku/hopfield-layers</p>
+    </div>
+    
+  </div>
+</div>
+</li></ol>
+
+  <h2 class="year">2019</h2>
+  <ol class="bibliography"><li><div class="row">
+  <div class="col-sm-2 abbr">
+  
+  </div>
+
+  <div id="renzUncertaintyEstimationMethods2019" class="col-sm-8">
+    
+      <div class="title">Uncertainty Estimation Methods to Support Decision-Making in Early Phases of Drug Discovery</div>
+      <div class="author">
+        
+          
+            
+              
+                
+                  Renz, P.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Hochreiter, S.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  and Klambauer, G.
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+        <em></em>
       
       
         2019
@@ -1609,13 +1578,9 @@
     
     
     
-      <a href="https://arxiv.org/abs/2009.14108" class="btn btn-sm z-depth-0" role="button" target="_blank">url</a>
     
     
     
-    
-    
-      <a href="https://ml-jku.github.io/rudder/" class="btn btn-sm z-depth-0" role="button" target="_blank">Blog</a>
     
     
     
@@ -1626,7 +1591,7 @@
     <!-- Hidden abstract block -->
     
     <div class="abstract hidden">
-      <p>We propose RUDDER, a novel reinforcement learning approach for delayed rewards in finite Markov decision processes (MDPs). In MDPs the Q-values are equal to the expected immediate reward plus the expected future rewards. The latter are related to bias problems in temporal difference (TD) learning and to high variance problems in Monte Carlo (MC) learning. Both problems are even more severe when rewards are delayed. RUDDER aims at making the expected future rewards zero, which simplifies Q-value estimation to computing the mean of the immediate reward. We propose the following two new concepts to push the expected future rewards toward zero. (i) Reward redistribution that leads to return-equivalent decision processes with the same optimal policies and, when optimal, zero expected future rewards. (ii) Return decomposition via contribution analysis which transforms the reinforcement learning task into a regression task at which deep learning excels. On artificial tasks with delayed rewards, RUDDER is significantly faster than MC and exponentially faster than Monte Carlo Tree Search (MCTS), TD({λ}), and reward shaping approaches. At Atari games, RUDDER on top of a Proximal Policy Optimization (PPO) baseline improves the scores, which is most prominent at games with delayed rewards. Source code is available at \url{https://github.com/ml-jku/rudder} and demonstration videos at \url{https://goo.gl/EQerZV}.</p>
+      <p>It takes about a decade to develop a new drug by a process in which a large number of decisions have to be made. Those decisions are critical for the success or failure of a multi-million dollar drug discovery project, which could save many lives or increase life quality. Decisions in early phases of drug discovery, such as the selection of certain series of chemical compounds, are particularly impactful on the success rate. Machine learning models are increasingly used to inform the decision making process by predicting desired effects, undesired effects, such as toxicity, molecular properties, or which wet-lab test to perform next. Thus, accurately quantifying the uncertainties of the models’ outputs is critical, for example, in order to calculate expected utilities, to estimate the risk and the potential gain. In this work, we review, assess and compare recent uncertainty estimation methods with respect to their use in drug discovery projects. We test both, which methods give well calibrated prediction and which ones perform well at misclassification detection. For the latter, we find the entropy of the predictive distribution performs best. Finally, we discuss the problem of defining out-of-distribution samples for prediction tasks on chemical compounds.</p>
     </div>
     
   </div>
@@ -2077,6 +2042,10 @@
 <li><div class="row">
   <div class="col-sm-2 abbr">
   
+    
+    <abbr class="badge">WRR</abbr>
+    
+  
   </div>
 
   <div id="kratzertImprovedPredictionsUngauged2019" class="col-sm-8">
@@ -2186,6 +2155,10 @@
 <li><div class="row">
   <div class="col-sm-2 abbr">
   
+    
+    <abbr class="badge">HESS</abbr>
+    
+  
   </div>
 
   <div id="kratzertLearningUniversalRegional2019" class="col-sm-8">
@@ -2294,6 +2267,10 @@
 </li>
 <li><div class="row">
   <div class="col-sm-2 abbr">
+  
+    
+    <abbr class="badge">Springer</abbr>
+    
   
   </div>
 
@@ -2798,18 +2775,22 @@
 <li><div class="row">
   <div class="col-sm-2 abbr">
   
+    
+    <abbr class="badge">NeurIPS</abbr>
+    
+  
   </div>
 
-  <div id="renzUncertaintyEstimationMethods2019" class="col-sm-8">
+  <div id="Arjona:19" class="col-sm-8">
     
-      <div class="title">Uncertainty Estimation Methods to Support Decision-Making in Early Phases of Drug Discovery</div>
+      <div class="title">RUDDER: Return Decomposition for Delayed Rewards</div>
       <div class="author">
         
           
             
               
                 
-                  Renz, P.,
+                  Arjona-Medina, J.,
                 
               
             
@@ -2819,7 +2800,7 @@
             
               
                 
-                  Hochreiter, S.,
+                  Gillhofer, M.,
                 
               
             
@@ -2829,7 +2810,37 @@
             
               
                 
-                  and Klambauer, G.
+                  Widrich, M.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Unterthiner, T.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Brandstetter, J.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  and Hochreiter, S.
                 
               
             
@@ -2839,7 +2850,7 @@
 
       <div class="periodical">
       
-        <em></em>
+        <em>In Advances in Neural Information Processing Systems 32</em>
       
       
         2019
@@ -2853,9 +2864,13 @@
     
     
     
+      <a href="https://arxiv.org/abs/2009.14108" class="btn btn-sm z-depth-0" role="button" target="_blank">url</a>
     
     
     
+    
+    
+      <a href="https://ml-jku.github.io/rudder/" class="btn btn-sm z-depth-0" role="button" target="_blank">Blog</a>
     
     
     
@@ -2866,7 +2881,7 @@
     <!-- Hidden abstract block -->
     
     <div class="abstract hidden">
-      <p>It takes about a decade to develop a new drug by a process in which a large number of decisions have to be made. Those decisions are critical for the success or failure of a multi-million dollar drug discovery project, which could save many lives or increase life quality. Decisions in early phases of drug discovery, such as the selection of certain series of chemical compounds, are particularly impactful on the success rate. Machine learning models are increasingly used to inform the decision making process by predicting desired effects, undesired effects, such as toxicity, molecular properties, or which wet-lab test to perform next. Thus, accurately quantifying the uncertainties of the models’ outputs is critical, for example, in order to calculate expected utilities, to estimate the risk and the potential gain. In this work, we review, assess and compare recent uncertainty estimation methods with respect to their use in drug discovery projects. We test both, which methods give well calibrated prediction and which ones perform well at misclassification detection. For the latter, we find the entropy of the predictive distribution performs best. Finally, we discuss the problem of defining out-of-distribution samples for prediction tasks on chemical compounds.</p>
+      <p>We propose RUDDER, a novel reinforcement learning approach for delayed rewards in finite Markov decision processes (MDPs). In MDPs the Q-values are equal to the expected immediate reward plus the expected future rewards. The latter are related to bias problems in temporal difference (TD) learning and to high variance problems in Monte Carlo (MC) learning. Both problems are even more severe when rewards are delayed. RUDDER aims at making the expected future rewards zero, which simplifies Q-value estimation to computing the mean of the immediate reward. We propose the following two new concepts to push the expected future rewards toward zero. (i) Reward redistribution that leads to return-equivalent decision processes with the same optimal policies and, when optimal, zero expected future rewards. (ii) Return decomposition via contribution analysis which transforms the reinforcement learning task into a regression task at which deep learning excels. On artificial tasks with delayed rewards, RUDDER is significantly faster than MC and exponentially faster than Monte Carlo Tree Search (MCTS), TD({λ}), and reward shaping approaches. At Atari games, RUDDER on top of a Proximal Policy Optimization (PPO) baseline improves the scores, which is most prominent at games with delayed rewards. Source code is available at \url{https://github.com/ml-jku/rudder} and demonstration videos at \url{https://goo.gl/EQerZV}.</p>
     </div>
     
   </div>
@@ -2879,16 +2894,16 @@
   
   </div>
 
-  <div id="fischerDefiningObjectiveClusters2018" class="col-sm-8">
+  <div id="unterthinerCoulombGANsProvably2018" class="col-sm-8">
     
-      <div class="title">Defining Objective Clusters for Rabies Virus Sequences Using Affinity Propagation Clustering</div>
+      <div class="title">Coulomb GANs: Provably Optimal Nash Equilibria via Potential Fields</div>
       <div class="author">
         
           
             
               
                 
-                  Fischer, S.,
+                  Unterthiner, T.,
                 
               
             
@@ -2898,7 +2913,7 @@
             
               
                 
-                  Freuling, C.,
+                  Nessler, B.,
                 
               
             
@@ -2908,7 +2923,7 @@
             
               
                 
-                  Müller, T.,
+                  Seward, C.,
                 
               
             
@@ -2918,7 +2933,7 @@
             
               
                 
-                  Pfaff, F.,
+                  Klambauer, G.,
                 
               
             
@@ -2928,7 +2943,7 @@
             
               
                 
-                  Bodenhofer, U.,
+                  Heusel, M.,
                 
               
             
@@ -2938,7 +2953,7 @@
             
               
                 
-                  Höper, D.,
+                  Ramsauer, H.,
                 
               
             
@@ -2948,57 +2963,7 @@
             
               
                 
-                  Fischer, M.,
-                
-              
-            
-          
-        
-          
-            
-              
-                
-                  Marston, D.,
-                
-              
-            
-          
-        
-          
-            
-              
-                
-                  Fooks, A.,
-                
-              
-            
-          
-        
-          
-            
-              
-                
-                  Mettenleiter, T.,
-                
-              
-            
-          
-        
-          
-            
-              
-                
-                  Conraths, F.,
-                
-              
-            
-          
-        
-          
-            
-              
-                
-                  and Homeier-Bachmann, T.
+                  and Hochreiter, S.
                 
               
             
@@ -3007,8 +2972,6 @@
       </div>
 
       <div class="periodical">
-      
-        <em></em>
       
       
         2018
@@ -3022,7 +2985,7 @@
     
     
     
-      <a href="https://doi.org/10.1371/journal.pntd.0006182" class="btn btn-sm z-depth-0" role="button" target="_blank">url</a>
+      <a href="http://arxiv.org/abs/1708.08819" class="btn btn-sm z-depth-0" role="button" target="_blank">url</a>
     
     
     
@@ -3037,7 +3000,7 @@
     <!-- Hidden abstract block -->
     
     <div class="abstract hidden">
-      <p>Rabies is caused by lyssaviruses, and is one of the oldest known zoonoses. In recent years, more than 21,000 nucleotide sequences of rabies viruses (RABV), from the prototype species rabies lyssavirus, have been deposited in public databases. Subsequent phylogenetic analyses in combination with metadata suggest geographic distributions of RABV. However, these analyses somewhat experience technical difficulties in defining verifiable criteria for cluster allocations in phylogenetic trees inviting for a more rational approach. Therefore, we applied a relatively new mathematical clustering algorythm named ‘affinity propagation clustering’ (AP) to propose a standardized sub-species classification utilizing full-genome RABV sequences. Because AP has the advantage that it is computationally fast and works for any meaningful measure of similarity between data samples, it has previously been applied successfully in bioinformatics, for analysis of microarray and gene expression data, however, cluster analysis of sequences is still in its infancy. Existing (516) and original (46) full genome RABV sequences were used to demonstrate the application of AP for RABV clustering. On a global scale, AP proposed four clusters, i.e. New World cluster, Arctic/Arctic-like, Cosmopolitan, and Asian as previously assigned by phylogenetic studies. By combining AP with established phylogenetic analyses, it is possible to resolve phylogenetic relationships between verifiably determined clusters and sequences. This workflow will be useful in confirming cluster distributions in a uniform transparent manner, not only for RABV, but also for other comparative sequence analyses.</p>
+      <p>Generative adversarial networks (GANs) evolved into one of the most successful unsupervised techniques for generating realistic images. Even though it has recently been shown that GAN training converges, GAN models often end up in local Nash equilibria that are associated with mode collapse or otherwise fail to model the target distribution. We introduce Coulomb GANs, which pose the GAN learning problem as a potential field of charged particles, where generated samples are attracted to training set samples but repel each other. The discriminator learns a potential field while the generator decreases the energy by moving its samples along the vector (force) field determined by the gradient of the potential field. Through decreasing the energy, the GAN model learns to generate samples according to the whole target distribution and does not only cover some of its modes. We prove that Coulomb GANs possess only one Nash equilibrium which is optimal in the sense that the model distribution equals the target distribution. We show the efficacy of Coulomb GANs on a variety of image datasets. On LSUN and celebA, Coulomb GANs set a new state of the art and produce a previously unseen variety of different samples.</p>
     </div>
     
   </div>
@@ -3761,16 +3724,16 @@
   
   </div>
 
-  <div id="unterthinerCoulombGANsProvably2018" class="col-sm-8">
+  <div id="fischerDefiningObjectiveClusters2018" class="col-sm-8">
     
-      <div class="title">Coulomb GANs: Provably Optimal Nash Equilibria via Potential Fields</div>
+      <div class="title">Defining Objective Clusters for Rabies Virus Sequences Using Affinity Propagation Clustering</div>
       <div class="author">
         
           
             
               
                 
-                  Unterthiner, T.,
+                  Fischer, S.,
                 
               
             
@@ -3780,7 +3743,7 @@
             
               
                 
-                  Nessler, B.,
+                  Freuling, C.,
                 
               
             
@@ -3790,7 +3753,7 @@
             
               
                 
-                  Seward, C.,
+                  Müller, T.,
                 
               
             
@@ -3800,7 +3763,7 @@
             
               
                 
-                  Klambauer, G.,
+                  Pfaff, F.,
                 
               
             
@@ -3810,7 +3773,7 @@
             
               
                 
-                  Heusel, M.,
+                  Bodenhofer, U.,
                 
               
             
@@ -3820,7 +3783,7 @@
             
               
                 
-                  Ramsauer, H.,
+                  Höper, D.,
                 
               
             
@@ -3830,7 +3793,57 @@
             
               
                 
-                  and Hochreiter, S.
+                  Fischer, M.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Marston, D.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Fooks, A.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Mettenleiter, T.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Conraths, F.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  and Homeier-Bachmann, T.
                 
               
             
@@ -3839,6 +3852,8 @@
       </div>
 
       <div class="periodical">
+      
+        <em></em>
       
       
         2018
@@ -3852,7 +3867,7 @@
     
     
     
-      <a href="http://arxiv.org/abs/1708.08819" class="btn btn-sm z-depth-0" role="button" target="_blank">url</a>
+      <a href="https://doi.org/10.1371/journal.pntd.0006182" class="btn btn-sm z-depth-0" role="button" target="_blank">url</a>
     
     
     
@@ -3867,7 +3882,7 @@
     <!-- Hidden abstract block -->
     
     <div class="abstract hidden">
-      <p>Generative adversarial networks (GANs) evolved into one of the most successful unsupervised techniques for generating realistic images. Even though it has recently been shown that GAN training converges, GAN models often end up in local Nash equilibria that are associated with mode collapse or otherwise fail to model the target distribution. We introduce Coulomb GANs, which pose the GAN learning problem as a potential field of charged particles, where generated samples are attracted to training set samples but repel each other. The discriminator learns a potential field while the generator decreases the energy by moving its samples along the vector (force) field determined by the gradient of the potential field. Through decreasing the energy, the GAN model learns to generate samples according to the whole target distribution and does not only cover some of its modes. We prove that Coulomb GANs possess only one Nash equilibrium which is optimal in the sense that the model distribution equals the target distribution. We show the efficacy of Coulomb GANs on a variety of image datasets. On LSUN and celebA, Coulomb GANs set a new state of the art and produce a previously unseen variety of different samples.</p>
+      <p>Rabies is caused by lyssaviruses, and is one of the oldest known zoonoses. In recent years, more than 21,000 nucleotide sequences of rabies viruses (RABV), from the prototype species rabies lyssavirus, have been deposited in public databases. Subsequent phylogenetic analyses in combination with metadata suggest geographic distributions of RABV. However, these analyses somewhat experience technical difficulties in defining verifiable criteria for cluster allocations in phylogenetic trees inviting for a more rational approach. Therefore, we applied a relatively new mathematical clustering algorythm named ‘affinity propagation clustering’ (AP) to propose a standardized sub-species classification utilizing full-genome RABV sequences. Because AP has the advantage that it is computationally fast and works for any meaningful measure of similarity between data samples, it has previously been applied successfully in bioinformatics, for analysis of microarray and gene expression data, however, cluster analysis of sequences is still in its infancy. Existing (516) and original (46) full genome RABV sequences were used to demonstrate the application of AP for RABV clustering. On a global scale, AP proposed four clusters, i.e. New World cluster, Arctic/Arctic-like, Cosmopolitan, and Asian as previously assigned by phylogenetic studies. By combining AP with established phylogenetic analyses, it is possible to resolve phylogenetic relationships between verifiably determined clusters and sequences. This workflow will be useful in confirming cluster distributions in a uniform transparent manner, not only for RABV, but also for other comparative sequence analyses.</p>
     </div>
     
   </div>
@@ -4422,6 +4437,7 @@
 
 </div>
 
+  </div>
   </article>
 
 </div>

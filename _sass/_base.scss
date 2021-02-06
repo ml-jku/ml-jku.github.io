@@ -435,7 +435,6 @@ footer.sticky-bottom {
 
 // Blog
 
-
 .header-bar {
   border-bottom: 1px solid $grey-color-light;
   text-align: center;
@@ -546,7 +545,7 @@ padding: 0;
 .projects {
   margin-left: 3rem;
   .grid-item {
-    width: 250px;
+    width: 200px;
     margin-bottom: 10px;
     margin-left: 10px;
     margin-top: 10px;
@@ -561,6 +560,10 @@ padding: 0;
   .card img {
     width: 100%;
   }
+}
+
+.research-img{
+ margin-bottom: 20px;
 }
 
 

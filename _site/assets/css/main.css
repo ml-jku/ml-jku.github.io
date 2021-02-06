@@ -157,10 +157,12 @@ ul#cat_list { list-style-type: none; margin: 0; padding: 0; }
 .distill a:hover { border-bottom-color: var(--global-theme-color); text-decoration: none; }
 
 .projects { margin-left: 3rem; }
-.projects .grid-item { width: 250px; margin-bottom: 10px; margin-left: 10px; margin-top: 10px; }
+.projects .grid-item { width: 200px; margin-bottom: 10px; margin-left: 10px; margin-top: 10px; }
 .projects .grid-item a { color: black; text-decoration: none; }
 .projects .grid-item a:hover { color: var(--global-theme-color); }
 .projects .card img { width: 100%; }
+
+.research-img { margin-bottom: 20px; }
 
 .publications { margin-top: 2rem; }
 .publications h1 { color: var(--global-theme-color); font-size: 2rem; text-align: center; margin-top: 1em; margin-bottom: 1em; }
