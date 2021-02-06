@@ -11,7 +11,7 @@ The increasing need for resources, the expansion of settlements, and Climate Cha
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1 research-img" src="/assets/img/research/ai4earth/ai4earth_1.png" alt="" title="example image"/>
+        <img class="img-fluid rounded research-img" src="/assets/img/research/ai4earth/ai4earth_1.png" alt="" title="example image"/>
     </div>
 
 <p>The Earth Science and Climate Change research group at the Institute of Machine Learning focuses on building deep learning models to better describe environmental systems. Our current research revolves mainly around water, the most vital natural resource. Within this field, we introduced a new approach to predict the amount of water in river systems. Unlike traditional simulations with coarse, hand-crafted abstractions, we use Machine Learning to generate fully data-driven predictions. Our approach has proven to outperform traditional hydrological models --- the outcomes of decades of expertise and model development --- by a large margin. Ultimately, these new models will allow us to provide early flood warnings, to predict future droughts, to operate hydropower plants more efficiently, to improve access to drinking water, and more.</p>
