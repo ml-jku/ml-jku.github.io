@@ -11,7 +11,7 @@ Artificial Intelligence (AI) methods have been shown to be able to design new mo
 
   <div class="row">
       <div class="col-sm mt-3 mt-md-0">
-          <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/research/ai_drug/ai_drug_1.png' | relative_url }}" alt="" title="example image"/>
+          <img class="img-fluid rounded" src="{{ '/assets/img/research/ai_drug/ai_drug_1.png' | relative_url }}" alt="" title="example image"/>
       </div>
   </div>
 
