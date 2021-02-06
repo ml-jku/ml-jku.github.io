@@ -154,6 +154,8 @@ ul#cat_list { list-style-type: none; margin: 0; padding: 0; }
 .categories .categories-list li > a:hover { border-bottom: 1px solid --global-theme-color; }
 .categories .categories-list .active { font-weight: 600; }
 
+.rcorners { border-radius: 25px; width: 50%; }
+
 .distill a:hover { border-bottom-color: var(--global-theme-color); text-decoration: none; }
 
 .projects { margin-left: 3rem; }
