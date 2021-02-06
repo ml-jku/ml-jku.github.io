@@ -2,7 +2,7 @@
 layout: page
 title: AI in Drug Discovery
 description:
-img: /assets/img/research/ai_drug/ai_drug_1.png
+img: /assets/img/research/ai_drug/ai_drug_2.jpg
 importance: 2
 ---
 

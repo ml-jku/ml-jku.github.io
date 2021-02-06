@@ -2,7 +2,7 @@
 layout: page
 title: Modern Hopfield Networks
 description:
-img: /assets/img/7.jpg
+img: /assets/img/hopfield/hopfieldRetrieval_homer.svg
 importance: 3
 ---
 
