@@ -18,7 +18,6 @@ Our research at the Institute of Machine Learning focuses on developing new algo
 
 We actively apply Reinforcement Learning to various applications including robotics, logistics, natural language processing and others.
 
-
 <div class="publications">
 <h4>recent publications in Reinforcement Learning:</h4>
   {% bibliography -f papers -q @*[category=reinforcement_learning]*%}
