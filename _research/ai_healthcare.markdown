@@ -2,7 +2,7 @@
 layout: page
 title: AI in Healthcare
 description:
-img: /assets/img/research/ai_healthcare/ai_healthcare_1.png
+img: /assets/img/research/ai_healthcare/ai_healthcare_2.png
 importance: 3
 ---
 <p>
