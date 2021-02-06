@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Modern Hopfield Networks
+title: Hopfield Networks
 description:
-img: /assets/img/hopfield/hopfieldRetrieval_homer.svg
-importance: 3
+img: /assets/img/research/hopfield/hopfield_1.png
+importance: 1
 ---
 
 One goal of deep learning is to provide models with the ability to store and access information in a learnable manner. A classical example of this are Hopfield Networks. These networks are capable of storing information and retrieving it by association. However, their limited capacity and the restriction to binary data render them inadequate in the context of modern deep learning. Recent work has led to a novel formulation of Hopfield Networks which exhibit considerable increase in storage capacity. However, in order to integrate these modern Hopfield networks into deep learning architectures, it is necessary to make them differentiable, which in turn requires a transition from the binary to the continuous domain.

@@ -3,7 +3,7 @@ layout: page
 title: Deep Learning
 description:
 img: /assets/img/research/deep_learning/deep_learning_2.png
-importance: 1
+importance: 2
 ---
 <p>
 Artificial Intelligence (AI) has recently revolutionised various fields of science and has also started to pervade commercial applications in an unprecedented manner. Despite great successes, most of AI’s enormous potential is still to be realised. The recent surge of AI can be attributed to advances in the machine learning field known as “Deep Learning”, that is, large deeply-layered artificial neural networks (ANNs) trained by modern learning algorithms on massive datasets. In its core, Deep Learning discovers multiple levels of distributed representations of the input, with higher levels representing more abstract concepts. These representations led to impressive successes in different research areas. In particular, artificial neural networks considerably improved the performance in computer vision, speech recognition, and internet advertising. </p>
