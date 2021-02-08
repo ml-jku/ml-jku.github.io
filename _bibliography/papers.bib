@@ -402,6 +402,7 @@
 }
 
 @article{renzUncertaintyEstimationMethods2019,
+ abbr={NeurIPS},
  abstract = {It takes about a decade to develop a new drug by a process in which a large number of decisions have to be made. Those decisions are critical for the success or failure of a multi-million dollar drug discovery project, which could save many lives or increase life quality. Decisions in early phases of drug discovery, such as the selection of certain series of chemical compounds, are particularly impactful on the success rate. Machine learning models are increasingly used to inform the decision making process by predicting desired effects, undesired effects, such as toxicity, molecular properties, or which wet-lab test to perform next. Thus, accurately quantifying the uncertainties of the models’ outputs is critical, for example, in order to calculate expected utilities, to estimate the risk and the potential gain. In this work, we review, assess and compare recent uncertainty estimation methods with respect to their use in drug discovery projects. We test both, which methods give well calibrated prediction and which ones perform well at misclassification detection. For the latter, we find the entropy of the predictive distribution performs best. Finally, we discuss the problem of defining out-of-distribution samples for prediction tasks on chemical compounds.},
  author = {Renz, Philipp and Hochreiter, Sepp and Klambauer, Günter},
  date = {2019},
@@ -485,7 +486,7 @@
 }
 
 @article{widrichDeepRCImmuneRepertoire2020,
-  abbr={bioarXiv},
+ abbr={bioarXiv},
  abstract = {{$<$}h3{$>$}Abstract{$<$}/h3{$>$} {$<$}p{$>$}High-throughput immunosequencing allows reconstructing the immune repertoire of an individual, which is a unique opportunity for new immunotherapies, immunodiagnostics, and vaccine design. Since immune repertoires are shaped by past and current immune events, such as infection and disease, and thus record an individual’s state of health, immune repertoire sequencing data may enable the prediction of health and disease using machine learning. However, finding the connections between an individual’s repertoire and the individual’s disease class, with potentially hundreds of thousands to millions of short sequences per individual, poses a difficult and unique challenge for machine learning methods. In this work, we present our method DeepRC that combines a Deep Learning architecture with attentionbased multiple instance learning. To validate that DeepRC accurately predicts an individual’s disease class based on its immune repertoire and determines the associated class-specific sequence motifs, we applied DeepRC in four large-scale experiments encompassing ground-truth simulated as well as real-world virus infection data. We demonstrate that DeepRC outperforms all tested methods with respect to predictive performance and enables the extraction of those sequence motifs that are connected to a given disease class.{$<$}/p{$>$}},
  author = {Widrich, Michael and Schäfl, Bernhard and Pavlović, Milena and Sandve, Geir Kjetil and Hochreiter, Sepp and Greiff, Victor and Klambauer, Günter},
  date = {2020-04-13},
@@ -499,3 +500,87 @@
  year = {2020},
  category={deep_learning}
 }
+
+@inproceedings{lehner2019,
+  abbr={NeurIPS},
+  title = {Patch Refinement – Localized {{3D}} Object Detection},
+  booktitle = {Workshop on Machine Learning for Autonomous Driving, Neural Information Processing Systems ({{NeurIPS}})},
+  author = {Lehner, Johannes and 
+            Mitterecker, Andreas and 
+            Adler, Thomas and 
+            Hofmarcher, Markus and 
+            Nessler, Bernhard and 
+            Hochreiter, Sepp},
+  date = {2019}
+}
+
+@inproceedings{treml2016,
+  abbr={NeurIPS},
+  title = {Speeding up Semantic Segmentation for Autonomous Driving},
+  booktitle = {Workshop on Machine Learning for Intelligent Transport Systems, Neural Information Processing Systems ({{NIPS}})},
+  author = {Treml, Michael and 
+            Arjona-Medina, José and 
+            Unterthiner, Thomas and 
+            Durgesh, Rupesh and 
+            Friedmann, Felix and 
+            Schuberth, Peter and 
+            Mayr, Andreas and 
+            Heusel, Martin and 
+            Hofmarcher, Markus and 
+            Widrich, Michael and 
+            Bodenhofer, Ulrich and 
+            Nessler, Bernhard and 
+            Hochreiter, Sepp},
+  date = {2016}
+}
+
+@article{hofmarcher2019,
+  abbr={JCIM},
+  title = {Accurate {{Prediction}} of {{Biological Assays}} with {{High}}-{{Throughput Microscopy Images}} and {{Convolutional Networks}}},
+  author = {Hofmarcher, Markus and 
+            Rumetshofer, Elisabeth and 
+            Clevert, Djork-Arné and 
+            Hochreiter, Sepp and 
+            Klambauer, Günter},
+  date = {2019-03-25},
+  journaltitle = {Journal of Chemical Information and Modeling},
+  shortjournal = {J. Chem. Inf. Model.},
+  volume = {59},
+  pages = {1163--1171},
+  publisher = {{American Chemical Society}},
+  issn = {1549-9596},
+  doi = {10.1021/acs.jcim.8b00670},
+  url = {https://doi.org/10.1021/acs.jcim.8b00670},
+  urldate = {2020-06-01},
+  abstract = {Predicting the outcome of biological assays based on high-throughput imaging data is a highly promising task in drug discovery since it can tremendously increase hit rates and suggest novel chemical scaffolds. However, end-to-end learning with convolutional neural networks (CNNs) has not been assessed for the task biological assay prediction despite the success of these networks at visual recognition. We compared several CNNs trained directly on high-throughput imaging data to a) CNNs trained on cell-centric crops and to b) the current state-of-the-art: fully connected networks trained on precalculated morphological cell features. The comparison was performed on the Cell Painting data set, the largest publicly available data set of microscopic images of cells with approximately 30,000 compound treatments. We found that CNNs perform significantly better at predicting the outcome of assays than fully connected networks operating on precomputed morphological features of cells. Surprisingly, the best performing method could predict 32\% of the 209 biological assays at high predictive performance (AUC {$>$} 0.9) indicating that the cell morphology changes contain a large amount of information about compound activities. Our results suggest that many biological assays could be replaced by high-throughput imaging together with convolutional neural networks and that the costly cell segmentation and feature extraction step can be replaced by convolutional neural networks.},
+  number = {3}
+}
+
+
+@article{kimeswenger2020ArtificialNeuralNetworks,
+  title = {Artificial Neural Networks and Pathologists Recognize Basal Cell Carcinomas Based on Different Histological Patterns},
+  author = {Kimeswenger, Susanne and 
+            Tschandl, Philipp and 
+            Noack, Petar and 
+            Hofmarcher, Markus and 
+            Rumetshofer, Elisabeth and 
+            Kindermann, Harald and 
+            Silye, Rene and 
+            Hochreiter, Sepp and 
+            Kaltenbrunner, Martin and 
+            Guenova, Emmanuella and 
+            Klambauer, Guenter and 
+            Hoetzenecker, Wolfram},
+  date = {2020-11-13},
+  journaltitle = {Modern Pathology},
+  pages = {1--9},
+  publisher = {{Nature Publishing Group}},
+  issn = {1530-0285},
+  doi = {10.1038/s41379-020-00712-7},
+  url = {https://www.nature.com/articles/s41379-020-00712-7},
+  urldate = {2020-12-03},
+  abstract = {Recent advances in artificial intelligence, particularly in the field of deep learning, have enabled researchers to create compelling algorithms for medical image analysis. Histological slides of basal cell carcinomas (BCCs), the most frequent skin tumor, are accessed by pathologists on a daily basis and are therefore well suited for automated prescreening by neural networks for the identification of cancerous regions and swift tumor classification.},
+  langid = {english}
+}
+
+
