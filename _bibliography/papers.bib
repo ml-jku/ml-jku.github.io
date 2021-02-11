@@ -1,3 +1,16 @@
+@online{hoedtMCLSTM2021,
+ abbr={arXiv},
+ abstract = {The success of Convolutional Neural Networks (CNNs) in computer vision is mainly driven by their strong inductive bias, which is strong enough to allow CNNs to solve vision-related tasks with random weights, meaning without learning. Similarly, Long Short-Term Memory (LSTM) has a strong inductive bias towards storing information over time. However, many real-world systems are governed by conservation laws, which lead to the redistribution of particular quantities -- e.g. in physical and economical systems. Our novel Mass-Conserving LSTM (MC-LSTM) adheres to these conservation laws by extending the inductive bias of LSTM to model the redistribution of those stored quantities. MC-LSTMs set a new state-of-the-art for neural arithmetic units at learning arithmetic operations, such as addition tasks, which have a strong conservation law, as the sum is constant over time. Further, MC-LSTM is applied to traffic forecasting, modelling a pendulum, and a large benchmark dataset in hydrology, where it sets a new state-of-the-art for predicting peak flows. In the hydrology example, we show that MC-LSTM states correlate with real-world processes and are therefore interpretable.},
+ author = {Hoedt, Pieter-Jan and Kratzert, Frederik and Klotz, Daniel and Halmich, Christina and Holzleitner, Markus and Nearing, Grey and Hochreiter, Sepp and Klambauer, Günter},
+ date = {2021-02-08},
+ eprint = {2101.05186},
+ eprinttype = {arxiv},
+ selected = {true},
+ title = {MC-LSTM: Mass-Conserving LSTM},
+ url = {https://arxiv.org/abs/2101.05186},
+ year = {2021},
+ category={deep_learning}
+}
 
 
 @online{ramsauerHopfieldNetworksAll2020,
@@ -62,31 +75,41 @@
   category = {reinforcement_learning}
 }
 
-@Article{widrich2020modern,
+@inproceedings{widrich2020modern,
   abbr={NeurIPS},
-  author        = {Widrich, Michael and Sch{\"a}fl, Bernhard and Ramsauer, Hubert and Pavlovi{\'c}, Milena and Gruber, Lukas and Holzleitner, Markus and Brandstetter, Johannes and Sandve, Geir Kjetil and Greiff, Victor and Hochreiter, Sepp and others},
-  title         = {Modern Hopfield networks and attention for immune repertoire classification},
-  journal       = {arXiv preprint arXiv:2007.13505},
-  arxiv         = {2007.13505},
-  year          = {2020},
-  __markedentry = {[gk:6]},
+  title={Modern Hopfield networks and attention for immune repertoire classification},
+  author={Widrich, Michael and Sch{\"a}fl, Bernhard and Ramsauer, Hubert and Pavlovi{\'c}, Milena and Gruber, Lukas and Holzleitner, Markus and Brandstetter, Johannes and Sandve, Geir Kjetil and Greiff, Victor and Hochreiter, Sepp and Klambauer, G{\"u}nter},
+  booktitle = {Advances in Neural Information Processing Systems},
+  editor = {H. Larochelle and M. Ranzato and R. Hadsell and M.F. Balcan and H. Lin},
+  publisher = {Curran Associates, Inc.},
+  volume = {33 (preproceedings)},
+  year = {2020},
+  abstract={A central mechanism in machine learning is to identify, store, and recognize patterns. How to learn, access, and retrieve such patterns is crucial in Hopfield networks and the more recent transformer architectures. We show that the attention mechanism of transformer architectures is actually the update rule of modern Hopfield networks that can store exponentially many patterns. We exploit this high storage capacity of modern Hopfield networks to solve a challenging multiple instance learning (MIL) problem in computational biology: immune repertoire classification. In immune repertoire classification, a vast number of immune receptors are used to predict the immune status of an individual. This constitutes a MIL problem with an unprecedentedly massive number of instances, two orders of magnitude larger than currently considered problems, and with an extremely low witness rate. Accurate and interpretable machine learning methods solving this problem could pave the way towards new vaccines and therapies, which is currently a very relevant research topic intensified by the COVID-19 crisis. In this work, we present our novel method DeepRC that integrates transformer-like attention, or equivalently modern Hopfield networks, into deep learning architectures for massive MIL such as immune repertoire classification. We demonstrate that DeepRC outperforms all other methods with respect to predictive performance on large-scale experiments including simulated and real-world virus infection data and enables the extraction of sequence motifs that are connected to a given disease class. Source code and datasets: https://github.com/ml-jku/DeepRC},
+  url           = {https://proceedings.neurips.cc/paper/2020/file/da4902cb0bc38210839714ebdcf0efc3-Paper.pdf},
   selected={true},
   software = {true},
   code = {https://github.com/ml-jku/DeepRC},
-  category={hopfield}
+  video = {https://nips.cc/virtual/2020/public/poster_da4902cb0bc38210839714ebdcf0efc3.html},
+  category={hopfield},
+  __markedentry = {[gk:6]}
 }
 
 
 @inproceedings{Arjona:19,
   abbr={NeurIPS},
   title = {RUDDER: Return Decomposition for Delayed Rewards},
-  author = {J. A. Arjona-Medina and M. Gillhofer and M. Widrich and
-          T. Unterthiner and J. Brandstetter and S. Hochreiter},
-  booktitle = {Advances in Neural Information Processing Systems 32},
-  abstract = {We propose RUDDER, a novel reinforcement learning approach for delayed rewards in finite Markov decision processes (MDPs). In MDPs the Q-values are equal to the expected immediate reward plus the expected future rewards. The latter are related to bias problems in temporal difference (TD) learning and to high variance problems in Monte Carlo (MC) learning. Both problems are even more severe when rewards are delayed. RUDDER aims at making the expected future rewards zero, which simplifies Q-value estimation to computing the mean of the immediate reward. We propose the following two new concepts to push the expected future rewards toward zero. (i) Reward redistribution that leads to return-equivalent decision processes with the same optimal policies and, when optimal, zero expected future rewards. (ii) Return decomposition via contribution analysis which transforms the reinforcement learning task into a regression task at which deep learning excels. On artificial tasks with delayed rewards, RUDDER is significantly faster than MC and exponentially faster than Monte Carlo Tree Search (MCTS), TD(\{\textbackslash lambda\}), and reward shaping approaches. At Atari games, RUDDER on top of a Proximal Policy Optimization (PPO) baseline improves the scores, which is most prominent at games with delayed rewards. Source code is available at \textbackslash url\{https://github.com/ml-jku/rudder\} and demonstration videos at \textbackslash url\{https://goo.gl/EQerZV\}.},
-  url = {https://arxiv.org/abs/2009.14108},
-  pages = {13566-13577},
+  author = {Arjona-Medina, Jose A. and Gillhofer, Michael and Widrich, Michael and Unterthiner, Thomas and Brandstetter, Johannes and Hochreiter, Sepp},
+  booktitle = {Advances in Neural Information Processing Systems},
+  editor = {H. Wallach and H. Larochelle and A. Beygelzimer and F. d\textquotesingle Alch\'{e}-Buc and E. Fox and R. Garnett},
+  pages = {13566--13577},
+  publisher = {Curran Associates, Inc.},
+  volume = {32},
   year = {2019},
+  abstract = {We propose RUDDER, a novel reinforcement learning approach for delayed rewards in finite Markov decision processes (MDPs). In MDPs the Q-values are equal to the expected immediate reward plus the expected future rewards. The latter are related to bias problems in temporal difference (TD) learning and to high variance problems in Monte Carlo (MC) learning. Both problems are even more severe when rewards are delayed. RUDDER aims at making the expected future rewards zero, which simplifies Q-value estimation to computing the mean of the immediate reward. We propose the following two new concepts to push the expected future rewards toward zero. (i) Reward redistribution that leads to return-equivalent decision processes with the same optimal policies and, when optimal, zero expected future rewards. (ii) Return decomposition via contribution analysis which transforms the reinforcement learning task into a regression task at which deep learning excels. On artificial tasks with delayed rewards, RUDDER is significantly faster than MC and exponentially faster than Monte Carlo Tree Search (MCTS), TD(\{\textbackslash lambda\}), and reward shaping approaches. At Atari games, RUDDER on top of a Proximal Policy Optimization (PPO) baseline improves the scores, which is most prominent at games with delayed rewards. Source code is available at \textbackslash url\{https://github.com/ml-jku/rudder\} and demonstration videos at \textbackslash url\{https://goo.gl/EQerZV\}.},
+  url = {https://papers.nips.cc/paper/2019/file/16105fb9cc614fc29e1bda00dab60d41-Paper.pdf},
+  software = {true},
+  code = {https://github.com/ml-jku/rudder},
+  video = {https://www.youtube.com/playlist?list=PLDfrC-Vpg-CzVTqSjxVeLQZy3f7iv9vyY},
   blog = {https://ml-jku.github.io/rudder/},
   category = {reinforcement_learning}
 }
