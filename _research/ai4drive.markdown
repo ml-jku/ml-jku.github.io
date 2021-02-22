@@ -2,7 +2,7 @@
 layout: page
 title: AI 4 Driving
 description:
-img: /assets/img/research/ai4drive/audi_car.jpg
+img: /assets/img/research/ai4drive/ai4drive_1.png
 importance: 3
 ---
 <p>
