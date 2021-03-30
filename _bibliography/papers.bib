@@ -1,3 +1,37 @@
+@online{schimunekhERGinterpretability2021,
+ abbr={QSAR2021},
+ abstract = {Since many highly accurate predictive models for bioactivity and toxicity assays are based on Deep Learning methods, there has been a recent surge of interest in interpretability methods for Deep Learning approaches in drug discovery [1,2]. Interpretability methods are highly desired by human experts to enable them to make design decisions on the molecule based on the activity model. However, it is still unclear which of those interpretability methods are better identifying relevant substructures of molecules.  A method comparison is further complicated by the lack of ground truth and appropriate metrics. Here, we present the first comparative study of a set of interpretability methods for Deep Learning models for hERG inhibition. In our work, we compared layer-wise relevance propagation, feature gradients, saliency maps, integrated gradients, occlusion and Shapley values. In the quantitative analysis, known substructures which indicate hERG activity are used as ground truth [3]. Interpretability methods were compared by their ability to rank atoms, which are part of indicative substructures, first. The significantly best performing method is Shapley values with an area under-ROC-curve (AUC) of ~0.74 ± 0.12, but also runner-up methods, such as Integrated Gradients, achieved similar results. The results indicate that interpretability methods for deep activity models have the potential to identify new toxicophores.
+
+[1] Jiménez-Luna, J., et al. (2020). Nature Machine Intelligence, 2(10), 573-584.
+[2]  Preuer, K., et al. (2019). In Explainable AI: Interpreting, Explaining and Visualizing Deep Learning (pp. 331-345).
+[3] Czodrowski, P. (2013). Journal of chemical information and modeling, 53, 2240–2251.},
+ author = {Schimunek, Johannes and Friedrich, Lukas and Kuhn, Daniel and Hochreiter, Sepp and Rippmann, Friedrich and Klambauer, Günter},
+ date = {2021-01-30},
+ selected = {true},
+ title = {Comparative assessment of interpretability methods of deep activity models for hERG},
+ url = {https://www.ascctox.org/qsar2021},
+ year = {2021},
+ category={ai_drug}
+}
+
+
+@online{seidltox21extended2021,
+ abbr={QSAR2021},
+ abstract = {The Tox21 data set has evolved into a standard benchmark for computational QSAR methods in toxicology [1]. One limitation of the Tox21 data set is, however, that it only contains twelve toxic assays which strongly restricts its power to distinguish the strength of computational methods.  We ameliorate this problem by benchmarking on the extended Tox21 dataset with 68 publicly available assays in order to allow for a better assessment and characterization. The broader range of assays also allows for multi-task approaches, which have been particularly successful as predictive models [2]. Furthermore, previous publications comparing methods on Tox21 did not include recent developments in the field of machine learning, such as graph neural and modern Hopfield networks [3]. Thus we benchmark a set of prominent machine learning methods including those new types of neural networks. The results of the benchmarking study show that the best methods are modern Hopfield networks and multi-task graph neural networks with an average area-under-ROC-curve of 0.91 ± 0.05 (standard deviation across assays), while traditional methods, such as Random Forests fall behind by a substantial margin. Our results of the full benchmark suggest that multi-task learning has a stronger effect on the predictive performance than the choice of the representation of the molecules, such as graph, descriptors, or string. 
+
+References: 
+[1] Huang, R., et al. (2016). Frontiers in Environmental Science, 3, 85.
+[2] Mayr, A., et al. (2016). Frontiers in Environmental Science, 3, 80.
+[3] Ramsauer, H., et al. (2021). 9th International Conference on Learning Representations.},
+ author = {Seidl, Philipp and Halmich Christina and Mayr, Andreas and Vall, Andreu and Ruch, Peter and Hochreiter, Sepp and Klambauer, Günter},
+ date = {2021-01-30},
+ selected = {true},
+ title = {Benchmarking recent Deep Learning methods on the extended Tox21 data set},
+ url = {https://www.ascctox.org/qsar2021},
+ year = {2021},
+ category={ai_drug}
+}
+
 @online{hoedtMCLSTM2021,
  abbr={arXiv},
  abstract = {The success of Convolutional Neural Networks (CNNs) in computer vision is mainly driven by their strong inductive bias, which is strong enough to allow CNNs to solve vision-related tasks with random weights, meaning without learning. Similarly, Long Short-Term Memory (LSTM) has a strong inductive bias towards storing information over time. However, many real-world systems are governed by conservation laws, which lead to the redistribution of particular quantities -- e.g. in physical and economical systems. Our novel Mass-Conserving LSTM (MC-LSTM) adheres to these conservation laws by extending the inductive bias of LSTM to model the redistribution of those stored quantities. MC-LSTMs set a new state-of-the-art for neural arithmetic units at learning arithmetic operations, such as addition tasks, which have a strong conservation law, as the sum is constant over time. Further, MC-LSTM is applied to traffic forecasting, modelling a pendulum, and a large benchmark dataset in hydrology, where it sets a new state-of-the-art for predicting peak flows. In the hydrology example, we show that MC-LSTM states correlate with real-world processes and are therefore interpretable.},
