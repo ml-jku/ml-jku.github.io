@@ -150,7 +150,7 @@ scholar:
   details_dir: bibliography
   details_layout: bibtex.html
   details_link: Details
-  sort_by: year
+  sort_by: date
   order: descending
 
   query: "@*"
@@ -159,7 +159,7 @@ scholar:
 # Optional Features
 # -----------------------------------------------------------------------------
 
-enable_google_analytics:  false
+enable_google_analytics:  true
 enable_mansory:           true
 enable_math:              true
 enable_tooltips:          false
