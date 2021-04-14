@@ -148,8 +148,8 @@ scholar:
   details_dir: bibliography
   details_layout: bibtex.html
   details_link: Details
-  sort_by: date
-  order: descending
+  sort_by: year, month
+  order: descending, ascending
 
   query: "@*"
 
