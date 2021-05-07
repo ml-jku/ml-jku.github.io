@@ -1,3 +1,47 @@
+@article{klotz2021uncertainty,
+  title={Uncertainty Estimation with Deep Learning for Rainfall-Runoff Modelling},
+  author={Klotz, D. and Kratzert, F. and Gauch, M. and Keefe Sampson, A. and Brandstetter, J. and Klambauer, G. and Hochreiter, S. and Nearing, G.},
+  abstract = {Deep Learning is becoming an increasingly important way to produce accurate hydrological predictions across a wide range of spatial and temporal scales. Uncertainty estimations are critical for actionable hydrological forecasting, and while standardized community benchmarks are becoming an increasingly important part of hydrological model development and research, similar tools for benchmarking uncertainty estimation are lacking. This contributions demonstrates that accurate uncertainty predictions can be obtained with Deep Learning. We establish an uncertainty estimation benchmarking procedure and present four Deep Learning baselines. Three baselines are based on Mixture Density Networks and one is based on Monte Carlo dropout. The results indicate that these approaches constitute strong baselines, especially the former ones. Additionaly, we provide a post-hoc model analysis to put forward some qualitative understanding of the resulting models. This analysis extends the notion of performance and show that learn nuanced behaviors in different situations.},
+    journal = {Hydrology and Earth System Sciences Discussions},
+    abbr = {HESSD},
+    url = {https://hess.copernicus.org/preprints/hess-2021-154/},
+    year = {2021},
+    selected = {true},
+    software = {false},
+    code = {https://github.com/neuralhydrology/neuralhydrology},
+    category = {ai4earth},
+    date = {2021-04-14}
+}
+
+@article{kratzert2021synergy,
+    author = {Kratzert, F. and Klotz, D. and Hochreiter, S. and Nearing, G. S.},
+    title = {A note on leveraging synergy in multiple meteorological datasets with deep learning for rainfall-runoff modeling},
+    abstract = {A deep learning rainfall-runoff model can take multiple meteorological forcing products as inputs and learn to combine them in spatially and temporally dynamic ways. This is demonstrated using Long Short Term Memory networks (LSTMs) trained over basins in the continental US using the CAMELS data set. Using multiple precipitation products (NLDAS, Maurer, DayMet) in a single LSTM significantly improved simulation accuracy relative to using only individual precipitation products. A sensitivity analysis showed that the LSTM learned to utilize different precipitation products in different ways in different basins and for simulating different parts of the hydrograph in individual basins.},
+    journal = {Hydrology and Earth System Sciences},
+    abbr = {HESS},
+    url = {https://hess.copernicus.org/preprints/hess-2020-221/},
+    year = {2021},
+    selected = {true},
+    software = {false},
+    code = {https://github.com/kratzert/multiple_forcing},
+    category = {ai4earth},
+    date = {2020-11-13}
+}
+
+@article{nearing2021opinion,
+    author = {Nearing, G. and Kratzert, F. and Sampson, A. and Pelissier, C. and Klotz, D. and Frame, J. and Prieto, C. and Gupta, H.},
+    title = {What Role Does Hydrological Science Play in the Age of Machine Learning?},
+    abstract = {This paper is derived from a keynote talk given at the Google's 2020 Flood Forecasting Meets Machine Learning Workshop. Recent experiments applying deep learning to rainfall-runoff simulation indicate that there is significantly more information in large-scale hydrological data sets than hydrologists have been able to translate into theory or models. While there is a growing interest in machine learning in the hydrological sciences community, in many ways, our community still holds deeply subjective and nonevidence-based preferences for models based on a certain type of “process understanding” that has historically not translated into accurate theory, models, or predictions. This commentary is a call to action for the hydrology community to focus on developing a quantitative understanding of where and when hydrological process understanding is valuable in a modeling discipline increasingly dominated by machine learning. We offer some potential perspectives and preliminary examples about how this might be accomplished.},
+    journal = {Water Resources Research},
+    abbr = {WRR},
+    url = {https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2020WR028091},
+    year = {2020},
+    selected = {true},
+    software = {false},
+    category = {ai4earth},
+    date = {2020-11-13}
+}
+
 @article{gauch2021mtslstm,
     author = {Gauch, M. and Kratzert, F. and Klotz, D. and Nearing, G. and Lin, J. and Hochreiter, S.},
     title = {Rainfall--runoff prediction at multiple timescales with a single Long Short-Term Memory network},
