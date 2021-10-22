@@ -1,3 +1,21 @@
+@misc{fürst2021cloob,
+      title={CLOOB: Modern Hopfield Networks with InfoLOOB Outperform CLIP}, 
+      author={Andreas Fürst and Elisabeth Rumetshofer and Viet Tran and Hubert Ramsauer and Fei Tang and Johannes Lehner and David Kreil and Michael Kopp and Günter Klambauer and Angela Bitto-Nemling and Sepp Hochreiter},
+      abstract = {Contrastive learning with the InfoNCE objective is exceptionally successful in various self-supervised learning tasks. Recently, the CLIP model yielded impressive results on zero-shot transfer learning when using InfoNCE for learning visual representations from natural language supervision. However, InfoNCE as a lower bound on the mutual information has been shown to perform poorly for high mutual information. In contrast, the InfoLOOB upper bound (leave one out bound) works well for high mutual information but suffers from large variance and instabilities. We introduce "Contrastive Leave One Out Boost" (CLOOB), where modern Hopfield networks boost learning with the InfoLOOB objective. Modern Hopfield networks replace the original embeddings by retrieved embeddings in the InfoLOOB objective. The retrieved embeddings give InfoLOOB two assets. Firstly, the retrieved embeddings stabilize InfoLOOB, since they are less noisy and more similar to one another than the original embeddings. Secondly, they are enriched by correlations, since the covariance structure of embeddings is reinforced through retrievals. We compare CLOOB to CLIP after learning on the Conceptual Captions and the YFCC dataset with respect to their zero-shot transfer learning performance on other datasets. CLOOB consistently outperforms CLIP at zero-shot transfer learning across all considered architectures and datasets.
+},
+      year={2021},
+      eprint={2110.11316},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      abbr={arXiv},
+      blog={https://ml-jku.github.io/cloob/},
+      url = {https://arxiv.org/abs/2110.11316},
+      code = {https://github.com/ml-jku/cloob},
+      category = {hopfield},
+      software = {true},
+      selected = {true}
+}
+
 @article{mayr2021_l3dgfs,
 abbr={arXiv},
 title={Learning 3D Granular Flow Simulations},
