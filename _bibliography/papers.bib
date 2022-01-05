@@ -1,3 +1,16 @@
+@inproceedings{
+widrich2021modern,
+title={Modern Hopfield Networks for Return Decomposition for Delayed Rewards},
+abstract={Delayed rewards, which are separated from their causative actions by irrelevant actions, hamper learning in reinforcement learning (RL). Especially real world problems often contain such delayed and sparse rewards. Recently, return decomposition for delayed rewards (RUDDER) employed pattern recognition to remove or reduce delay in rewards, which dramatically simplifies the learning task of the underlying RL method. RUDDER was realized using a long short-term memory (LSTM). The LSTM was trained to identify important state-action pair patterns, responsible for the return. Reward was then redistributed to these important state-action pairs. However, training the LSTM is often difficult and requires a large number of episodes. In this work, we replace the LSTM with the recently proposed continuous modern Hopfield networks (MHN) and introduce Hopfield-RUDDER. MHN are powerful trainable associative memories with large storage capacity. They require only few training samples and excel at identifying and recognizing patterns. We use this property of MHN to identify important state-action pairs that are associated with low or high return episodes and directly redistribute reward to them. However, in partially observable environments, Hopfield-RUDDER requires additional information about the history of state-action pairs. Therefore, we evaluate several methods for compressing history and introduce reset-max history, a lightweight history compression using the max-operator in combination with a reset gate. We experimentally show that Hopfield-RUDDER is able to outperform LSTM-based RUDDER on various 1D environments with small numbers of episodes. Finally, we show in preliminary experiments that Hopfield-RUDDER scales to highly complex environments with the Minecraft ObtainDiamond task from the MineRL NeurIPS challenge.},
+author={Michael Widrich and Markus Hofmarcher and Vihang Prakash Patil and Angela Bitto-Nemling and Sepp Hochreiter},
+booktitle={Deep RL Workshop NeurIPS 2021},
+year={2021},
+url={https://openreview.net/forum?id=t0PQSDcqAiy},
+category={reinforcement_learning},
+selected={true},
+date={2021-12-09}
+}
+
 @misc{schweighofer:21,
       title={Understanding the Effects of Dataset Characteristics on Offline Reinforcement Learning}, 
       author={Kajetan Schweighofer and Markus Hofmarcher and Marius-Constantin Dinu and Philipp Renz and Angela Bitto-Nemling and Vihang Patil and Sepp Hochreiter},
