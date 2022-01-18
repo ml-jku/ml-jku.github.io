@@ -1,3 +1,42 @@
+@article{seidlImproving2022,
+author = {Seidl, Philipp and Renz, Philipp and Dyubankova, Natalia and Neves, Paulo and Verhoeven, Jonas and Wegner, Jörg K. and Segler, Marwin and Hochreiter, Sepp and Klambauer, Günter},
+title = {Improving Few- and Zero-Shot Reaction Template Prediction Using Modern Hopfield Networks},
+journal = {Journal of Chemical Information and Modeling},
+volume = {0},
+number = {0},
+pages = {null},
+year = {2022},
+doi = {10.1021/acs.jcim.1c01065},
+    note ={PMID: 35034452},
+url = {https://doi.org/10.1021/acs.jcim.1c01065},
+eprint = {https://doi.org/10.1021/acs.jcim.1c01065},
+abstract = {Finding synthesis routes for molecules of interest is essential in the discovery of new drugs and materials. To find such routes, computer-assisted synthesis planning (CASP) methods are employed, which rely on a single-step model of chemical reactivity. In this study, we introduce a template-based single-step retrosynthesis model based on Modern Hopfield Networks, which learn an encoding of both molecules and reaction templates in order to predict the relevance of templates for a given molecule. The template representation allows generalization across different reactions and significantly improves the performance of template relevance prediction, especially for templates with few or zero training examples. With inference speed up to orders of magnitude faster than baseline methods, we improve or match the state-of-the-art performance for top-k exact match accuracy for k ≥ 3 in the retrosynthesis benchmark USPTO-50k. Code to reproduce the results is available at github.com/ml-jku/mhn-react.},
+software = {true},
+code = {https://github.com/ml-jku/mhn-react},
+abbr={JCIM},
+category = {ai_drug},
+selected = {true},
+date = {2022-01-15},
+}
+
+@inproceedings{seidlBenchmarking2021,
+author = {Seidl, Philipp and Halmich, Christina and Mayr, Andreas and Vall, Andreu and Ruch, Peter and Hochreiter, Sepp and Klambauer, Günter},
+title = {Benchmarking recent Deep Learning methods on the extended Tox21 data set},
+journal = {19th International Workshop on (Quantitative) Structure-Activity Relationships in Environmental and Health Sciences},
+volume = {19},
+number = {Abstract nr 293},
+publisher = {Computational Toxicology},
+abstract = {The Tox21 data set has evolved into a standard benchmark for computational QSAR methods in toxicology. One limitation of the Tox21 data set is, however, that it only contains twelve toxic assays which strongly restricts its power to distinguish the strength of computational methods. We ameliorate this problem by benchmarking on the extended Tox21 dataset with 68 publicly available assays in order to allow for a better assessment and characterization. The broader range of assays also allows for multi-task approaches, which have been particularly successful as predictive models. Furthermore, previous publications comparing methods on Tox21 did not include recent developments in the field of machine learning, such as graph neural and modern Hopfield networks. Thus we benchmark a set of prominent machine learning methods including those new types of neural networks. The results of the benchmarking study show that the best methods are modern Hopfield networks and multi-task graph neural networks with an average area-under-ROCcurve of 0.91 ± 0.05 (standard deviation across assays), while traditional methods, such as Random Forests fall behind by a substantial margin. Our results of the full benchmark suggest that multi-task learning has a stronger effect on the predictive performance than the choice of the representation of the molecules, such as graph, descriptors, or fingerprints.},
+year = {2021},
+date = {2021-06-07},
+url = {https://www.ascctox.org/sites/default/files/QSAR%202021%20Program.pdf},
+abbr = {QSAR},
+software = {false},
+category = {ai_drug},
+selected = {false},
+}
+
+
 @inproceedings{
 widrich2021modern,
 title={Modern Hopfield Networks for Return Decomposition for Delayed Rewards},
@@ -193,24 +232,6 @@ date = {2021-05-04}
  date = {2021-01-30},
  selected = {true},
  title = {Comparative assessment of interpretability methods of deep activity models for hERG},
- url = {https://www.ascctox.org/qsar2021},
- year = {2021},
- category={ai_drug}
-}
-
-
-@online{seidltox21extended2021,
- abbr={QSAR2021},
- abstract = {The Tox21 data set has evolved into a standard benchmark for computational QSAR methods in toxicology [1]. One limitation of the Tox21 data set is, however, that it only contains twelve toxic assays which strongly restricts its power to distinguish the strength of computational methods.  We ameliorate this problem by benchmarking on the extended Tox21 dataset with 68 publicly available assays in order to allow for a better assessment and characterization. The broader range of assays also allows for multi-task approaches, which have been particularly successful as predictive models [2]. Furthermore, previous publications comparing methods on Tox21 did not include recent developments in the field of machine learning, such as graph neural and modern Hopfield networks [3]. Thus we benchmark a set of prominent machine learning methods including those new types of neural networks. The results of the benchmarking study show that the best methods are modern Hopfield networks and multi-task graph neural networks with an average area-under-ROC-curve of 0.91 ± 0.05 (standard deviation across assays), while traditional methods, such as Random Forests fall behind by a substantial margin. Our results of the full benchmark suggest that multi-task learning has a stronger effect on the predictive performance than the choice of the representation of the molecules, such as graph, descriptors, or string. 
-
-References: 
-[1] Huang, R., et al. (2016). Frontiers in Environmental Science, 3, 85.
-[2] Mayr, A., et al. (2016). Frontiers in Environmental Science, 3, 80.
-[3] Ramsauer, H., et al. (2021). 9th International Conference on Learning Representations.},
- author = {Seidl, Philipp and Halmich Christina and Mayr, Andreas and Vall, Andreu and Ruch, Peter and Hochreiter, Sepp and Klambauer, Günter},
- date = {2021-01-30},
- selected = {true},
- title = {Benchmarking recent Deep Learning methods on the extended Tox21 data set},
  url = {https://www.ascctox.org/qsar2021},
  year = {2021},
  category={ai_drug}
