@@ -1,3 +1,21 @@
+@inproceedings{paischer2022helm,
+  doi = {10.48550/ARXIV.2205.12258},
+  url = {https://arxiv.org/abs/2205.12258},
+  author = {Paischer, Fabian and Adler, Thomas and Patil, Vihang and Bitto-Nemling, Angela and Holzleitner, Markus and Lehner, Sebastian and Eghbal-zadeh, Hamid and Hochreiter, Sepp},
+  keywords = {Machine Learning (cs.LG), Computation and Language (cs.CL), Machine Learning (stat.ML), FOS: Computer and information sciences, FOS: Computer and information sciences},
+  title = {History Compression via Language Models in Reinforcement Learning},
+  abbr = {ICML},
+  year = {2022},
+  blog = {https://ml-jku.github.io/blog/2022/helm/},
+  code = {https://github.com/ml-jku/helm},
+  software = {True},
+  category = {reinforcement_learning},
+  selected = {true},
+  date = {2022-05-24},
+  abstract = {In a partially observable Markov decision process (POMDP), an agent typically uses a representation of the past to approximate the underlying MDP. We propose to utilize a frozen Pretrained Language Transformer (PLT) for history representation and compression to improve sample efficiency. To avoid training of the Transformer, we introduce FrozenHopfield, which automatically associates observations with original token embeddings. To form these associations, a modern Hopfield network stores the original token embeddings, which are retrieved by queries that are obtained by a random but fixed projection of observations. Our new method, HELM, enables actor-critic network architectures that contain a pretrained language Transformer for history representation as a memory module. Since a representation of the past need not be learned, HELM is much more sample efficient than competitors. On Minigrid and Procgen environments HELM achieves new state-of-the-art results. Our code is available at https://github.com/ml-jku/helm.}
+}
+
+
 @article{seidlImproving2022,
 author = {Seidl, Philipp and Renz, Philipp and Dyubankova, Natalia and Neves, Paulo and Verhoeven, Jonas and Wegner, Jörg K. and Segler, Marwin and Hochreiter, Sepp and Klambauer, Günter},
 title = {Improving Few- and Zero-Shot Reaction Template Prediction Using Modern Hopfield Networks},
