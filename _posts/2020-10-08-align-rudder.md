@@ -21,6 +21,8 @@ authors:
    affiliations:
       name: Institute for Machine Learning, Linz
 
+published: International Conference on Machine learning, 2022
+
 bibliography: 2020-10-08-align-rudder.bib
 
 pic: /assets/img/align-rudder/minecraft.gif
@@ -91,8 +93,9 @@ _styles: >
 
 ---
 
+UPDATE: ALIGN-RUDDER was accepted for a long presentation at ICML 2022. 
 
-This blog post explains the paper [Align-RUDDER: Learning from Few Demonstrations by Reward Redistribution](https://arxiv.org/abs/2009.14108).
+This blog post explains the paper [Align-RUDDER: Learning from Few Demonstrations by Reward Redistribution](https://arxiv.org/abs/2009.14108). 
 Align-RUDDER is [RUDDER](https://arxiv.org/abs/1806.07857)<d-cite key="Arjona:19"></d-cite> with two modifications:
 
 * Align-RUDDER assumes that episodes with high rewards are given as demonstrations.
