@@ -91,14 +91,25 @@ _styles: >
   }
 
 ---
+<body>
+     <header class="page-header" role="banner">
+      <h1 class="project-name">RUDDER - Reinforcement Learning with Delayed Rewards</h1>
+      <h2 class="project-tagline">Blog post</h2>
+      
+        <a href="https://github.com/brandstetter-johannes/align-rudder-blog" class="btn">View on GitHub</a>
+      
+      
+    </header>
+</body>
 
-UPDATE: ALIGN-RUDDER was accepted for a long presentation at ICML 2022. 
 
 This blog post explains the paper [Align-RUDDER: Learning from Few Demonstrations by Reward Redistribution](https://arxiv.org/abs/2009.14108). 
 Align-RUDDER is [RUDDER](https://arxiv.org/abs/1806.07857)<d-cite key="Arjona:19"></d-cite> with two modifications:
 
 * Align-RUDDER assumes that episodes with high rewards are given as demonstrations.
 * Align-RUDDER replaces the RUDDER's LSTM model by a profile model that is obtained from multiple sequence alignment of demonstrations.
+
+UPDATE: ALIGN-RUDDER was accepted for a long presentation at ICML 2022.
 
 [Blog post to RUDDER: Return Decomposition for Delayed Rewards](https://ml-jku.github.io/rudder)
 
