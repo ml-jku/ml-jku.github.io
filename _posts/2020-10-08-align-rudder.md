@@ -92,13 +92,8 @@ _styles: >
 
 ---
 <body>
-     <header class="page-header" role="banner">
-      <h1 class="project-name">RUDDER - Reinforcement Learning with Delayed Rewards</h1>
-      <h2 class="project-tagline">Blog post</h2>
-      
-        <a href="https://github.com/brandstetter-johannes/align-rudder-blog" class="btn">View on GitHub</a>
-      
-      
+    <header class="page-header" role="banner">
+      <h1 class="project-name">Align-RUDDER: Learning from Few Demonstrations by Reward Redistribution</h1>
     </header>
 </body>
 
