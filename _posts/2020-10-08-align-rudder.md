@@ -1,5 +1,5 @@
 ---
-layout: distill
+layout: default
 title: "Align-RUDDER: Learning from Few Demonstrations by Reward Redistribution"
 description: We present Align-RUDDER an algorithm which learns from as few as two demonstrations. It does this by aligning demonstrations and speeds up learning by reducing the delay in reward.
 date:   2020-10-08
@@ -21,7 +21,6 @@ authors:
    affiliations:
       name: Institute for Machine Learning, Linz
 
-published: International Conference on Machine learning, 2022
 
 bibliography: 2020-10-08-align-rudder.bib
 
