@@ -1,3 +1,41 @@
+@misc{schaefl2022hopular,
+      title={Hopular: Modern Hopfield Networks for Tabular Data}, 
+      author={Bernhard Sch{\"a}fl and Lukas Gruber and Angela Bitto-Nemling and Sepp Hochreiter},
+      abstract={While Deep Learning excels in structured data as encountered in vision and natural language processing, it failed to meet its expectations on tabular data. For tabular data, Support Vector Machines (SVMs), Random Forests, and Gradient Boosting are the best performing techniques with Gradient Boosting in the lead. Recently, we saw a surge of Deep Learning methods that were tailored to tabular data but still underperform compared to Gradient Boosting on small-sized datasets. We suggest "Hopular", a novel Deep Learning architecture for medium- and small-sized datasets, where each layer is equipped with continuous modern Hopfield networks. The modern Hopfield networks use stored data to identify feature-feature, feature-target, and sample-sample dependencies. Hopular's novelty is that every layer can directly access the original input as well as the whole training set via stored data in the Hopfield networks. Therefore, Hopular can step-wise update its current model and the resulting prediction at every layer like standard iterative learning algorithms. In experiments on small-sized tabular datasets with less than 1,000 samples, Hopular surpasses Gradient Boosting, Random Forests, SVMs, and in particular several Deep Learning methods. In experiments on medium-sized tabular data with about 10,000 samples, Hopular outperforms XGBoost, CatBoost, LightGBM and a state-of-the art Deep Learning method designed for tabular data. Thus, Hopular is a strong alternative to these methods on tabular data.},
+      year={2022},
+      eprint={2206.00664},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      abbr={arXiv},
+      blog={https://ml-jku.github.io/hopular/},
+      url={https://arxiv.org/abs/2206.00664},
+      code={https://github.com/ml-jku/hopular},
+      category={hopfield},
+      software={true},
+      selected={true},     
+      date={2022-06-01}
+}
+
+
+@misc{gauch2022subgd,
+    title={Few-Shot Learning by Dimensionality Reduction in Gradient Space},
+    author={Gauch, Martin and Beck, Maximilian and Adler, Thomas and Kotsur, Dmytro and Fiel, Stefan and Eghbal-zadeh, Hamid and Brandstetter, Johannes and Kofler, Johannes and Holzleitner, Markus and Zellinger, Werner and Klotz, Daniel and Hochreiter, Sepp and Lehner, Sebastian},
+    abstract = {We introduce SubGD, a novel few-shot learning method which is based on the recent finding that stochastic gradient descent updates tend to live in a low-dimensional parameter subspace. In experimental and theoretical analyses, we show that models confined to a suitable predefined subspace generalize well for few-shot learning. A suitable subspace fulfills three criteria across the given tasks: it (a) allows to reduce the training error by gradient flow, (b) leads to models that generalize well, and (c) can be identified by stochastic gradient descent. SubGD identifies these subspaces from an eigendecomposition of the auto-correlation matrix of update directions across different tasks. Demonstrably, we can identify low-dimensional suitable subspaces for few-shot learning of dynamical systems, which have varying properties described by one or few parameters of the analytical system description. Such systems are ubiquitous among real-world applications in science and engineering. We experimentally corroborate the advantages of SubGD on three distinct dynamical systems problem settings, significantly outperforming popular few-shot learning methods both in terms of sample efficiency and performance.},
+      year={2022},
+      eprint={2206.03483},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      abbr={arXiv},
+      blog={https://ml-jku.github.io/subgd/},
+      url = {https://arxiv.org/abs/2206.03483},
+      code = {https://github.com/ml-jku/subgd},
+      category = {deep_learning},
+      software = {true},
+      selected = {true},
+      date = {2022-06-08}
+}
+
+
 @inproceedings{paischer2022helm,
   doi = {10.48550/ARXIV.2205.12258},
   url = {https://arxiv.org/abs/2205.12258},
