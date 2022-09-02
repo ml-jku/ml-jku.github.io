@@ -1,6 +1,371 @@
+@misc{schweighofer2022dataset,
+	title={A Dataset Perspective on Offline Reinforcement Learning},
+	author={Schweighofer, Kajetan and Radler, Andreas and Dinu, Marius-Constantin and Hofmarcher, Markus and Patil, Vihang and Bitto-Nemling, Angela and Eghbal-zadeh, Hamid and Hochreiter, Sepp},
+  abstract={The application of Reinforcement Learning (RL) in real world environments can be expensive or risky due to sub-optimal policies during training. In Offline RL, this problem is avoided since interactions with an environment are prohibited. Policies are learned from a given dataset, which solely determines their performance. Despite this fact, how dataset characteristics influence Offline RL algorithms is still hardly investigated. The dataset characteristics are determined by the behavioral policy that samples this dataset. Therefore, we define characteristics of behavioral policies as exploratory for yielding high expected information in their interaction with the Markov Decision Process (MDP) and as exploitative for having high expected return. We implement two corresponding empirical measures for the datasets sampled by the behavioral policy in deterministic MDPs. The first empirical measure SACo is defined by the normalized unique state-action pairs and captures exploration. The second empirical measure TQ is defined by the normalized average trajectory return and captures exploitation. Empirical evaluations show the effectiveness of TQ and SACo. In large-scale experiments using our proposed measures, we show that the unconstrained off-policy Deep Q-Network family requires datasets with high SACo to find a good policy. Furthermore, experiments show that policy constraint algorithms perform well on datasets with high TQ and SACo. Finally, the experiments show, that purely dataset-constrained Behavioral Cloning performs competitively to the best Offline RL algorithms for datasets with high TQ.},
+	    year={2022},
+	    eprint={2111.04714},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      abbr={CoLLAs},
+      url = {https://arxiv.org/abs/2111.04714},
+      code = {https://github.com/ml-jku/OfflineRL},
+      category = {reinforcement_learning},
+      software = {true},
+      selected = {true},
+      date = {2022-07-12}
+}
+
+
+@misc{steinparz2022reactive,
+	title={Reactive Exploration to Cope with Non-Stationarity in Lifelong Reinforcement Learning},
+	author={Steinparz, Christian and Schmied, Thomas and Paischer, Fabian and Dinu, Marius-Constantin and Patil, Vihang and Bitto-Nemling, Angela and Eghbal-zadeh, Hamid and Hochreiter, Sepp},
+  abstract={In lifelong learning, an agent learns throughout its entire life without resets, in a constantly changing environment, as we humans do. Consequently, lifelong learning comes with a plethora of research problems such as continual domain shifts, which result in non-stationary rewards and environment dynamics. These non-stationarities are difficult to detect and cope with due to their continuous nature. Therefore, exploration strategies and learning methods are required that are capable of tracking the steady domain shifts, and adapting to them. We propose Reactive Exploration to track and react to continual domain shifts in lifelong reinforcement learning, and to update the policy correspondingly. To this end, we conduct experiments in order to investigate different exploration strategies. We empirically show that representatives of the policy-gradient family are better suited for lifelong learning, as they adapt more quickly to distribution shifts than Q-learning. Thereby, policy-gradient methods profit the most from Reactive Exploration and show good results in lifelong learning with continual domain shifts.},
+	    year={2022},
+	    eprint={2207.05742},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      abbr={CoLLAs},
+      url = {https://arxiv.org/abs/2207.05742},
+      code = {https://github.com/ml-jku/reactive-exploration},
+      category = {reinforcement_learning},
+      software = {true},
+      selected = {true},
+      date = {2022-07-12}
+}
+
+
+@misc{schaefl2022hopular,
+      title={Hopular: Modern Hopfield Networks for Tabular Data}, 
+      author={Bernhard Sch{\"a}fl and Lukas Gruber and Angela Bitto-Nemling and Sepp Hochreiter},
+      abstract={While Deep Learning excels in structured data as encountered in vision and natural language processing, it failed to meet its expectations on tabular data. For tabular data, Support Vector Machines (SVMs), Random Forests, and Gradient Boosting are the best performing techniques with Gradient Boosting in the lead. Recently, we saw a surge of Deep Learning methods that were tailored to tabular data but still underperform compared to Gradient Boosting on small-sized datasets. We suggest "Hopular", a novel Deep Learning architecture for medium- and small-sized datasets, where each layer is equipped with continuous modern Hopfield networks. The modern Hopfield networks use stored data to identify feature-feature, feature-target, and sample-sample dependencies. Hopular's novelty is that every layer can directly access the original input as well as the whole training set via stored data in the Hopfield networks. Therefore, Hopular can step-wise update its current model and the resulting prediction at every layer like standard iterative learning algorithms. In experiments on small-sized tabular datasets with less than 1,000 samples, Hopular surpasses Gradient Boosting, Random Forests, SVMs, and in particular several Deep Learning methods. In experiments on medium-sized tabular data with about 10,000 samples, Hopular outperforms XGBoost, CatBoost, LightGBM and a state-of-the art Deep Learning method designed for tabular data. Thus, Hopular is a strong alternative to these methods on tabular data.},
+      year={2022},
+      eprint={2206.00664},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      abbr={arXiv},
+      blog={https://ml-jku.github.io/hopular/},
+      url={https://arxiv.org/abs/2206.00664},
+      code={https://github.com/ml-jku/hopular},
+      category={hopfield},
+      software={true},
+      selected={true},     
+      date={2022-06-01}
+}
+
+
+@misc{gauch2022subgd,
+    title={Few-Shot Learning by Dimensionality Reduction in Gradient Space},
+    author={Gauch, Martin and Beck, Maximilian and Adler, Thomas and Kotsur, Dmytro and Fiel, Stefan and Eghbal-zadeh, Hamid and Brandstetter, Johannes and Kofler, Johannes and Holzleitner, Markus and Zellinger, Werner and Klotz, Daniel and Hochreiter, Sepp and Lehner, Sebastian},
+    abstract = {We introduce SubGD, a novel few-shot learning method which is based on the recent finding that stochastic gradient descent updates tend to live in a low-dimensional parameter subspace. In experimental and theoretical analyses, we show that models confined to a suitable predefined subspace generalize well for few-shot learning. A suitable subspace fulfills three criteria across the given tasks: it (a) allows to reduce the training error by gradient flow, (b) leads to models that generalize well, and (c) can be identified by stochastic gradient descent. SubGD identifies these subspaces from an eigendecomposition of the auto-correlation matrix of update directions across different tasks. Demonstrably, we can identify low-dimensional suitable subspaces for few-shot learning of dynamical systems, which have varying properties described by one or few parameters of the analytical system description. Such systems are ubiquitous among real-world applications in science and engineering. We experimentally corroborate the advantages of SubGD on three distinct dynamical systems problem settings, significantly outperforming popular few-shot learning methods both in terms of sample efficiency and performance.},
+      year={2022},
+      eprint={2206.03483},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      abbr={CoLLAs},
+      blog={https://ml-jku.github.io/subgd/},
+      url = {https://arxiv.org/abs/2206.03483},
+      code = {https://github.com/ml-jku/subgd},
+      category = {deep_learning},
+      software = {true},
+      selected = {true},
+      date = {2022-06-08}
+}
+
+
+@inproceedings{paischer2022helm,
+  doi = {10.48550/ARXIV.2205.12258},
+  url = {https://arxiv.org/abs/2205.12258},
+  author = {Paischer, Fabian and Adler, Thomas and Patil, Vihang and Bitto-Nemling, Angela and Holzleitner, Markus and Lehner, Sebastian and Eghbal-zadeh, Hamid and Hochreiter, Sepp},
+  keywords = {Machine Learning (cs.LG), Computation and Language (cs.CL), Machine Learning (stat.ML), FOS: Computer and information sciences, FOS: Computer and information sciences},
+  title = {History Compression via Language Models in Reinforcement Learning},
+  abbr = {ICML},
+  year = {2022},
+  blog = {https://ml-jku.github.io/blog/2022/helm/},
+  code = {https://github.com/ml-jku/helm},
+  software = {True},
+  category = {reinforcement_learning},
+  selected = {true},
+  date = {2022-05-24},
+  abstract = {In a partially observable Markov decision process (POMDP), an agent typically uses a representation of the past to approximate the underlying MDP. We propose to utilize a frozen Pretrained Language Transformer (PLT) for history representation and compression to improve sample efficiency. To avoid training of the Transformer, we introduce FrozenHopfield, which automatically associates observations with original token embeddings. To form these associations, a modern Hopfield network stores the original token embeddings, which are retrieved by queries that are obtained by a random but fixed projection of observations. Our new method, HELM, enables actor-critic network architectures that contain a pretrained language Transformer for history representation as a memory module. Since a representation of the past need not be learned, HELM is much more sample efficient than competitors. On Minigrid and Procgen environments HELM achieves new state-of-the-art results. Our code is available at https://github.com/ml-jku/helm.}
+}
+
+
+@article{seidlImproving2022,
+author = {Seidl, Philipp and Renz, Philipp and Dyubankova, Natalia and Neves, Paulo and Verhoeven, Jonas and Wegner, Jörg K. and Segler, Marwin and Hochreiter, Sepp and Klambauer, Günter},
+title = {Improving Few- and Zero-Shot Reaction Template Prediction Using Modern Hopfield Networks},
+journal = {Journal of Chemical Information and Modeling},
+volume = {0},
+number = {0},
+pages = {null},
+year = {2022},
+doi = {10.1021/acs.jcim.1c01065},
+    note ={PMID: 35034452},
+url = {https://doi.org/10.1021/acs.jcim.1c01065},
+eprint = {https://doi.org/10.1021/acs.jcim.1c01065},
+abstract = {Finding synthesis routes for molecules of interest is essential in the discovery of new drugs and materials. To find such routes, computer-assisted synthesis planning (CASP) methods are employed, which rely on a single-step model of chemical reactivity. In this study, we introduce a template-based single-step retrosynthesis model based on Modern Hopfield Networks, which learn an encoding of both molecules and reaction templates in order to predict the relevance of templates for a given molecule. The template representation allows generalization across different reactions and significantly improves the performance of template relevance prediction, especially for templates with few or zero training examples. With inference speed up to orders of magnitude faster than baseline methods, we improve or match the state-of-the-art performance for top-k exact match accuracy for k ≥ 3 in the retrosynthesis benchmark USPTO-50k. Code to reproduce the results is available at github.com/ml-jku/mhn-react.},
+software = {true},
+code = {https://github.com/ml-jku/mhn-react},
+abbr={JCIM},
+category = {ai_drug},
+selected = {true},
+date = {2022-01-15},
+}
+
+@inproceedings{hoedt2022normalization,
+  author = {Hoedt, Pieter-Jan and Hochreiter, Sepp and Klambauer, Günter},
+  title = {Normalization is dead, long live normalization!},
+  booktitle = {ICLR Blog Track},
+  year = {2022},
+  note = {https://iclr-blog-track.github.io/2022/03/25/unnormalized-resnets/},
+  url  = {https://iclr-blog-track.github.io/2022/03/25/unnormalized-resnets/},
+  abstract = {Since the advent of Batch Normalization (BN), almost every state-of-the-art (SOTA) method uses some form of normalization. After all, normalization generally speeds up learning and leads to models that generalize better than their unnormalized counterparts. This turns out to be especially useful when using some form of skip connections, which are prominent in Residual Networks (ResNets), for example. However, Brock et al. (2021a) suggest that SOTA performance can also be achieved using ResNets without normalization!},
+  category = {deep_learning},
+  abbr = {ICLR}
+}
+
+@inproceedings{seidlBenchmarking2021,
+author = {Seidl, Philipp and Halmich, Christina and Mayr, Andreas and Vall, Andreu and Ruch, Peter and Hochreiter, Sepp and Klambauer, Günter},
+title = {Benchmarking recent Deep Learning methods on the extended Tox21 data set},
+journal = {19th International Workshop on (Quantitative) Structure-Activity Relationships in Environmental and Health Sciences},
+volume = {19},
+number = {Abstract nr 293},
+publisher = {Computational Toxicology},
+abstract = {The Tox21 data set has evolved into a standard benchmark for computational QSAR methods in toxicology. One limitation of the Tox21 data set is, however, that it only contains twelve toxic assays which strongly restricts its power to distinguish the strength of computational methods. We ameliorate this problem by benchmarking on the extended Tox21 dataset with 68 publicly available assays in order to allow for a better assessment and characterization. The broader range of assays also allows for multi-task approaches, which have been particularly successful as predictive models. Furthermore, previous publications comparing methods on Tox21 did not include recent developments in the field of machine learning, such as graph neural and modern Hopfield networks. Thus we benchmark a set of prominent machine learning methods including those new types of neural networks. The results of the benchmarking study show that the best methods are modern Hopfield networks and multi-task graph neural networks with an average area-under-ROCcurve of 0.91 ± 0.05 (standard deviation across assays), while traditional methods, such as Random Forests fall behind by a substantial margin. Our results of the full benchmark suggest that multi-task learning has a stronger effect on the predictive performance than the choice of the representation of the molecules, such as graph, descriptors, or fingerprints.},
+year = {2021},
+date = {2021-06-07},
+url = {https://www.ascctox.org/sites/default/files/QSAR%202021%20Program.pdf},
+abbr = {QSAR},
+software = {false},
+category = {ai_drug},
+selected = {false},
+}
+
+
+@inproceedings{
+widrich2021modern,
+title={Modern Hopfield Networks for Return Decomposition for Delayed Rewards},
+abstract={Delayed rewards, which are separated from their causative actions by irrelevant actions, hamper learning in reinforcement learning (RL). Especially real world problems often contain such delayed and sparse rewards. Recently, return decomposition for delayed rewards (RUDDER) employed pattern recognition to remove or reduce delay in rewards, which dramatically simplifies the learning task of the underlying RL method. RUDDER was realized using a long short-term memory (LSTM). The LSTM was trained to identify important state-action pair patterns, responsible for the return. Reward was then redistributed to these important state-action pairs. However, training the LSTM is often difficult and requires a large number of episodes. In this work, we replace the LSTM with the recently proposed continuous modern Hopfield networks (MHN) and introduce Hopfield-RUDDER. MHN are powerful trainable associative memories with large storage capacity. They require only few training samples and excel at identifying and recognizing patterns. We use this property of MHN to identify important state-action pairs that are associated with low or high return episodes and directly redistribute reward to them. However, in partially observable environments, Hopfield-RUDDER requires additional information about the history of state-action pairs. Therefore, we evaluate several methods for compressing history and introduce reset-max history, a lightweight history compression using the max-operator in combination with a reset gate. We experimentally show that Hopfield-RUDDER is able to outperform LSTM-based RUDDER on various 1D environments with small numbers of episodes. Finally, we show in preliminary experiments that Hopfield-RUDDER scales to highly complex environments with the Minecraft ObtainDiamond task from the MineRL NeurIPS challenge.},
+author={Michael Widrich and Markus Hofmarcher and Vihang Prakash Patil and Angela Bitto-Nemling and Sepp Hochreiter},
+booktitle={Deep RL Workshop NeurIPS 2021},
+year={2021},
+url={https://openreview.net/forum?id=t0PQSDcqAiy},
+category={reinforcement_learning},
+selected={true},
+date={2021-12-09}
+}
+
+@misc{schweighofer:21,
+      title={Understanding the Effects of Dataset Characteristics on Offline Reinforcement Learning}, 
+      author={Kajetan Schweighofer and Markus Hofmarcher and Marius-Constantin Dinu and Philipp Renz and Angela Bitto-Nemling and Vihang Patil and Sepp Hochreiter},
+      abstract={In real world, affecting the environment by a weak policy can be expensive or very risky, therefore hampers real world applications of reinforcement learning. Offline Reinforcement Learning (RL) can learn policies from a given dataset without interacting with the environment. However, the dataset is the only source of information for an Offline RL algorithm and determines the performance of the learned policy. We still lack studies on how dataset characteristics influence different Offline RL algorithms. Therefore, we conducted a comprehensive empirical analysis of how dataset characteristics effect the performance of Offline RL algorithms for discrete action environments. A dataset is characterized by two metrics: (1) the average dataset return measured by the Trajectory Quality (TQ) and (2) the coverage measured by the State-Action Coverage (SACo). We found that variants of the off-policy Deep Q-Network family require datasets with high SACo to perform well. Algorithms that constrain the learned policy towards the given dataset perform well for datasets with high TQ or SACo. For datasets with high TQ, Behavior Cloning outperforms or performs similarly to the best Offline RL algorithms.
+},
+      year={2021},
+      eprint={2111.04714},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      abbr={arXiv},
+      url = {https://arxiv.org/abs/2111.04714},
+      code = {https://github.com/ml-jku/OfflineRL},
+      category = {reinforcement_learning},
+      software = {true},
+      selected = {true},
+      date = {2021-11-09}
+}
+
+@misc{fürst2021cloob,
+      title={CLOOB: Modern Hopfield Networks with InfoLOOB Outperform CLIP}, 
+      author={Andreas Fürst and Elisabeth Rumetshofer and Viet Tran and Hubert Ramsauer and Fei Tang and Johannes Lehner and David Kreil and Michael Kopp and Günter Klambauer and Angela Bitto-Nemling and Sepp Hochreiter},
+      abstract = {Contrastive learning with the InfoNCE objective is exceptionally successful in various self-supervised learning tasks. Recently, the CLIP model yielded impressive results on zero-shot transfer learning when using InfoNCE for learning visual representations from natural language supervision. However, InfoNCE as a lower bound on the mutual information has been shown to perform poorly for high mutual information. In contrast, the InfoLOOB upper bound (leave one out bound) works well for high mutual information but suffers from large variance and instabilities. We introduce "Contrastive Leave One Out Boost" (CLOOB), where modern Hopfield networks boost learning with the InfoLOOB objective. Modern Hopfield networks replace the original embeddings by retrieved embeddings in the InfoLOOB objective. The retrieved embeddings give InfoLOOB two assets. Firstly, the retrieved embeddings stabilize InfoLOOB, since they are less noisy and more similar to one another than the original embeddings. Secondly, they are enriched by correlations, since the covariance structure of embeddings is reinforced through retrievals. We compare CLOOB to CLIP after learning on the Conceptual Captions and the YFCC dataset with respect to their zero-shot transfer learning performance on other datasets. CLOOB consistently outperforms CLIP at zero-shot transfer learning across all considered architectures and datasets.
+},
+      year={2021},
+      eprint={2110.11316},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      abbr={arXiv},
+      blog={https://ml-jku.github.io/cloob/},
+      url = {https://arxiv.org/abs/2110.11316},
+      code = {https://github.com/ml-jku/cloob},
+      category = {hopfield},
+      software = {true},
+      selected = {true},
+      date = {2021-10-22}
+}
+
+@article{mayr2021_l3dgfs,
+abbr={arXiv},
+title={Learning 3D Granular Flow Simulations},
+author={Mayr, Andreas and Lehner, Sebastian and Mayrhofer, Arno and Kloss, Christoph and Hochreiter, Sepp and Brandstetter, Johannes},
+abstract = {Recently, the application of machine learning models has gained momentum in natural sciences and engineering, which is a natural fit due to the abundance of data in these fields. However, the modeling of physical processes from simulation data without first principle solutions remains difficult. Here, we present a Graph Neural Networks approach towards accurate modeling of complex 3D granular flow simulation processes created by the discrete element method LIGGGHTS and concentrate on simulations of physical systems found in real world applications like rotating drums and hoppers. We discuss how to implement Graph Neural Networks that deal with 3D objects, boundary conditions, particle - particle, and particle - boundary interactions such that an accurate modeling of relevant physical quantities is made possible. Finally, we compare the machine learning based trajectories to LIGGGHTS trajectories in terms of particle flows and mixing entropies.},
+booktitle = {Deep Learning for Simulation (SimDL) Workshop @ ICLR 2021},
+url = {https://arxiv.org/abs/2105.01636},
+poster = {https://simdl.github.io/posters/42-supp_poster.pdf},
+video = {https://slideslive.de/38955315/learning-3d-granular-flow-simulations?ref=speaker-10792-latest},
+selected = {true},
+year = {2021},
+software = {false},
+category={deep_learning},
+date = {2021-05-04}
+}
+
+@article{klotz2021uncertainty,
+  title={Uncertainty Estimation with Deep Learning for Rainfall-Runoff Modelling},
+  author={Klotz, D. and Kratzert, F. and Gauch, M. and Keefe Sampson, A. and Brandstetter, J. and Klambauer, G. and Hochreiter, S. and Nearing, G.},
+  abstract = {Deep Learning is becoming an increasingly important way to produce accurate hydrological predictions across a wide range of spatial and temporal scales. Uncertainty estimations are critical for actionable hydrological forecasting, and while standardized community benchmarks are becoming an increasingly important part of hydrological model development and research, similar tools for benchmarking uncertainty estimation are lacking. This contributions demonstrates that accurate uncertainty predictions can be obtained with Deep Learning. We establish an uncertainty estimation benchmarking procedure and present four Deep Learning baselines. Three baselines are based on Mixture Density Networks and one is based on Monte Carlo dropout. The results indicate that these approaches constitute strong baselines, especially the former ones. Additionaly, we provide a post-hoc model analysis to put forward some qualitative understanding of the resulting models. This analysis extends the notion of performance and show that learn nuanced behaviors in different situations.},
+    journal = {Hydrology and Earth System Sciences Discussions},
+    abbr = {HESSD},
+    url = {https://hess.copernicus.org/preprints/hess-2021-154/},
+    year = {2021},
+    selected = {true},
+    software = {false},
+    code = {https://github.com/neuralhydrology/neuralhydrology},
+    category = {ai4earth},
+    date = {2021-04-14}
+}
+
+@article{kratzert2021synergy,
+    author = {Kratzert, F. and Klotz, D. and Hochreiter, S. and Nearing, G. S.},
+    title = {A note on leveraging synergy in multiple meteorological datasets with deep learning for rainfall-runoff modeling},
+    abstract = {A deep learning rainfall-runoff model can take multiple meteorological forcing products as inputs and learn to combine them in spatially and temporally dynamic ways. This is demonstrated using Long Short Term Memory networks (LSTMs) trained over basins in the continental US using the CAMELS data set. Using multiple precipitation products (NLDAS, Maurer, DayMet) in a single LSTM significantly improved simulation accuracy relative to using only individual precipitation products. A sensitivity analysis showed that the LSTM learned to utilize different precipitation products in different ways in different basins and for simulating different parts of the hydrograph in individual basins.},
+    journal = {Hydrology and Earth System Sciences},
+    abbr = {HESS},
+    url = {https://hess.copernicus.org/preprints/hess-2020-221/},
+    year = {2021},
+    selected = {true},
+    software = {false},
+    code = {https://github.com/kratzert/multiple_forcing},
+    category = {ai4earth},
+    date = {2020-11-13}
+}
+
+@article{nearing2021opinion,
+    author = {Nearing, G. and Kratzert, F. and Sampson, A. and Pelissier, C. and Klotz, D. and Frame, J. and Prieto, C. and Gupta, H.},
+    title = {What Role Does Hydrological Science Play in the Age of Machine Learning?},
+    abstract = {This paper is derived from a keynote talk given at the Google's 2020 Flood Forecasting Meets Machine Learning Workshop. Recent experiments applying deep learning to rainfall-runoff simulation indicate that there is significantly more information in large-scale hydrological data sets than hydrologists have been able to translate into theory or models. While there is a growing interest in machine learning in the hydrological sciences community, in many ways, our community still holds deeply subjective and nonevidence-based preferences for models based on a certain type of “process understanding” that has historically not translated into accurate theory, models, or predictions. This commentary is a call to action for the hydrology community to focus on developing a quantitative understanding of where and when hydrological process understanding is valuable in a modeling discipline increasingly dominated by machine learning. We offer some potential perspectives and preliminary examples about how this might be accomplished.},
+    journal = {Water Resources Research},
+    abbr = {WRR},
+    url = {https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2020WR028091},
+    year = {2020},
+    selected = {true},
+    software = {false},
+    category = {ai4earth},
+    date = {2020-11-13}
+}
+
+@article{gauch2021mtslstm,
+    author = {Gauch, M. and Kratzert, F. and Klotz, D. and Nearing, G. and Lin, J. and Hochreiter, S.},
+    title = {Rainfall--runoff prediction at multiple timescales with a single Long Short-Term Memory network},
+    abstract = {Long Short-Term Memory (LSTM) networks have been applied to daily discharge prediction with remarkable success. Many practical applications, however, require predictions at more granular timescales. For instance, accurate prediction of short but extreme flood peaks can make a lifesaving difference, yet such peaks may escape the coarse temporal resolution of daily predictions. Naively training an LSTM on hourly data, however, entails very long input sequences that make learning difficult and computationally expensive. In this study, we propose two multi-timescale LSTM (MTS-LSTM) architectures that jointly predict multiple timescales within one model, as they process long-past inputs at a different temporal resolution than more recent inputs. In a benchmark on 516 basins across the continental United States, these models achieved significantly higher Nash–Sutcliffe efficiency (NSE) values than the US National Water Model. Compared to naive prediction with distinct LSTMs per timescale, the multi-timescale architectures are computationally more efficient with no loss in accuracy. Beyond prediction quality, the multi-timescale LSTM can process different input variables at different timescales, which is especially relevant to operational applications where the lead time of meteorological forcings depends on their temporal resolution.},
+    journal = {Hydrology and Earth System Sciences},
+    abbr = {HESS},
+    url = {https://hess.copernicus.org/articles/25/2045/2021/},
+    year = {2021},
+    selected = {true},
+    software = {false},
+    code = {https://github.com/gauchm/mts-lstm},
+    category = {ai4earth},
+    date = {2021-04-19}
+}
+
+@article{vall_promise_2021,
+  abstract={Drug-induced liver injury (DILI) is a common reason for the withdrawal of a drug from the market. Early assessment of DILI risk is an essential part of drug development, but it is rendered challenging prior to clinical trials by the complex factors that give rise to liver damage. Artificial intelligence (AI) approaches, particularly those building on machine learning, range from random forests to more recent techniques such as deep learning, and provide tools that can analyze chemical compounds and accurately predict some of their properties based purely on their structure. This article reviews existing AI approaches to predicting DILI and elaborates on the challenges that arise from the as yet limited availability of data. Future directions are discussed focusing on rich data modalities, such as 3D spheroids, and the slow but steady increase in drugs annotated with DILI risk labels.},
+  abbr={Frontiers in AI},
+  url={https://www.frontiersin.org/articles/10.3389/frai.2021.638410},
+  category={ai_drug},
+  selected={true},
+  date = {2021-04-14},
+  title = {The Promise of {{AI}} for {{DILI}} Prediction},
+  author = {Vall, Andreu and Sabnis, Yogesh and Shi, Jiye and Class, Reiner and Hochreiter, Sepp and Klambauer, G{\"u}nter},
+  year = {2021},
+  volume = {4},
+  publisher = {{Frontiers}},
+  issn = {2624-8212},
+  copyright = {All rights reserved},
+  journal = {Frontiers in Artificial Intelligence},
+  keywords = {artificial intelligence,deep learning,drug-induced liver injury,machine learning,neural networks}
+}
+
+@article{roland2021covid,
+  abbr={medRxiv},
+  abstract = {We investigate machine learning models that identify COVID-19 positive patients and estimate the mortality risk based on routinely acquired blood tests in a hospital setting. However, during pandemics or new outbreaks, disease and testing characteristics change, thus we face domain shifts. Domain shifts can be caused, e.g., by changes in the disease prevalence (spreading or tested population), by refined RT-PCR testing procedures (taking samples, laboratory), or by virus mutations. Therefore, machine learning models for diagnosing COVID-19 or other diseases may not be reliable and degrade in performance over time. To countermand this effect, we propose methods that first identify domain shifts and then reverse their negative effects on the model performance. Frequent re-training and reassessment, as well as stronger weighting of more recent samples, keeps model performance and credibility at a high level over time. Our diagnosis models are constructed and tested on large-scale data sets, steadily adapt to observed domain shifts, and maintain high ROC AUC values along pandemics.},
+  title={Machine Learning based COVID-19 Diagnosis from Blood Tests with Robustness to Domain Shifts},
+  author={Theresa Roland, Carl Böck, Thomas Tschoellitsch, Alexander Maletzky, Sepp Hochreiter, Jens Meier, Günter Klambauer},
+  journal={medRxiv preprint doi:10.1101/2021.04.06.21254997},
+  year={2021},
+  date = {2021-04-09},
+  url = {https://www.medrxiv.org/content/10.1101/2021.04.06.21254997v1.full-text},
+  category = {ai_healthcare},
+  selected={true}
+}
+
+@article{seidl2021reaction,
+  abbr={arXiv},
+  title={Modern Hopfield Networks for Few- and Zero-Shot Reaction Prediction},
+  author={Philipp Seidl, Philipp Renz, Natalia Dyubankova, Paulo Neves, Jonas Verhoeven, Jörg K. Wegner, Sepp Hochreiter, Günter Klambauer},
+  abstract = {An essential step in the discovery of new drugs and materials is the synthesis of a molecule that exists so far only as an idea to test its biological and physical properties. While computer-aided design of virtual molecules has made large progress, computer-assisted synthesis planning (CASP) to realize physical molecules is still in its infancy and lacks a performance level that would enable large-scale molecule discovery. CASP supports the search for multi-step synthesis routes, which is very challenging due to high branching factors in each synthesis step and the hidden rules that govern the reactions. The central and repeatedly applied step in CASP is reaction prediction, for which machine learning methods yield the best performance. We propose a novel reaction prediction approach that uses a deep learning architecture with modern Hopfield networks (MHNs) that is optimized by contrastive learning. An MHN is an associative memory that can store and retrieve chemical reactions in each layer of a deep learning architecture. We show that our MHN contrastive learning approach enables few- and zero-shot learning for reaction prediction which, in contrast to previous methods, can deal with rare, single, or even no training example(s) for a reaction. On a well established benchmark, our MHN approach pushes the state-of-the-art performance up by a large margin as it improves the predictive top-100 accuracy from 0.858±0.004 to 0.959±0.004. This advance might pave the way to large-scale molecule discovery.},
+  journal={arXiv preprint arXiv:2104.03279},
+  year={2021},
+  date = {2021-04-07},
+  category = {ai_drug},
+  selected={true}
+}
+
+
+@online{winterTrustedAI2021,
+ abbr={arXiv},
+ abstract = {Artificial Intelligence is one of the fastest growing technologies of the 21st century and accompanies us in our daily lives when interacting with technical applications. However, reliance on such technical systems is crucial for their widespread applicability and acceptance. The societal tools to express reliance are usually formalized by lawful regulations, i.e., standards, norms, accreditations, and certificates. Therefore, the TÜV AUSTRIA Group in cooperation with the Institute for Machine Learning at the Johannes Kepler University Linz, proposes a certification process and an audit catalog for Machine Learning applications. We are convinced that our approach can serve as the foundation for the certification of applications that use Machine Learning and Deep Learning, the techniques that drive the current revolution in Artificial Intelligence. While certain high-risk areas, such as fully autonomous robots in workspaces shared with humans, are still some time away from certification, we aim to cover low-risk applications with our certification procedure. Our holistic approach attempts to analyze Machine Learning applications from multiple perspectives to evaluate and verify the aspects of secure software development, functional requirements, data quality, data protection, and ethics. Inspired by existing work, we introduce four criticality levels to map the criticality of a Machine Learning application regarding the impact of its decisions on people, environment, and organizations. Currently, the audit catalog can be applied to low-risk applications within the scope of supervised learning as commonly encountered in industry. Guided by field experience, scientific developments, and market demands, the audit catalog will be extended and modified accordingly.},
+ author = {Winter, Philip Matthias and Eder, Sebastian and Weissenböck, Johannes and Schwald, Christoph and Doms, Thomas and Vogt, Tom and Hochreiter, Sepp, and Nessler, Bernhard},
+ date = {2021-03-31},
+ eprint = {2103.16910},
+ eprinttype = {arxiv},
+ selected = {true},
+ title = {Trusted Artificial Intelligence: Towards Certification of Machine Learning Applications},
+ url = {https://arxiv.org/abs/2103.16910.pdf},
+ year = {2021},
+ software = {false},
+ category={deep_learning}
+}
+
+@online{schimunekhERGinterpretability2021,
+ abbr={QSAR2021},
+ abstract = {Since many highly accurate predictive models for bioactivity and toxicity assays are based on Deep Learning methods, there has been a recent surge of interest in interpretability methods for Deep Learning approaches in drug discovery [1,2]. Interpretability methods are highly desired by human experts to enable them to make design decisions on the molecule based on the activity model. However, it is still unclear which of those interpretability methods are better identifying relevant substructures of molecules.  A method comparison is further complicated by the lack of ground truth and appropriate metrics. Here, we present the first comparative study of a set of interpretability methods for Deep Learning models for hERG inhibition. In our work, we compared layer-wise relevance propagation, feature gradients, saliency maps, integrated gradients, occlusion and Shapley values. In the quantitative analysis, known substructures which indicate hERG activity are used as ground truth [3]. Interpretability methods were compared by their ability to rank atoms, which are part of indicative substructures, first. The significantly best performing method is Shapley values with an area under-ROC-curve (AUC) of ~0.74 ± 0.12, but also runner-up methods, such as Integrated Gradients, achieved similar results. The results indicate that interpretability methods for deep activity models have the potential to identify new toxicophores.
+
+[1] Jiménez-Luna, J., et al. (2020). Nature Machine Intelligence, 2(10), 573-584.
+[2]  Preuer, K., et al. (2019). In Explainable AI: Interpreting, Explaining and Visualizing Deep Learning (pp. 331-345).
+[3] Czodrowski, P. (2013). Journal of chemical information and modeling, 53, 2240–2251.},
+ author = {Schimunek, Johannes and Friedrich, Lukas and Kuhn, Daniel and Hochreiter, Sepp and Rippmann, Friedrich and Klambauer, Günter},
+ date = {2021-01-30},
+ selected = {true},
+ title = {Comparative assessment of interpretability methods of deep activity models for hERG},
+ url = {https://www.ascctox.org/qsar2021},
+ year = {2021},
+ category={ai_drug}
+}
+
+@inproceedings{hoedtMCLSTM2021,
+ abbr={ICML},
+ abstract = {The success of Convolutional Neural Networks (CNNs) in computer vision is mainly driven by their strong inductive bias, which is strong enough to allow CNNs to solve vision-related tasks with random weights, meaning without learning. Similarly, Long Short-Term Memory (LSTM) has a strong inductive bias towards storing information over time. However, many real-world systems are governed by conservation laws, which lead to the redistribution of particular quantities -- e.g. in physical and economical systems. Our novel Mass-Conserving LSTM (MC-LSTM) adheres to these conservation laws by extending the inductive bias of LSTM to model the redistribution of those stored quantities. MC-LSTMs set a new state-of-the-art for neural arithmetic units at learning arithmetic operations, such as addition tasks, which have a strong conservation law, as the sum is constant over time. Further, MC-LSTM is applied to traffic forecasting, modelling a pendulum, and a large benchmark dataset in hydrology, where it sets a new state-of-the-art for predicting peak flows. In the hydrology example, we show that MC-LSTM states correlate with real-world processes and are therefore interpretable.},
+ author = {Hoedt, Pieter-Jan and Kratzert, Frederik and Klotz, Daniel and Halmich, Christina and Holzleitner, Markus and Nearing, Grey and Hochreiter, Sepp and Klambauer, Günter},
+ date = {2021-07-22},
+ eprint = {2101.05186},
+ eprinttype = {arxiv},
+ selected = {true},
+ title = {MC-LSTM: Mass-Conserving LSTM},
+ booktitle = {Proceedings of the 38th International Conference on Machine Learning},
+ pages = {4275--4286},
+ year = {2021},
+ volume = {139},
+ series = {Proceedings of Machine Learning Research},
+ publisher = {PMLR},
+ url = {https://proceedings.mlr.press/v139/hoedt21a.html},
+ pdf = {https://proceedings.mlr.press/v139/hoedt21a/hoedt21a.pdf},
+ software = {true},
+ code = {https://github.com/ml-jku/mc-lstm},
+ category={deep_learning}
+}
+
 
 @online{ramsauerHopfieldNetworksAll2020,
- abbr={arXiv},
+ abbr={ICLR},
  abstract = {We show that the transformer attention mechanism is the update rule of a modern Hopfield network with continuous states. This new Hopfield network can store exponentially (with the dimension) many patterns, converges with one update, and has exponentially small retrieval errors. The number of stored patterns is traded off against convergence speed and retrieval error. The new Hopfield network has three types of energy minima (fixed points of the update): (1) global fixed point averaging over all patterns, (2) metastable states averaging over a subset of patterns, and (3) fixed points which store a single pattern. Transformer and BERT models operate in their first layers preferably in the global averaging regime, while they operate in higher layers in metastable states. The gradient in transformers is maximal for metastable states, is uniformly distributed for global averaging, and vanishes for a fixed point near a stored pattern. Using the Hopfield network interpretation, we analyzed learning of transformer and BERT models. Learning starts with attention heads that average and then most of them switch to metastable states. However, the majority of heads in the first layers still averages and can be replaced by averaging, e.g. our proposed Gaussian weighting. In contrast, heads in the last layers steadily learn and seem to use metastable states to collect information created in lower layers. These heads seem to be a promising target for improving transformers. Neural networks with Hopfield networks outperform other methods on immune repertoire classification, where the Hopfield net stores several hundreds of thousands of patterns. We provide a new PyTorch layer called "Hopfield", which allows to equip deep learning architectures with modern Hopfield networks as a new powerful concept comprising pooling, memory, and attention. GitHub: https://github.com/ml-jku/hopfield-layers},
  author = {Ramsauer, Hubert and Schäfl, Bernhard and Lehner, Johannes and Seidl, Philipp and Widrich, Michael and Gruber, Lukas and Holzleitner, Markus and Pavlović, Milena and Sandve, Geir Kjetil and Greiff, Victor and Kreil, David and Kopp, Michael and Klambauer, Günter and Brandstetter, Johannes and Hochreiter, Sepp},
  date = {2020-07-16},
@@ -12,7 +377,8 @@
  year = {2020},
  blog = {https://ml-jku.github.io/hopfield-layers/},
  software = {true},
- code = {https://github.com/ml-jku/hopfield-layers}
+ code = {https://github.com/ml-jku/hopfield-layers},
+ category={hopfield}
 }
 
 
@@ -28,49 +394,75 @@
   blog = {https://ml-jku.github.io/chef/},
   selected={true},
   software = {true},
-  code = {https://github.com/ml-jku/chef}
+  code = {https://github.com/ml-jku/chef},
+  category={deep_learning}
+}
+
+@misc{holzleitner2020convergence,
+      title={Convergence Proof for Actor-Critic Methods Applied to PPO and RUDDER},
+      author={Markus Holzleitner and Lukas Gruber and José Arjona-Medina and Johannes Brandstetter and Sepp Hochreiter},
+      year={2020},
+      eprint={2012.01399},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      abbr = {arXiv},
+      selected = {true},
+      category = {reinforcement_learning}
 }
 
 
 @Article{patil2020alignrudder,
-  abbr          = {arXiv},
+  abbr          = {ICML},
   title         = {Align-RUDDER: Learning From Few Demonstrations by Reward Redistribution},
   author        = {Vihang P. Patil and Markus Hofmarcher and Marius-Constantin Dinu and Matthias Dorfer and Patrick M. Blies and Johannes Brandstetter and Jose A. Arjona-Medina and Sepp Hochreiter},
-  year          = {2020},
+  year          = {2022},
   abstract      = {Reinforcement Learning algorithms require a large number of samples to solve complex tasks with sparse and delayed rewards. Complex tasks can often be hierarchically decomposed into sub-tasks. A step in the Q-function can be associated with solving a sub-task, where the expectation of the return increases. RUDDER has been introduced to identify these steps and then redistribute reward to them, thus immediately giving reward if sub-tasks are solved. Since the problem of delayed rewards is mitigated, learning is considerably sped up. However, for complex tasks, current exploration strategies as deployed in RUDDER struggle with discovering episodes with high rewards. Therefore, we assume that episodes with high rewards are given as demonstrations and do not have to be discovered by exploration. Typically the number of demonstrations is small and RUDDER's LSTM model as a deep learning method does not learn well. Hence, we introduce Align-RUDDER, which is RUDDER with two major modifications. First, Align-RUDDER assumes that episodes with high rewards are given as demonstrations, replacing RUDDER's safe exploration and lessons replay buffer. Second, we replace RUDDER's LSTM model by a profile model that is obtained from multiple sequence alignment of demonstrations. Profile models can be constructed from as few as two demonstrations as known from bioinformatics. Align-RUDDER inherits the concept of reward redistribution, which considerably reduces the delay of rewards, thus speeding up learning. Align-RUDDER outperforms competitors on complex artificial tasks with delayed reward and few demonstrations. On the MineCraft ObtainDiamond task, Align-RUDDER is able to mine a diamond, though not frequently.},
   journal       = {arXiv preprint arXiv:2009.14108},
   url           = {https://arxiv.org/abs/2009.14108},
   primaryClass  = {cs.LG},
   selected      = {true},
   software      = {true},
-  code        = {https://github.com/ml-jku/align-rudder}
+  code        = {https://github.com/ml-jku/align-rudder},
+  category = {reinforcement_learning}
 }
 
-@Article{widrich2020modern,
+@inproceedings{widrich2020modern,
   abbr={NeurIPS},
-  author        = {Widrich, Michael and Sch{\"a}fl, Bernhard and Ramsauer, Hubert and Pavlovi{\'c}, Milena and Gruber, Lukas and Holzleitner, Markus and Brandstetter, Johannes and Sandve, Geir Kjetil and Greiff, Victor and Hochreiter, Sepp and Klambauer, G{\"u}nter},
-  title         = {Modern Hopfield networks and attention for immune repertoire classification},
-  journal       = {arXiv preprint arXiv:2007.13505},
-  arxiv         = {2007.13505},
-  year          = {2020},
-  __markedentry = {[gk:6]},
+  title={Modern Hopfield networks and attention for immune repertoire classification},
+  author={Widrich, Michael and Sch{\"a}fl, Bernhard and Ramsauer, Hubert and Pavlovi{\'c}, Milena and Gruber, Lukas and Holzleitner, Markus and Brandstetter, Johannes and Sandve, Geir Kjetil and Greiff, Victor and Hochreiter, Sepp and Klambauer, G{\"u}nter},
+  booktitle = {Advances in Neural Information Processing Systems},
+  editor = {H. Larochelle and M. Ranzato and R. Hadsell and M.F. Balcan and H. Lin},
+  publisher = {Curran Associates, Inc.},
+  volume = {33 (preproceedings)},
+  year = {2020},
+  abstract={A central mechanism in machine learning is to identify, store, and recognize patterns. How to learn, access, and retrieve such patterns is crucial in Hopfield networks and the more recent transformer architectures. We show that the attention mechanism of transformer architectures is actually the update rule of modern Hopfield networks that can store exponentially many patterns. We exploit this high storage capacity of modern Hopfield networks to solve a challenging multiple instance learning (MIL) problem in computational biology: immune repertoire classification. In immune repertoire classification, a vast number of immune receptors are used to predict the immune status of an individual. This constitutes a MIL problem with an unprecedentedly massive number of instances, two orders of magnitude larger than currently considered problems, and with an extremely low witness rate. Accurate and interpretable machine learning methods solving this problem could pave the way towards new vaccines and therapies, which is currently a very relevant research topic intensified by the COVID-19 crisis. In this work, we present our novel method DeepRC that integrates transformer-like attention, or equivalently modern Hopfield networks, into deep learning architectures for massive MIL such as immune repertoire classification. We demonstrate that DeepRC outperforms all other methods with respect to predictive performance on large-scale experiments including simulated and real-world virus infection data and enables the extraction of sequence motifs that are connected to a given disease class. Source code and datasets: https://github.com/ml-jku/DeepRC},
+  url           = {https://proceedings.neurips.cc/paper/2020/file/da4902cb0bc38210839714ebdcf0efc3-Paper.pdf},
   selected={true},
   software = {true},
-  code = {https://github.com/ml-jku/DeepRC}
+  code = {https://github.com/ml-jku/DeepRC},
+  video = {https://nips.cc/virtual/2020/public/poster_da4902cb0bc38210839714ebdcf0efc3.html},
+  category={hopfield},
+  __markedentry = {[gk:6]}
 }
 
 
 @inproceedings{Arjona:19,
   abbr={NeurIPS},
   title = {RUDDER: Return Decomposition for Delayed Rewards},
-  author = {J. A. Arjona-Medina and M. Gillhofer and M. Widrich and
-          T. Unterthiner and J. Brandstetter and S. Hochreiter},
-  booktitle = {Advances in Neural Information Processing Systems 32},
-  abstract = {We propose RUDDER, a novel reinforcement learning approach for delayed rewards in finite Markov decision processes (MDPs). In MDPs the Q-values are equal to the expected immediate reward plus the expected future rewards. The latter are related to bias problems in temporal difference (TD) learning and to high variance problems in Monte Carlo (MC) learning. Both problems are even more severe when rewards are delayed. RUDDER aims at making the expected future rewards zero, which simplifies Q-value estimation to computing the mean of the immediate reward. We propose the following two new concepts to push the expected future rewards toward zero. (i) Reward redistribution that leads to return-equivalent decision processes with the same optimal policies and, when optimal, zero expected future rewards. (ii) Return decomposition via contribution analysis which transforms the reinforcement learning task into a regression task at which deep learning excels. On artificial tasks with delayed rewards, RUDDER is significantly faster than MC and exponentially faster than Monte Carlo Tree Search (MCTS), TD(\{\textbackslash lambda\}), and reward shaping approaches. At Atari games, RUDDER on top of a Proximal Policy Optimization (PPO) baseline improves the scores, which is most prominent at games with delayed rewards. Source code is available at \textbackslash url\{https://github.com/ml-jku/rudder\} and demonstration videos at \textbackslash url\{https://goo.gl/EQerZV\}.},
-  url = {https://arxiv.org/abs/2009.14108},
-  pages = {13566-13577},
+  author = {Arjona-Medina, Jose A. and Gillhofer, Michael and Widrich, Michael and Unterthiner, Thomas and Brandstetter, Johannes and Hochreiter, Sepp},
+  booktitle = {Advances in Neural Information Processing Systems},
+  editor = {H. Wallach and H. Larochelle and A. Beygelzimer and F. d\textquotesingle Alch\'{e}-Buc and E. Fox and R. Garnett},
+  pages = {13566--13577},
+  publisher = {Curran Associates, Inc.},
+  volume = {32},
   year = {2019},
-  blog = {https://ml-jku.github.io/rudder/}
+  abstract = {We propose RUDDER, a novel reinforcement learning approach for delayed rewards in finite Markov decision processes (MDPs). In MDPs the Q-values are equal to the expected immediate reward plus the expected future rewards. The latter are related to bias problems in temporal difference (TD) learning and to high variance problems in Monte Carlo (MC) learning. Both problems are even more severe when rewards are delayed. RUDDER aims at making the expected future rewards zero, which simplifies Q-value estimation to computing the mean of the immediate reward. We propose the following two new concepts to push the expected future rewards toward zero. (i) Reward redistribution that leads to return-equivalent decision processes with the same optimal policies and, when optimal, zero expected future rewards. (ii) Return decomposition via contribution analysis which transforms the reinforcement learning task into a regression task at which deep learning excels. On artificial tasks with delayed rewards, RUDDER is significantly faster than MC and exponentially faster than Monte Carlo Tree Search (MCTS), TD(\{\textbackslash lambda\}), and reward shaping approaches. At Atari games, RUDDER on top of a Proximal Policy Optimization (PPO) baseline improves the scores, which is most prominent at games with delayed rewards. Source code is available at \textbackslash url\{https://github.com/ml-jku/rudder\} and demonstration videos at \textbackslash url\{https://goo.gl/EQerZV\}.},
+  url = {https://papers.nips.cc/paper/2019/file/16105fb9cc614fc29e1bda00dab60d41-Paper.pdf},
+  software = {true},
+  code = {https://github.com/ml-jku/rudder},
+  video = {https://www.youtube.com/playlist?list=PLDfrC-Vpg-CzVTqSjxVeLQZy3f7iv9vyY},
+  blog = {https://ml-jku.github.io/rudder/},
+  category = {reinforcement_learning}
 }
 
 @incollection{arrasExplainingInterpretingLSTMs2019,
@@ -96,7 +488,8 @@
  title = {Rectified Factor Networks for Biclustering of Omics Data},
  url = {https://doi.org/10.1093/bioinformatics/btx226},
  volume = {33},
- year = {2017}
+ year = {2017},
+ category={ai_drug}
 }
 
 @article{fischerDefiningObjectiveClusters2018,
@@ -139,7 +532,8 @@
  selected = {false},
  title = {{{GANs Trained}} by a {{Two Time}}-{{Scale Update Rule Converge}} to a {{Local Nash Equilibrium}}},
  url = {http://arxiv.org/abs/1706.08500},
- year = {2017}
+ year = {2017},
+ category={deep_learning}
 }
 
 @article{hochreiterMachineLearningDrug2018,
@@ -153,7 +547,8 @@
  title = {Machine {{Learning}} in {{Drug Discovery}}},
  url = {https://doi.org/10.1021/acs.jcim.8b00478},
  volume = {58},
- year = {2018}
+ year = {2018},
+ category={ai_drug}
 }
 
 @online{hofmarcherLargescaleLigandbasedVirtual2020,
@@ -166,7 +561,8 @@
  selected = {true},
  title = {Large-Scale Ligand-Based Virtual Screening for {{SARS}}-{{CoV}}-2 Inhibitors Using Deep Neural Networks},
  url = {http://arxiv.org/abs/2004.00979},
- year = {2020}
+ year = {2020},
+ category={ai_healthcare}
 }
 
 @incollection{hofmarcherVisualSceneUnderstanding2019,
@@ -179,7 +575,8 @@
  selected = {false},
  title = {Visual {{Scene Understanding}} for {{Autonomous Driving Using Semantic Segmentation}}},
  url = {https://doi.org/10.1007/978-3-030-28954-6_15},
- year = {2019}
+ year = {2019},
+ category={ai4drive}
 }
 
 @online{kimeswengerDetectingCutaneousBasal2019,
@@ -192,8 +589,26 @@
  selected = {false},
  title = {Detecting Cutaneous Basal Cell Carcinomas in Ultra-High Resolution and Weakly Labelled Histopathological Images},
  url = {http://arxiv.org/abs/1911.06616},
- year = {2019}
+ year = {2019},
+ category={ai_healthcare}
 }
+
+@online{lehner2019patch,
+ abbr={arXiv},
+ abstract = {We introduce Patch Refinement a two-stage model for accurate 3D object detection and localization from point cloud data. Patch Refinement is composed of two independently trained Voxelnet-based networks, a Region Proposal Network (RPN) and a Local Refinement Network (LRN). We decompose the detection task into a preliminary Bird's Eye View (BEV) detection step and a local 3D detection step. Based on the proposed BEV locations by the RPN, we extract small point cloud subsets ("patches"), which are then processed by the LRN, which is less limited by memory constraints due to the small area of each patch. Therefore, we can apply encoding with a higher voxel resolution locally. The independence of the LRN enables the use of additional augmentation techniques and allows for an efficient, regression focused training as it uses only a small fraction of each scene. Evaluated on the KITTI 3D object detection benchmark, our submission from January 28, 2019, outperformed all previous entries on all three difficulties of the class car, using only 50 % of the available training data and only LiDAR information.},
+ author = {Lehner, Johannes and Mitterecker, Andreas and Adler, Thomas  and Hofmarcher, Markus and Nessler, Bernhard and Hochreiter, Sepp },
+ date = {2019-10-09},
+ eprint = {1910.04093},
+ eprinttype = {arxiv},
+ pdf = {https://arxiv.org/pdf/1910.04093},
+ selected = {false},
+ title = {Patch Refinement - Localized 3D Object Detection},
+ url = {https://arxiv.org/abs/1910.04093},
+ year = {2019},
+ category={ai4drive}
+}
+
+
 
 @article{klambauerMachineLearningDrug2019,
  author = {Klambauer, Günter and Hochreiter, Sepp and Rarey, Matthias},
@@ -206,7 +621,8 @@
  title = {Machine {{Learning}} in {{Drug Discovery}}},
  url = {https://doi.org/10.1021/acs.jcim.9b00136},
  volume = {59},
- year = {2019}
+ year = {2019},
+ category={ai_drug}
 }
 
 @online{klambauerSelfNormalizingNeuralNetworks2017,
@@ -220,7 +636,8 @@
  selected = {false},
  title = {Self-{{Normalizing Neural Networks}}},
  url = {http://arxiv.org/abs/1706.02515},
- year = {2017}
+ year = {2017},
+ category={deep_learning}
 }
 
 @article{kratzertImprovedPredictionsUngauged2019,
@@ -235,7 +652,9 @@
  title = {Toward {{Improved Predictions}} in {{Ungauged Basins}}: {{Exploiting}} the {{Power}} of {{Machine Learning}}},
  url = {https://doi.org/10.1029/2019WR026065},
  volume = {55},
- year = {2019}
+ year = {2019},
+ category = {ai4earth},
+ abbr={WRR}
 }
 
 @article{kratzertLearningUniversalRegional2019,
@@ -250,7 +669,9 @@
  title = {Towards Learning Universal, Regional, and Local Hydrological Behaviors via Machine Learning Applied to Large-Sample Datasets},
  url = {https://doi.org/10.5194/hess-23-5089-2019},
  volume = {23},
- year = {2019}
+ year = {2019},
+ category = {ai4earth},
+ abbr={HESS}
 }
 
 @incollection{kratzertNeuralHydrologyInterpretingLSTMs2019,
@@ -262,7 +683,9 @@
  selected = {false},
  title = {{{NeuralHydrology}} – {{Interpreting LSTMs}} in {{Hydrology}}},
  url = {https://doi.org/10.1007/978-3-030-28954-6_19},
- year = {2019}
+ year = {2019},
+ category = {ai4earth},
+ abbr={Springer}
 }
 
 @article{mayrLargescaleComparisonMachine2018,
@@ -273,7 +696,8 @@
  selected = {false},
  title = {Large-Scale Comparison of Machine Learning Methods for Drug Target Prediction on {{ChEMBL}}},
  url = {https://doi.org/10.1039/C8SC00148K},
- year = {2018}
+ year = {2018},
+ category={ai_drug}
 }
 
 @article{mendenCommunityAssessmentAdvance2019,
@@ -288,7 +712,8 @@
  title = {Community Assessment to Advance Computational Prediction of Cancer Drug Combinations in a Pharmacogenomic Screen},
  url = {https://doi.org/10.1038/s41467-019-09799-2},
  volume = {10},
- year = {2019}
+ year = {2019},
+ category={ai_drug}
 }
 
 @article{povysilPanelcnMOPSCopynumber2017,
@@ -303,7 +728,8 @@
  title = {Panelcn.{{MOPS}}: {{Copy}}-Number Detection in Targeted {{NGS}} Panel Data for Clinical Diagnostics},
  url = {https://doi.org/10.1002/humu.23237},
  volume = {38},
- year = {2017}
+ year = {2017},
+ category={ai_drug}
 }
 
 @article{preuerDeepSynergyPredictingAnticancer2018,
@@ -318,7 +744,8 @@
  title = {{{DeepSynergy}}: Predicting Anti-Cancer Drug Synergy with {{Deep Learning}}},
  url = {https://doi.org/10.1093/bioinformatics/btx806},
  volume = {34},
- year = {2018}
+ year = {2018},
+ category={ai_drug}
 }
 
 @article{preuerFrechetChemNetDistance2018,
@@ -334,7 +761,8 @@
  title = {Fréchet {{ChemNet Distance}}: {{A Metric}} for {{Generative Models}} for {{Molecules}} in {{Drug Discovery}}},
  url = {https://doi.org/10.1021/acs.jcim.8b00234},
  volume = {58},
- year = {2018}
+ year = {2018},
+ category={ai_drug}
 }
 
 @incollection{preuerInterpretableDeepLearning2019,
@@ -346,7 +774,8 @@
  selected = {false},
  title = {Interpretable {{Deep Learning}} in {{Drug Discovery}}},
  url = {https://doi.org/10.1007/978-3-030-28954-6_18},
- year = {2019}
+ year = {2019},
+ category={ai_drug}
 }
 
 @article{renzFailureModesMolecule2020a,
@@ -359,17 +788,20 @@
  url = {https://doi.org/10.1016/j.ddtec.2020.09.003},
  year = {2020},
  code = {https://github.com/ml-jku/mgenerators-failure-modes},
- software = {true}
+ software = {true},
+ category={ai_drug}
 }
 
 @article{renzUncertaintyEstimationMethods2019,
+ abbr={NeurIPS},
  abstract = {It takes about a decade to develop a new drug by a process in which a large number of decisions have to be made. Those decisions are critical for the success or failure of a multi-million dollar drug discovery project, which could save many lives or increase life quality. Decisions in early phases of drug discovery, such as the selection of certain series of chemical compounds, are particularly impactful on the success rate. Machine learning models are increasingly used to inform the decision making process by predicting desired effects, undesired effects, such as toxicity, molecular properties, or which wet-lab test to perform next. Thus, accurately quantifying the uncertainties of the models’ outputs is critical, for example, in order to calculate expected utilities, to estimate the risk and the potential gain. In this work, we review, assess and compare recent uncertainty estimation methods with respect to their use in drug discovery projects. We test both, which methods give well calibrated prediction and which ones perform well at misclassification detection. For the latter, we find the entropy of the predictive distribution performs best. Finally, we discuss the problem of defining out-of-distribution samples for prediction tasks on chemical compounds.},
  author = {Renz, Philipp and Hochreiter, Sepp and Klambauer, Günter},
  date = {2019},
  journaltitle = {NeurIPS-2019 Workshop on  Safety and Robustness in Decision Making},
  selected = {false},
  title = {Uncertainty {{Estimation Methods}} to {{Support Decision}}-{{Making}} in {{Early Phases}} of {{Drug Discovery}}},
- year = {2019}
+ year = {2019},
+ category={ai_drug}
 }
 
 @inproceedings{rumetshoferHumanlevelProteinLocalization2018,
@@ -381,7 +813,8 @@
  selected = {false},
  title = {Human-Level {{Protein Localization}} with {{Convolutional Neural Networks}}},
  url = {https://openreview.net/forum?id=ryl5khRcKm},
- year = {2018}
+ year = {2018},
+ category={ai_healthcare}
 }
 
 @online{sewardFirstOrderGenerative2018,
@@ -394,7 +827,8 @@
  selected = {false},
  title = {First {{Order Generative Adversarial Networks}}},
  url = {http://arxiv.org/abs/1802.04591},
- year = {2018}
+ year = {2018},
+ category={deep_learning}
 }
 
 @article{steinwandterMultivariateAnalyticsChromatographic2018,
@@ -414,7 +848,7 @@
 @article{sturmIndustryscaleApplicationEvaluation2020,
  abstract = {Artificial intelligence (AI) is undergoing a revolution thanks to the breakthroughs of machine learning algorithms in computer vision, speech recognition, natural language processing and generative modelling. Recent works on publicly available pharmaceutical data showed that AI methods are highly promising for Drug Target prediction. However, the quality of public data might be different than that of industry data due to different labs reporting measurements, different measurement techniques, fewer samples and less diverse and specialized assays. As part of a European funded project (ExCAPE), that brought together expertise from pharmaceutical industry, machine learning, and high-performance computing, we investigated how well machine learning models obtained from public data can be transferred to internal pharmaceutical industry data. Our results show that machine learning models trained on public data can indeed maintain their predictive power to a large degree when applied to industry data. Moreover, we observed that deep learning derived machine learning models outperformed comparable models, which were trained by other machine learning algorithms, when applied to internal pharmaceutical company datasets. To our knowledge, this is the first large-scale study evaluating the potential of machine learning and especially deep learning directly at the level of industry-scale settings and moreover investigating the transferability of publicly learned target prediction models towards industrial bioactivity prediction pipelines.},
  author = {Sturm, Noé and Mayr, Andreas and Le Van, Thanh and Chupakhin, Vladimir and Ceulemans, Hugo and Wegner, Joerg and Golib-Dzib, Jose-Felipe and Jeliazkova, Nina and Vandriessche, Yves and Böhm, Stanislav and Cima, Vojtech and Martinovic, Jan and Greene, Nigel and Vander Aa, Tom and Ashby, Thomas J. and Hochreiter, Sepp and Engkvist, Ola and Klambauer, Günter and Chen, Hongming},
- date = {2020-04-19},
+ date = {2020-11-19},
  journaltitle = {Journal of Cheminformatics},
  number = {1},
  pages = {26},
@@ -422,7 +856,10 @@
  title = {Industry-Scale Application and Evaluation of Deep Learning for Drug Target Prediction},
  url = {https://doi.org/10.1186/s13321-020-00428-5},
  volume = {12},
- year = {2020}
+ year = {2020},
+ category={ai_drug},
+ abbr={Springer},
+ selected={True}
 }
 
 @online{unterthinerCoulombGANsProvably2018,
@@ -435,11 +872,12 @@
  shorttitle = {Coulomb {{GANs}}},
  title = {Coulomb {{GANs}}: {{Provably Optimal Nash Equilibria}} via {{Potential Fields}}},
  url = {http://arxiv.org/abs/1708.08819},
- year = {2018}
+ year = {2018},
+ category={deep_learning}
 }
 
 @article{widrichDeepRCImmuneRepertoire2020,
-  abbr={bioarXiv},
+ abbr={bioarXiv},
  abstract = {{$<$}h3{$>$}Abstract{$<$}/h3{$>$} {$<$}p{$>$}High-throughput immunosequencing allows reconstructing the immune repertoire of an individual, which is a unique opportunity for new immunotherapies, immunodiagnostics, and vaccine design. Since immune repertoires are shaped by past and current immune events, such as infection and disease, and thus record an individual’s state of health, immune repertoire sequencing data may enable the prediction of health and disease using machine learning. However, finding the connections between an individual’s repertoire and the individual’s disease class, with potentially hundreds of thousands to millions of short sequences per individual, poses a difficult and unique challenge for machine learning methods. In this work, we present our method DeepRC that combines a Deep Learning architecture with attentionbased multiple instance learning. To validate that DeepRC accurately predicts an individual’s disease class based on its immune repertoire and determines the associated class-specific sequence motifs, we applied DeepRC in four large-scale experiments encompassing ground-truth simulated as well as real-world virus infection data. We demonstrate that DeepRC outperforms all tested methods with respect to predictive performance and enables the extraction of those sequence motifs that are connected to a given disease class.{$<$}/p{$>$}},
  author = {Widrich, Michael and Schäfl, Bernhard and Pavlović, Milena and Sandve, Geir Kjetil and Hochreiter, Sepp and Greiff, Victor and Klambauer, Günter},
  date = {2020-04-13},
@@ -450,5 +888,88 @@
  shorttitle = {{{DeepRC}}},
  title = {{{DeepRC}}: {{Immune}} Repertoire Classification with Attention-Based Deep Massive Multiple Instance Learning},
  url = {https://doi.org/10.1101/2020.04.12.038158},
- year = {2020}
+ year = {2020},
+ category={deep_learning}
+}
+
+@inproceedings{lehner2019,
+  abbr={NeurIPS},
+  title = {Patch Refinement – Localized {{3D}} Object Detection},
+  booktitle = {Workshop on Machine Learning for Autonomous Driving, Neural Information Processing Systems ({{NeurIPS}})},
+  author = {Lehner, Johannes and 
+            Mitterecker, Andreas and 
+            Adler, Thomas and 
+            Hofmarcher, Markus and 
+            Nessler, Bernhard and 
+            Hochreiter, Sepp},
+  date = {2019}
+}
+
+@inproceedings{treml2016,
+  abbr={NeurIPS},
+  title = {Speeding up Semantic Segmentation for Autonomous Driving},
+  booktitle = {Workshop on Machine Learning for Intelligent Transport Systems, Neural Information Processing Systems ({{NIPS}})},
+  author = {Treml, Michael and 
+            Arjona-Medina, José and 
+            Unterthiner, Thomas and 
+            Durgesh, Rupesh and 
+            Friedmann, Felix and 
+            Schuberth, Peter and 
+            Mayr, Andreas and 
+            Heusel, Martin and 
+            Hofmarcher, Markus and 
+            Widrich, Michael and 
+            Bodenhofer, Ulrich and 
+            Nessler, Bernhard and 
+            Hochreiter, Sepp},
+  date = {2016}
+}
+
+@article{hofmarcher2019,
+  abbr={JCIM},
+  title = {Accurate {{Prediction}} of {{Biological Assays}} with {{High}}-{{Throughput Microscopy Images}} and {{Convolutional Networks}}},
+  author = {Hofmarcher, Markus and 
+            Rumetshofer, Elisabeth and 
+            Clevert, Djork-Arné and 
+            Hochreiter, Sepp and 
+            Klambauer, Günter},
+  date = {2019-03-25},
+  journaltitle = {Journal of Chemical Information and Modeling},
+  shortjournal = {J. Chem. Inf. Model.},
+  volume = {59},
+  pages = {1163--1171},
+  publisher = {{American Chemical Society}},
+  issn = {1549-9596},
+  doi = {10.1021/acs.jcim.8b00670},
+  url = {https://doi.org/10.1021/acs.jcim.8b00670},
+  urldate = {2020-06-01},
+  abstract = {Predicting the outcome of biological assays based on high-throughput imaging data is a highly promising task in drug discovery since it can tremendously increase hit rates and suggest novel chemical scaffolds. However, end-to-end learning with convolutional neural networks (CNNs) has not been assessed for the task biological assay prediction despite the success of these networks at visual recognition. We compared several CNNs trained directly on high-throughput imaging data to a) CNNs trained on cell-centric crops and to b) the current state-of-the-art: fully connected networks trained on precalculated morphological cell features. The comparison was performed on the Cell Painting data set, the largest publicly available data set of microscopic images of cells with approximately 30,000 compound treatments. We found that CNNs perform significantly better at predicting the outcome of assays than fully connected networks operating on precomputed morphological features of cells. Surprisingly, the best performing method could predict 32\% of the 209 biological assays at high predictive performance (AUC {$>$} 0.9) indicating that the cell morphology changes contain a large amount of information about compound activities. Our results suggest that many biological assays could be replaced by high-throughput imaging together with convolutional neural networks and that the costly cell segmentation and feature extraction step can be replaced by convolutional neural networks.},
+  number = {3}
+}
+
+
+@article{kimeswenger2020ArtificialNeuralNetworks,
+  title = {Artificial Neural Networks and Pathologists Recognize Basal Cell Carcinomas Based on Different Histological Patterns},
+  author = {Kimeswenger, Susanne and 
+            Tschandl, Philipp and 
+            Noack, Petar and 
+            Hofmarcher, Markus and 
+            Rumetshofer, Elisabeth and 
+            Kindermann, Harald and 
+            Silye, Rene and 
+            Hochreiter, Sepp and 
+            Kaltenbrunner, Martin and 
+            Guenova, Emmanuella and 
+            Klambauer, Guenter and 
+            Hoetzenecker, Wolfram},
+  date = {2020-11-13},
+  journaltitle = {Modern Pathology},
+  pages = {1--9},
+  publisher = {{Nature Publishing Group}},
+  issn = {1530-0285},
+  doi = {10.1038/s41379-020-00712-7},
+  url = {https://www.nature.com/articles/s41379-020-00712-7},
+  urldate = {2020-12-03},
+  abstract = {Recent advances in artificial intelligence, particularly in the field of deep learning, have enabled researchers to create compelling algorithms for medical image analysis. Histological slides of basal cell carcinomas (BCCs), the most frequent skin tumor, are accessed by pathologists on a daily basis and are therefore well suited for automated prescreening by neural networks for the identification of cancerous regions and swift tumor classification.},
+  langid = {english}
 }

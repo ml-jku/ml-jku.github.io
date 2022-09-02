@@ -16,8 +16,8 @@ footer_text: >
 
 jku_logo: /assets/img/jku_ml_1.svg
 ellis_logo: /assets/img/ellis_linz.jpeg
-url: vihangp.github.io # the base hostname & protocol for your site
-baseurl: /duo-iml # the subpath of your site, e.g. /blog/
+url: ml-jku.github.io # the base hostname & protocol for your site
+baseurl:  # the subpath of your site, e.g. /blog/
 last_updated: false # set to true if you want to display last updated in the footer
 
 # -----------------------------------------------------------------------------
@@ -55,7 +55,7 @@ keybase_username: # your keybase user name
 
 contact_note: #
 
-google_analytics: UA-XXXXXXXXX # out your google-analytics code
+google_analytics: G-KC0VGMCD6W # out your google-analytics code
 
 # -----------------------------------------------------------------------------
 # Blog
@@ -148,6 +148,8 @@ scholar:
   details_dir: bibliography
   details_layout: bibtex.html
   details_link: Details
+  sort_by: year, month
+  order: descending, ascending
 
   query: "@*"
 
@@ -155,7 +157,7 @@ scholar:
 # Optional Features
 # -----------------------------------------------------------------------------
 
-enable_google_analytics:  false
+enable_google_analytics:  true
 enable_mansory:           true
 enable_math:              true
 enable_tooltips:          false
