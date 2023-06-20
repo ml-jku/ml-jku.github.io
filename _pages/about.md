@@ -6,7 +6,7 @@ permalink: /
 
 profile:
   align: center
-  image: group_pics/barbeque_2022.jpg
+  image: group_pics/jku_sp3.jpg
 
 news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
