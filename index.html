@@ -1,0 +1,1507 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>Institute for Machine Learning @ JKU</title>
+<meta name="description" content="Research blog of the Institute for Machine Learning @ JKU.
+">
+
+<!-- Open Graph -->
+
+
+<!-- Bootstrap & MDB -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha512-MoRNloxbStBcD8z3M/2BmnT+rg4IsMxPkXaGh2zD6LGNNFE80W3onsAhRcMAMrSoyWL9xD7Ert0men7vR8LUZg==" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" integrity="sha512-RO38pBRxYH3SoOprtPTD86JFOclM51/XTIdEPh5j8sj4tp8jmQIx26twG52UaLi//hQldfrh7e51WzP9wuP32Q==" crossorigin="anonymous" />
+
+<!-- Fonts & Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"  integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css" integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
+
+<!-- Code Syntax Highlighting -->
+<link rel="stylesheet" href="https://gitcdn.link/repo/jwarby/jekyll-pygments-themes/master/github.css" />
+
+<!-- Styles -->
+<link rel="shortcut icon" href="/assets/img/favicon.ico">
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<link rel="canonical" href="/">
+
+<!-- Theming-->
+
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KC0VGMCD6W"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-KC0VGMCD6W');
+  </script>
+
+
+    
+<!-- MathJax -->
+<script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.1.2/es5/tex-mml-chtml.js"></script>
+<script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+
+  </head>
+
+
+  <body class="fixed-top-nav ">
+
+
+    <!-- Header -->
+
+    <!-- <div class="container-fluid mx-0 px-0">
+  <div class="logo d-flex justify-content-center align-items-center">
+    <img class="jku-logo img-fluid rounded" src="/assets/img/jku_ml_1.svg" width=120px height=40px>
+    <img class="ellis-logo img-fluid rounded" src="/assets/img/ellis_linz.jpeg" width=250px height=40px>
+  </div>
+</div> -->
+
+
+<header>
+    <!-- Nav Bar -->
+
+      <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
+        <a class="navbar-brand title font-weight-lighter">
+         <!-- <span>Institute</span> for Machine  Learning @ JKU -->
+         <img class="rounded" src="/assets/img/jku_ml_1.svg" width=100px height=45px>
+         <img class="rounded" src="/assets/img/ellis_linz.jpeg" width=200px height=45px>
+        </a>
+    <div class="container">
+      
+      <!-- Navbar Toogle -->
+      <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar top-bar"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>
+      </button>
+      <div class="collapse navbar-collapse text-right" id="navbarNav">
+        <ul class="navbar-nav ml-auto flex-nowrap">
+          <!-- About -->
+          <li class="nav-item active">
+            <a class="nav-link" href="/">
+              about
+              
+                <span class="sr-only">(current)</span>
+              
+            </a>
+          </li>
+          
+          <!-- Blog -->
+          <li class="nav-item ">
+            <a class="nav-link" href="/blog/">
+              blog
+              
+            </a>
+          </li>
+          
+          <!-- Other pages -->
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="nav-item ">
+                
+                    <div class="dropdown">
+                      <a class="nav-link" href="/research/">
+                        research
+                        
+                      </a>
+                        <div class="dropdown-content">
+                          <a href="/research/deep_learning">Deep Learning</a>
+                          <a href="/research/ai_healthcare">AI in Health Care</a>
+                          <a href="/research/ai_drug">AI in Drug Discovery</a>
+                          <a href="/research/reinforcement_learning">Reinforcement Learning</a>
+                          <a href="/research/hopfield_networks">Modern Hopfield Networks</a>
+                          <a href="/research/ai4earth">AI 4 Earth</a>
+                          <a href="/research/ai4drive">AI 4 Driving</a>
+                        </div>
+                      </div>
+                    
+                
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          <li class="nav-item ">
+                
+                <a class="nav-link" href="/publications/">
+                  publications
+                  
+                </a>
+                
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="nav-item ">
+                
+                <a class="nav-link" href="/talks/">
+                  talks
+                  
+                </a>
+                
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          <li class="nav-item ">
+              <a class="nav-link" href="https://www.jku.at/en/institute-for-machine-learning/about-us/team/" target="_blank" rel="noopener noreferrer">
+                people
+                
+              </a>
+          </li>
+          
+          
+          
+          
+          
+          <li class="nav-item ">
+                
+                <a class="nav-link" href="/software/">
+                  software
+                  
+                </a>
+                
+          </li>
+          
+          
+          
+          
+          
+          <li class="nav-item ">
+              <a class="nav-link" href="https://www.jku.at/en/institute-for-machine-learning/" target="_blank" rel="noopener noreferrer">
+                contact
+                
+              </a>
+          </li>
+          
+          
+          
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+</header>
+
+
+    <!-- Content -->
+
+    <div class="container mt-5">
+      <div class="post">
+
+  <article>
+    
+    <div class="profile float-">
+      
+        <img class="img-fluid z-depth-1 rounded" src="/assets/img/group_pics/jku_sp3.jpg">
+      
+      
+    </div>
+    
+
+    <div class="clearfix">
+      <div class="about-text">
+      <p>The Institute for Machine Learning conducts research and provides profound education in machine learning. Its research focuses on development of machine learning and statistical methods. We further apply these methods to various domains like medicine, drug discovery, autonomous driving, earth science, natural language processing, control and others. The institute is led by <a href="https://en.wikipedia.org/wiki/Sepp_Hochreiter">Sepp Hochreiter</a> and is affiliated with Johannes Kepler University Linz and is also one of the founding units of European Lab for Learning and Intelligent Systems (<a href="https://ellis.eu/">ELLIS</a>).</p>
+
+<p>The Institute for Machine Learning is located in the beautiful city of Linz, Austria. Located near the amazing Austrian alps, the once European capital of culture mixes the right balance between nature and urban life. A part of the institute is also located in the city of Vienna, Austria.</p>
+
+    </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col-sm-4 col-xs-6 mt-3 mt-md-0 about-text">
+            
+              <div class="news">
+  <h2>news</h2>
+  
+    <div class="table-responsive">
+      <table class="table table-sm table-borderless">
+      
+      
+        <tr>
+          <td>
+            <p class="post-meta">Apr 20, 2023</p>
+            
+              Paper accepted with oral talk at MIDL 2023: <a href="https://openreview.net/pdf?id=newlahoISt1" target="_blank">Learning Retinal Representations from Multi-modal Imaging via Contrastive Pre-training</a>
+
+            
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <p class="post-meta">Jan 10, 2023</p>
+            
+              Paper accepted with oral talk at AAAI 2023: <a href="https://ojs.aaai.org/index.php/AAAI/article/view/26092" target="_blank">Boundary Graph Neural Networks for 3D Simulations</a>
+
+            
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <p class="post-meta">Jan 11, 2021</p>
+            
+              Paper accepted at ICLR 2021:
+<a href="http://arxiv.org/abs/2008.02217" target="_blank"> Hopfield Networks is all you need </a>
+
+            
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <p class="post-meta">Dec 22, 2020</p>
+            
+              Talk by Sepp Hochreiter on the topic of Modern Hopfield networks and Dense associative memories:
+<a href="https://youtu.be/bsdPZJKOlQs" target="_blank"> link </a>
+
+            
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <p class="post-meta">Nov 25, 2020</p>
+            
+              New blog post on the relationship of Performers and Hopfield Networks:
+<a href="https://ml-jku.github.io/blog-post-performer/" target="_blank"> link </a>
+
+            
+          </td>
+        </tr>
+      
+      </table>
+    </div>
+  
+</div>
+
+              
+        </div>
+        <div class="col-sm-8 col-xs-6 mt-3 mt-md-0 about-text">
+            
+              <div class="publications_about">
+  <h2>recent publications</h2>
+  <ol class="bibliography"><li><div class="row">
+  <div class="col-sm-2 abbr">
+  
+    
+    <abbr class="badge">arXiv</abbr>
+    
+  
+  </div>
+
+  <div id="schweighofer2023quam" class="col-sm-8">
+    
+      <div class="title">Quantification of Uncertainty with Adversarial Models</div>
+      <div class="author">
+        
+          
+            
+              
+                
+                  Schweighofer, K.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Aichberger, L.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Ielanski, M.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Klambauer, G.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  and Hochreiter, S.
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+      
+        2023
+      
+      </div>
+    
+
+    <div class="links">
+    
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+    
+    
+    
+      <a href="https://arxiv.org/abs/2307.03217" class="btn btn-sm z-depth-0" role="button" target="_blank">url</a>
+    
+    
+    
+    
+    
+    
+      <a href="https://github.com/ml-jku/quam" class="btn btn-sm z-depth-0" role="button" target="_blank">Code</a>
+    
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+    <div class="abstract hidden">
+      <p>Quantifying uncertainty is important for actionable predictions in real-world applications. A crucial part of predictive uncertainty quantification is the estimation of epistemic uncertainty, which is defined as an integral of the product between a divergence function and the posterior. Current methods such as Deep Ensembles or MC dropout underperform at estimating the epistemic uncertainty, since they primarily consider the posterior when sampling models. We suggest Quantification of Uncertainty with Adversarial Models (QUAM) to better estimate the epistemic uncertainty. QUAM identifies regions where the whole product under the integral is large, not just the posterior. Consequently, QUAM has lower approximation error of the epistemic uncertainty compared to previous methods. Models for which the product is large correspond to adversarial models (not adversarial examples!). Adversarial models have both a high posterior as well as a high divergence between their predictions and that of a reference model. Our experiments show that QUAM excels in capturing epistemic uncertainty for deep learning models and outperforms previous methods on challenging tasks in the vision domain.</p>
+    </div>
+    
+  </div>
+</div>
+</li>
+<li><div class="row">
+  <div class="col-sm-2 abbr">
+  
+    
+    <abbr class="badge">arXiv</abbr>
+    
+  
+  </div>
+
+  <div id="paischer2023sitta" class="col-sm-8">
+    
+      <div class="title">SITTA: A Semantic Image-Text Alignment for Image Captioning</div>
+      <div class="author">
+        
+          
+            
+              
+                
+                  Paischer, F.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Adler, T.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Hofmarcher, M.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  and Hochreiter, S.
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+        <em></em>
+      
+      
+        2023
+      
+      </div>
+    
+
+    <div class="links">
+    
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+    
+    
+    
+      <a href="https://arxiv.org/abs/2307.05591" class="btn btn-sm z-depth-0" role="button" target="_blank">url</a>
+    
+    
+    
+    
+    
+    
+      <a href="https://github.com/ml-jku/semantic-image-text-alignment" class="btn btn-sm z-depth-0" role="button" target="_blank">Code</a>
+    
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+    <div class="abstract hidden">
+      <p>Textual and semantic comprehension of images is essential for generating proper captions. The comprehension requires detection of objects, modeling of relations between them, an assessment of the semantics of the scene and, finally, representing the extracted knowledge in a language space. To achieve rich language capabilities while ensuring good image-language mappings, pretrained language models (LMs) were conditioned on pretrained multi-modal (image-text) models that allow for image inputs. This requires an alignment of the image representation of the multi-modal model with the language representations of a generative LM. However, it is not clear how to best transfer semantics detected by the vision encoder of the multi-modal model to the LM. We introduce two novel ways of constructing a linear mapping that successfully transfers semantics between the embedding spaces of the two pretrained models. The first aligns the embedding space of the multi-modal language encoder with the embedding space of the pretrained LM via token correspondences. The latter leverages additional data that consists of image-text pairs to construct the mapping directly from vision to language space. Using our semantic mappings, we unlock image captioning for LMs without access to gradient information. By using different sources of data we achieve strong captioning performance on MS-COCO and Flickr30k datasets. Even in the face of limited data, our method partly exceeds the performance of other zero-shot and even finetuned competitors. Our ablation studies show that even LMs at a scale of merely 250M parameters can generate decent captions employing our semantic mappings. Our approach makes image captioning more accessible for institutions with restricted computational resources.</p>
+    </div>
+    
+  </div>
+</div>
+</li>
+<li><div class="row">
+  <div class="col-sm-2 abbr">
+  
+    
+    <abbr class="badge">arXiv</abbr>
+    
+  
+  </div>
+
+  <div id="bib:Mayr2023_2" class="col-sm-8">
+    
+      <div class="title">Boundary Graph Neural Networks for 3D Simulations</div>
+      <div class="author">
+        
+          
+            
+              
+                
+                  Mayr, A.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Lehner, S.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Mayrhofer, A.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Kloss, C.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Hochreiter, S.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  and Brandstetter, J.
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+        <em></em>
+      
+      
+        2023
+      
+      </div>
+    
+
+    <div class="links">
+    
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+    
+    
+    
+      <a href="https://arxiv.org/abs/2106.11299" class="btn btn-sm z-depth-0" role="button" target="_blank">url</a>
+    
+    
+    
+    
+    
+      <a href="https://ml-jku.github.io/bgnn" class="btn btn-sm z-depth-0" role="button" target="_blank">Blog</a>
+    
+    
+      <a href="https://github.com/ml-jku/bgnn" class="btn btn-sm z-depth-0" role="button" target="_blank">Code</a>
+    
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+    <div class="abstract hidden">
+      <p>The abundance of data has given machine learning considerable momentum in natural sciences and engineering, though modeling of physical processes is often difficult. A particularly tough problem is the efficient representation of geometric boundaries. Triangularized geometric boundaries are well understood and ubiquitous in engineering applications. However, it is notoriously difficult to integrate them into machine learning approaches due to their heterogeneity with respect to size and orientation. In this work, we introduce an effective theory to model particle-boundary interactions, which leads to our new Boundary Graph Neural Networks (BGNNs) that dynamically modify graph structures to obey boundary conditions. The new BGNNs are tested on complex 3D granular flow processes of hoppers, rotating drums and mixers, which are all standard components of modern industrial machinery but still have complicated geometry. BGNNs are evaluated in terms of computational efficiency as well as prediction accuracy of particle flows and mixing entropies. BGNNs are able to accurately reproduce 3D granular flows within simulation uncertainties over hundreds of thousands of simulation timesteps. Most notably, in our experiments, particles stay within the geometric objects without using handcrafted conditions or restrictions.</p>
+    </div>
+    
+  </div>
+</div>
+</li>
+<li><div class="row">
+  <div class="col-sm-2 abbr">
+  
+    
+    <abbr class="badge">arXiv</abbr>
+    
+  
+  </div>
+
+  <div id="paischer2023semantic" class="col-sm-8">
+    
+      <div class="title">Semantic HELM: An Interpretable Memory for Reinforcement Learning</div>
+      <div class="author">
+        
+          
+            
+              
+                
+                  Paischer, F.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Adler, T.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Hofmarcher, M.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  and Hochreiter, S.
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+        <em></em>
+      
+      
+        2023
+      
+      </div>
+    
+
+    <div class="links">
+    
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+    
+    
+    
+      <a href="https://arxiv.org/abs/2306.09312" class="btn btn-sm z-depth-0" role="button" target="_blank">url</a>
+    
+    
+    
+    
+    
+    
+      <a href="https://github.com/ml-jku/helm" class="btn btn-sm z-depth-0" role="button" target="_blank">Code</a>
+    
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+    <div class="abstract hidden">
+      <p>Reinforcement learning agents deployed in the real world often have to cope with partially observable environments. Therefore, most agents employ memory mechanisms to approximate the state of the environment. Recently, there have been impressive success stories in mastering partially observable environments, mostly in the realm of computer games like Dota 2, StarCraft II, or MineCraft. However, none of these methods are interpretable in the sense that it is not comprehensible for humans how the agent decides which actions to take based on its inputs. Yet, human understanding is necessary in order to deploy such methods in high-stake domains like autonomous driving or medical applications. We propose a novel memory mechanism that operates on human language to illuminate the decision-making process. First, we use CLIP to associate visual inputs with language tokens. Then we feed these tokens to a pretrained language model that serves the agent as memory and provides it with a coherent and interpretable representation of the past. Our memory mechanism achieves state-of-the-art performance in environments where memorizing the past is crucial to solve tasks. Further, we present situations where our memory component excels or fails to demonstrate strengths and weaknesses of our new approach.</p>
+    </div>
+    
+  </div>
+</div>
+</li>
+<li><div class="row">
+  <div class="col-sm-2 abbr">
+  
+    
+    <abbr class="badge">arXiv</abbr>
+    
+  
+  </div>
+
+  <div id="lehner2023maect" class="col-sm-8">
+    
+      <div class="title">Contrastive Tuning: A Little Help to Make Masked Autoencoders Forget</div>
+      <div class="author">
+        
+          
+            
+              
+                
+                  Lehner, J.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Alkin, B.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Fürst, A.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Rumetshofer, E.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Miklautz, L.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  and Hochreiter, S.
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+      
+        2023
+      
+      </div>
+    
+
+    <div class="links">
+    
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+    
+    
+    
+      <a href="https://arxiv.org/abs/2304.10520" class="btn btn-sm z-depth-0" role="button" target="_blank">url</a>
+    
+    
+    
+    
+    
+    
+      <a href="https://github.com/ml-jku/MAE-CT" class="btn btn-sm z-depth-0" role="button" target="_blank">Code</a>
+    
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+    <div class="abstract hidden">
+      <p>Masked Image Modeling (MIM) methods, like Masked Autoencoders (MAE), efficiently learn a rich representation of the input. However, for adapting to downstream tasks, they require a sufficient amount of labeled data since their rich features code not only objects but also less relevant image background. In contrast, Instance Discrimination (ID) methods focus on objects. In this work, we study how to combine the efficiency and scalability of MIM with the ability of ID to perform downstream classification in the absence of large amounts of labeled data. To this end, we introduce Masked Autoencoder Contrastive Tuning (MAE-CT), a sequential approach that utilizes the implicit clustering of the Nearest Neighbor Contrastive Learning (NNCLR) objective to induce abstraction in the topmost layers of a pre-trained MAE. MAE-CT tunes the rich features such that they form semantic clusters of objects without using any labels. Notably, MAE-CT does not rely on hand-crafted augmentations and frequently achieves its best performances while using only minimal augmentations (crop & flip). Further, MAE-CT is compute efficient as it requires at most 10% overhead compared to MAE pre-training. Applied to large and huge Vision Transformer (ViT) models, MAE–CT excels over previous self-supervised methods trained on ImageNet in linear probing, k-NN and low-shot classification accuracy as well as in unsupervised clustering accuracy. With ViT-H/16 MAE–CT achieves a new state-of-the-art in linear probing of 82.2%.</p>
+    </div>
+    
+  </div>
+</div>
+</li>
+<li><div class="row">
+  <div class="col-sm-2 abbr">
+  
+    
+    <abbr class="badge">RRL</abbr>
+    
+  
+  </div>
+
+  <div id="schmied2023learning" class="col-sm-8">
+    
+      <div class="title">Learning to Modulate pre-trained Models in RL</div>
+      <div class="author">
+        
+          
+            
+              
+                
+                  Schmied, T.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Hofmarcher, M.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Paischer, F.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Pascanu, R.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  and Hochreiter, S.
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+      
+        2023
+      
+      </div>
+    
+
+    <div class="links">
+    
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+    
+    
+    
+      <a href="https://openreview.net/forum?id=Us6BtPZGei3" class="btn btn-sm z-depth-0" role="button" target="_blank">url</a>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+    <div class="abstract hidden">
+      <p>Reinforcement Learning (RL) has experienced great success in complex games and simulations. However, RL agents are often highly specialized for a particular task, and it is difficult to adapt a trained agent to a new task. In supervised learning, an established paradigm is multi-task pre-training followed by fine-tuning. A similar trend is emerging in RL, where agents are pre-trained on data collections that comprise a multitude of tasks. Despite these developments, it remains an open challenge how to adapt such pre-trained agents to novel tasks while retaining performance on the pre-training tasks. In this regard, we pre-train an agent on a set of tasks from the Meta-World benchmark suite and adapt it to tasks from Continual-World. We conduct a comprehensive comparison of fine-tuning methods originating from supervised learning in our setup. Our findings show that fine-tuning is feasible, but for existing methods, performance on previously learned tasks often deteriorates. Therefore, we propose a novel approach that avoids forgetting by modulating the information flow of the pre-trained model. Our method outperforms existing fine-tuning approaches, and achieves state-of-the-art performance on the Continual-World benchmark. To facilitate future research in this direction, we collect datasets for all Meta-World tasks and make them publicly available.</p>
+    </div>
+    
+  </div>
+</div>
+</li>
+<li><div class="row">
+  <div class="col-sm-2 abbr">
+  
+    
+    <abbr class="badge">MIDL</abbr>
+    
+  
+  </div>
+
+  <div id="midl2023" class="col-sm-8">
+    
+      <div class="title">Learning Retinal Representations from Multi-modal Imaging via Contrastive Pre-training</div>
+      <div class="author">
+        
+          
+            
+              
+                
+                  Sükei, E.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Rumetshofer, E.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Schmidinger, N.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Schmidt-Erfurth, U.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Klambauer, G.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  and Bogunović, H.
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+        <em>In Medical Imaging with Deep Learning, short paper track</em>
+      
+      
+        2023
+      
+      </div>
+    
+
+    <div class="links">
+    
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+    
+    
+    
+      <a href="https://openreview.net/forum?id=newlahoISt1" class="btn btn-sm z-depth-0" role="button" target="_blank">url</a>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+    <div class="abstract hidden">
+      <p>Contrastive representation learning techniques trained on large multi-modal datasets, such as CLIP and CLOOB, have demonstrated impressive capabilities of producing highly transferable representations for different downstream tasks. In the field of ophthalmology, large multi-modal datasets are conveniently accessible as retinal imaging scanners acquire both 2D fundus images and 3D optical coherence tomography to evaluate the disease. Motivated by this, we propose a CLIP/CLOOB objective-based model to learn joint representations of the two retinal imaging modalities. We evaluate our modelś capability to accurately retrieve the appropriate OCT based on a fundus image belonging to the same eye. Furthermore, we showcase the transferability of the obtained representations by conducting linear probing and fine-tuning on several prediction tasks from OCT.</p>
+    </div>
+    
+  </div>
+</div>
+</li>
+<li><div class="row">
+  <div class="col-sm-2 abbr">
+  
+    
+    <abbr class="badge">AAAI</abbr>
+    
+  
+  </div>
+
+  <div id="bib:Mayr2023_1" class="col-sm-8">
+    
+      <div class="title">Boundary Graph Neural Networks for 3D Simulations</div>
+      <div class="author">
+        
+          
+            
+              
+                
+                  Mayr, A.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Lehner, S.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Mayrhofer, A.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Kloss, C.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Hochreiter, S.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  and Brandstetter, J.
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+        <em>Proceedings of the AAAI Conference on Artificial Intelligence</em>
+      
+      
+        2023
+      
+      </div>
+    
+
+    <div class="links">
+    
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+    
+    
+    
+      <a href="https://ojs.aaai.org/index.php/AAAI/article/view/26092" class="btn btn-sm z-depth-0" role="button" target="_blank">url</a>
+    
+    
+    
+    
+    
+      <a href="https://ml-jku.github.io/bgnn" class="btn btn-sm z-depth-0" role="button" target="_blank">Blog</a>
+    
+    
+      <a href="https://github.com/ml-jku/bgnn" class="btn btn-sm z-depth-0" role="button" target="_blank">Code</a>
+    
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+    <div class="abstract hidden">
+      <p>The abundance of data has given machine learning considerable momentum in natural sciences and engineering, though modeling of physical processes is often difficult. A particularly tough problem is the efficient representation of geometric boundaries. Triangularized geometric boundaries are well understood and ubiquitous in engineering applications. However, it is notoriously difficult to integrate them into machine learning approaches due to their heterogeneity with respect to size and orientation. In this work, we introduce an effective theory to model particle-boundary interactions, which leads to our new Boundary Graph Neural Networks (BGNNs) that dynamically modify graph structures to obey boundary conditions. The new BGNNs are tested on complex 3D granular flow processes of hoppers, rotating drums and mixers, which are all standard components of modern industrial machinery but still have complicated geometry. BGNNs are evaluated in terms of computational efficiency as well as prediction accuracy of particle flows and mixing entropies. BGNNs are able to accurately reproduce 3D granular flows within simulation uncertainties over hundreds of thousands of simulation timesteps. Most notably, in our experiments, particles stay within the geometric objects without using handcrafted conditions or restrictions.</p>
+    </div>
+    
+  </div>
+</div>
+</li>
+<li><div class="row">
+  <div class="col-sm-2 abbr">
+  
+    
+    <abbr class="badge">ML4Molecules</abbr>
+    
+  
+  </div>
+
+  <div id="svensson2022task" class="col-sm-8">
+    
+      <div class="title">Task-conditioned modeling of drug-target interactions</div>
+      <div class="author">
+        
+          
+            
+              
+                
+                  Svensson, E.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Hoedt, P.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Hochreiter, S.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  and Klambauer, G.
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+        <em>In ELLIS Machine Learning for Molecule Discovery Workshop</em>
+      
+      
+        2022
+      
+      </div>
+    
+
+    <div class="links">
+    
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+    
+    
+    
+      <a href="https://openreview.net/pdf?id=MrUwwGKRhOM" class="btn btn-sm z-depth-0" role="button" target="_blank">url</a>
+    
+    
+    
+    
+    
+    
+      <a href="https://github.com/ml-jku/hyper-dti" class="btn btn-sm z-depth-0" role="button" target="_blank">Code</a>
+    
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+    <div class="abstract hidden">
+      <p>HyperNetworks have been established as an effective technique to achieve fast adaptation of parameters for neural networks. Recently, HyperNetworks conditioned on descriptors of tasks have improved multi-task generalization in various domains, such as personalized federated learning and neural architecture search. Especially powerful results were achieved in few- and zero-shot settings, attributed to the increased information sharing by the HyperNetwork. With the rise of new diseases fast discovery of drugs is needed which requires proteo-chemometric models that are able to generalize drug-target interaction predictions in low-data scenarios. State-of-the-art methods apply a few fully-connected layers to concatenated learned embeddings of the protein target and drug compound. In this work, we develop a task-conditioned HyperNetwork approach for the problem of predicting drug-target interactions in drug discovery. We show that when model parameters are predicted for the fully-connected layers processing the drug compound embedding, based on the protein target embedding, predictive performance can be improved over previous methods. Two additional components of our architecture, a) switching to L1 loss, and b) integrating a context module for proteins, further boost performance and robustness. On an established benchmark for proteo-chemometrics models, our architecture outperforms previous methods in all settings, including few- and zero-shot settings. In an ablation study, we analyze the importance of each of the components of our HyperNetwork approach.</p>
+    </div>
+    
+  </div>
+</div>
+</li>
+<li><div class="row">
+  <div class="col-sm-2 abbr">
+  
+    
+    <abbr class="badge">CoLLAs</abbr>
+    
+  
+  </div>
+
+  <div id="schweighofer2022dataset" class="col-sm-8">
+    
+      <div class="title">A Dataset Perspective on Offline Reinforcement Learning</div>
+      <div class="author">
+        
+          
+            
+              
+                
+                  Schweighofer, K.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Radler, A.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Dinu, M.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Hofmarcher, M.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Patil, V.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Bitto-Nemling, A.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Eghbal-zadeh, H.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  and Hochreiter, S.
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+      
+        2022
+      
+      </div>
+    
+
+    <div class="links">
+    
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+    
+    
+    
+      <a href="https://arxiv.org/abs/2111.04714" class="btn btn-sm z-depth-0" role="button" target="_blank">url</a>
+    
+    
+    
+    
+    
+      <a href="https://kschweig.github.io/OfflineRL/" class="btn btn-sm z-depth-0" role="button" target="_blank">Blog</a>
+    
+    
+      <a href="https://github.com/ml-jku/OfflineRL" class="btn btn-sm z-depth-0" role="button" target="_blank">Code</a>
+    
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+    <div class="abstract hidden">
+      <p>The application of Reinforcement Learning (RL) in real world environments can be expensive or risky due to sub-optimal policies during training. In Offline RL, this problem is avoided since interactions with an environment are prohibited. Policies are learned from a given dataset, which solely determines their performance. Despite this fact, how dataset characteristics influence Offline RL algorithms is still hardly investigated. The dataset characteristics are determined by the behavioral policy that samples this dataset. Therefore, we define characteristics of behavioral policies as exploratory for yielding high expected information in their interaction with the Markov Decision Process (MDP) and as exploitative for having high expected return. We implement two corresponding empirical measures for the datasets sampled by the behavioral policy in deterministic MDPs. The first empirical measure SACo is defined by the normalized unique state-action pairs and captures exploration. The second empirical measure TQ is defined by the normalized average trajectory return and captures exploitation. Empirical evaluations show the effectiveness of TQ and SACo. In large-scale experiments using our proposed measures, we show that the unconstrained off-policy Deep Q-Network family requires datasets with high SACo to find a good policy. Furthermore, experiments show that policy constraint algorithms perform well on datasets with high TQ and SACo. Finally, the experiments show, that purely dataset-constrained Behavioral Cloning performs competitively to the best Offline RL algorithms for datasets with high TQ.</p>
+    </div>
+    
+  </div>
+</div>
+</li></ol>
+</div>
+
+              
+        </div>
+    </div>
+    
+    <div class="social">
+      <span class="contact-icon text-center">
+  <a href="mailto:%73%65%63%72%65%74%61%72%79@%6D%6C.%6A%6B%75.%61%74"><i class="fas fa-envelope"></i></a>
+  
+  
+  
+  
+  <a href="https://github.com/ml-jku" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+  
+  <a href="https://twitter.com/LITAILab" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+  
+  
+  
+  
+  
+</span>
+
+      <div class="contact-note"></div>
+    </div>
+    
+  </article>
+
+</div>
+
+    </div>
+
+    <!-- Footer -->
+
+    
+<footer class="fixed-bottom">
+  <div class="container mt-0">
+    &copy; Copyright 2023 Institute for Machine Learning @ JKU.
+    Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+
+    
+  </div>
+</footer>
+
+
+
+  </body>
+
+  <!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+
+  <!-- Bootsrap & MDB scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.4.4/umd/popper.min.js" integrity="sha512-eUQ9hGdLjBjY3F41CScH3UX+4JDSI9zXeroz7hJ+RteoCaY+GP/LDoM8AO+Pt+DRFw3nXqsjh9Zsts8hnYv8/A==" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha512-M5KW3ztuIICmVIhjSqXe01oV2bpe248gOxqmlcYrEzAvws7Pw3z6BK0iGbrwvdrUQUhi3eXgtxp5I8PDo9YfjQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js" integrity="sha512-Mug9KHKmroQFMLm93zGrjhibM2z2Obg9l6qFG2qKjXEXkMp/VDkI4uju9m4QKPjWSwQ6O2qzZEnJDEeCw0Blcw==" crossorigin="anonymous"></script>
+
+  
+<!-- Mansory & imagesLoaded -->
+<script defer src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script defer src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+<script defer src="/assets/js/mansory.js" type="text/javascript"></script>
+
+
+  
+
+
+<!-- Load Common JS -->
+<script src="/assets/js/common.js"></script>
+
+<!-- Load DarkMode JS -->
+<script src="/assets/js/dark_mode.js"></script>
+
+
+</html>
