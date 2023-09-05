@@ -1,3 +1,51 @@
+@misc{schweighofer2023quam,
+      title={Quantification of Uncertainty with Adversarial Models}, 
+      author={Kajetan Schweighofer and Lukas Aichberger and Mykyta Ielanski and G{\"u}nter Klambauer and Sepp Hochreiter},
+      abstract={Quantifying uncertainty is important for actionable predictions in real-world applications. A crucial part of predictive uncertainty quantification is the estimation of epistemic uncertainty, which is defined as an integral of the product between a divergence function and the posterior. Current methods such as Deep Ensembles or MC dropout underperform at estimating the epistemic uncertainty, since they primarily consider the posterior when sampling models. We suggest Quantification of Uncertainty with Adversarial Models (QUAM) to better estimate the epistemic uncertainty. QUAM identifies regions where the whole product under the integral is large, not just the posterior. Consequently, QUAM has lower approximation error of the epistemic uncertainty compared to previous methods. Models for which the product is large correspond to adversarial models (not adversarial examples!). Adversarial models have both a high posterior as well as a high divergence between their predictions and that of a reference model. Our experiments show that QUAM excels in capturing epistemic uncertainty for deep learning models and outperforms previous methods on challenging tasks in the vision domain.},
+      year={2023},
+      eprint={2307.03217},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      abbr={arXiv},
+      url={https://arxiv.org/abs/2307.03217},
+      code={https://github.com/ml-jku/quam},
+      category={deep_learning},   
+      selected={true},
+      date={2023-07-06}
+}
+
+@article{paischer2023semantic,
+   abstract={Reinforcement learning agents deployed in the real world often have to cope with partially observable environments. Therefore, most agents employ memory mechanisms to approximate the state of the environment. Recently, there have been impressive success stories in mastering partially observable environments, mostly in the realm of computer games like Dota 2, StarCraft II, or MineCraft. However, none of these methods are interpretable in the sense that it is not comprehensible for humans how the agent decides which actions to take based on its inputs. Yet, human understanding is necessary in order to deploy such methods in high-stake domains like autonomous driving or medical applications. We propose a novel memory mechanism that operates on human language to illuminate the decision-making process. First, we use CLIP to associate visual inputs with language tokens. Then we feed these tokens to a pretrained language model that serves the agent as memory and provides it with a coherent and interpretable representation of the past. Our memory mechanism achieves state-of-the-art performance in environments where memorizing the past is crucial to solve tasks. Further, we present situations where our memory component excels or fails to demonstrate strengths and weaknesses of our new approach.},
+   abbr={arXiv},
+   url={https://arxiv.org/abs/2306.09312},
+   code={https://github.com/ml-jku/helm},
+   category={deep_learning},
+   selected={true},
+   date={2023-06-15},
+   title={Semantic HELM: An Interpretable Memory for Reinforcement Learning}, 
+   author={Fabian Paischer and Thomas Adler and Markus Hofmarcher and Sepp Hochreiter},
+   year={2023},
+   eprint={2306.09312},
+   archivePrefix={arXiv},
+   primaryClass={cs.LG}
+}
+
+@article{paischer2023sitta,
+   abstract={Textual and semantic comprehension of images is essential for generating proper captions. The comprehension requires detection of objects, modeling of relations between them, an assessment of the semantics of the scene and, finally, representing the extracted knowledge in a language space. To achieve rich language capabilities while ensuring good image-language mappings, pretrained language models (LMs) were conditioned on pretrained multi-modal (image-text) models that allow for image inputs. This requires an alignment of the image representation of the multi-modal model with the language representations of a generative LM. However, it is not clear how to best transfer semantics detected by the vision encoder of the multi-modal model to the LM. We introduce two novel ways of constructing a linear mapping that successfully transfers semantics between the embedding spaces of the two pretrained models. The first aligns the embedding space of the multi-modal language encoder with the embedding space of the pretrained LM via token correspondences. The latter leverages additional data that consists of image-text pairs to construct the mapping directly from vision to language space. Using our semantic mappings, we unlock image captioning for LMs without access to gradient information. By using different sources of data we achieve strong captioning performance on MS-COCO and Flickr30k datasets. Even in the face of limited data, our method partly exceeds the performance of other zero-shot and even finetuned competitors. Our ablation studies show that even LMs at a scale of merely 250M parameters can generate decent captions employing our semantic mappings. Our approach makes image captioning more accessible for institutions with restricted computational resources.},
+   abbr={arXiv},
+   url={https://arxiv.org/abs/2307.05591},
+   code={https://github.com/ml-jku/semantic-image-text-alignment},
+   category={deep_learning},
+   selected={true},
+   date={2023-07-10},
+   title={SITTA: A Semantic Image-Text Alignment for Image Captioning}, 
+   author={Fabian Paischer and Thomas Adler and Markus Hofmarcher and Sepp Hochreiter},
+   year={2023},
+   eprint={2307.05591},
+   archivePrefix={arXiv},
+   primaryClass={cs.CV}
+}
+
 @inproceedings{
 midl2023,
 abstract={Contrastive representation learning techniques trained on large multi-modal datasets, such as CLIP and CLOOB, have demonstrated impressive capabilities of producing highly transferable representations for different downstream tasks. In the field of ophthalmology, large multi-modal datasets are conveniently accessible as retinal imaging scanners acquire both 2D fundus images and 3D optical coherence tomography to evaluate the disease. Motivated by this, we propose a CLIP/CLOOB objective-based model to learn joint representations of the two retinal imaging modalities. We evaluate our model\'s capability to accurately retrieve the appropriate OCT based on a fundus image belonging to the same eye. Furthermore, we showcase the transferability of the obtained representations by conducting linear probing and fine-tuning on several prediction tasks from OCT.},
