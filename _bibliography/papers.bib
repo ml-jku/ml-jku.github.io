@@ -1,3 +1,175 @@
+@inproceedings{paischer2025gyroswin,
+abbr={NeurIPS},
+author        = {Paischer, Fabian and Galletti, Gianluca and Hornsby, William and Setinek, Paul and Zanisi, Lorenzo and Carey, Naomi and Pamela, Stanislas and Brandstetter, Johannes},
+title         = {GyroSwin: 5D Surrogates for Gyrokinetic Plasma Turbulence Simulations},
+abstract      = {Nuclear fusion plays a pivotal role in the quest for reliable and sustainable energy production. A major roadblock to viable fusion power is understanding plasma turbulence, which significantly impairs plasma confinement, and is vital for next-generation reactor design. Plasma turbulence is governed by the nonlinear gyrokinetic equation, which evolves a 5D distribution function over time. Due to its high computational cost, reduced-order models are often employed in practice to approximate turbulent transport of energy. However, they omit nonlinear effects unique to the full 5D dynamics. To tackle this, we introduce GyroSwin, the first scalable 5D neural surrogate that can model 5D nonlinear gyrokinetic simulations, thereby capturing the physical phenomena neglected by reduced models, while providing accurate estimates of turbulent heat transport. GyroSwin (i) extends hierarchical Vision Transformers to 5D, (ii) introduces cross-attention and integration modules for latent 3D$\leftrightarrow$5D interactions between electrostatic potential fields and the distribution function, and (iii) performs channelwise mode separation inspired by nonlinear physics. We demonstrate that GyroSwin outperforms widely used reduced numerics on heat flux prediction, captures the turbulent energy cascade, and reduces the cost of fully resolved nonlinear gyrokinetics by three orders of magnitude while remaining physically verifiable. GyroSwin shows promising scaling laws, tested up to one billion parameters, paving the way for scalable neural surrogates for gyrokinetic simulations of plasma turbulence.},
+journal       = {Advances in Neural Information Processing Systems},
+url           = {https://arxiv.org/abs/2510.07314},
+year          = {2025},
+blog = {https://ml-jku.github.io/blog/2025/gyroswin/},
+selected={true},
+software = {true},
+code = {https://github.com/ml-jku/neural-gyrokinetics},
+category={plasma_physics,deep_learning}
+}
+
+@article{tschoellitsch2024potential,
+  title={Potential predictors for deterioration of renal function after transfusion},
+  author={Tschoellitsch, Thomas and Moser, Philipp and Maletzky, Alexander and Seidl, Philipp and B{\"o}ck, Carl and Roland, Theresa and Ludwig, Helga and S{\"u}ssner, Susanne and Hochreiter, Sepp and Meier, Jens},
+  journal={Anesthesia \& Analgesia},
+  volume={138},
+  number={3},
+  pages={645--654},
+  year={2024},
+  publisher={LWW}
+}
+
+@article{tschoellitsch2023using,
+  title={Using emergency department triage for machine learning-based admission and mortality prediction},
+  author={Tschoellitsch, Thomas and Seidl, Philipp and B{\"o}ck, Carl and Maletzky, Alexander and Moser, Philipp and Thumfart, Stefan and Giretzlehner, Michael and Hochreiter, Sepp and Meier, Jens},
+  journal={European Journal of Emergency Medicine},
+  volume={30},
+  number={6},
+  pages={408--416},
+  year={2023},
+  publisher={LWW}
+}
+
+@article{hofmann2024energy,
+  title={Energy-based hopfield boosting for out-of-distribution detection},
+  author={Hofmann, Claus and Schmid, Simon and Lehner, Bernhard and Klotz, Daniel and Hochreiter, Sepp},
+  journal={arXiv preprint arXiv:2405.08766},
+  year={2024},
+  abstract={Out-of-distribution (OOD) detection is critical when deploying machine learning models in the real world. Outlier exposure methods, which incorporate auxiliary outlier data in the training process, can drastically improve OOD detection performance compared to approaches without advanced training strategies. We introduce Hopfield Boosting, a boosting approach, which leverages modern Hopfield energy (MHE) to sharpen the decision boundary between the in-distribution and OOD data. Hopfield Boosting encourages the model to concentrate on hard-to-distinguish auxiliary outlier examples that lie close to the decision boundary between in-distribution and auxiliary outlier data. Our method achieves a new state-of-the-art in OOD detection with outlier exposure, improving the FPR95 metric from 2.28 to 0.92 on CIFAR-10 and from 11.76 to 7.94 on CIFAR-100.},
+  code={https://github.com/ml-jku/hopfield-boosting},
+  url={https://arxiv.org/abs/2405.08766},
+  selected = {true},
+  abbr = {arXiv},
+  category = {hopfield},
+  date={2024-05-14},
+}
+
+@article{sanokowski2024diffusion,
+  abbr={ICML},
+  title={A Diffusion Model Framework for Unsupervised Neural Combinatorial Optimization},
+  author={Sanokowski, Sebastian and Hochreiter, Sepp and Lehner, Sebastian},
+  journal={Proceedings of the 41st International Conference on Machine Learning},
+  year={2024},
+  date = {2024-06-3},
+  code={https://github.com/ml-jku/DIffUCO},
+  url={https://arxiv.org/abs/2406.01661},
+  category={deep_learning},
+  selected={true},
+  software = {true},
+}
+
+@article{sanokowski2023variational,
+  abbr={NeurIPS},
+  title={Variational annealing on graphs for combinatorial optimization},
+  author={Sanokowski, Sebastian and Berghammer, Wilhelm and Hochreiter, Sepp and Lehner, Sebastian},
+  journal={Advances in Neural Information Processing Systems},
+  volume={36},
+  pages={63907--63930},
+  year={2023},
+  date = {2023-11-23},
+  code={https://github.com/ml-jku/VAG-CO},
+  url={https://arxiv.org/abs/2311.14156},
+  category={deep_learning},
+}
+
+@InProceedings{pmlr-v220-caggiano23a,
+  title = 	 {MyoChallenge 2022: Learning contact-rich manipulation using a musculoskeletal hand},
+  author =       {Caggiano, Vittorio and Durandau, Guillaume and Wang, Huwawei and Chiappa, Alberto and Mathis, Alexander and Tano, Pablo and Patel, Nisheet and Pouget, Alexandre and Schumacher, Pierre and Martius, Georg and Haeufle, Daniel and Geng, Yiran and An, Boshi and Zhong, Yifan and Ji, Jiaming and Chen, Yuanpei and Dong, Hao and Yang, Yaodong and Siripurapu, Rahul and Ferro Diez, Luis Eduardo and Kopp, Michael and Patil, Vihang and Hochreiter, Sepp and Tassa, Yuval and Merel, Josh and Schultheis, Randy and Song, Seungmoon and Sartori, Massimo and Kumar, Vikash},
+  booktitle = 	 {Proceedings of the NeurIPS 2022 Competitions Track},
+  pages = 	 {233--250},
+  year = 	 {2022},
+  editor = 	 {Ciccone, Marco and Stolovitzky, Gustavo and Albrecht, Jacob},
+  volume = 	 {220},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {28 Nov--09 Dec},
+  publisher =    {PMLR},
+  pdf = 	 {https://proceedings.mlr.press/v220/caggiano23a/caggiano23a.pdf},
+  url = 	 {https://proceedings.mlr.press/v220/caggiano23a.html},
+  abstract = 	 {Manual dexterity has been considered one of the critical components for human evolution. The ability to perform movements as simple as holding and rotating an object in the hand without dropping it needs the coordination of more than 35 muscles which act synergistically or antagonistically on multiple joints. This complexity in control is markedly different from typical pre-specified movements or torque based controls used in robotics. In the MyoChallenge at the NeurIPS 2022 competition track, we challenged the community to develop controllers for a realistic hand to solve a series of dexterous manipulation tasks. The MyoSuite framework was used to train and test controllers on realistic, contact rich and computation efficient virtual neuromusculoskeletal model of the hand and wrist. Two tasks were proposed: a die re-orientation and a boading ball (rotation of two spheres respect to each other) tasks. More than 40 teams participated to the challenge and submitted more than 340 solutions. The challenge was split in two phases. In the first phase, where a limited set of objectives and randomization were proposed, teams managed to achieve high performance, in particular in the boading-ball task.  In the second phase as the focus shifted towards generalization of task solutions to extensive variations of object and task properties, teams saw significant performance drop. This shows that there is still a large gap in developing agents capable of generalizable skilled manipulation. In future challenges, we will continue pursuing the generalizability both in skills and agility of the tasks exploring additional realistic neuromusculoskeletal models.}
+  category = {deep_learning},
+  abbr = {NeurIPS}
+}
+
+
+
+@inproceedings{Patil:23,
+  author    = {Vihang Patil and
+               Elisabeth Rumetshofer and
+               Markus Hofmarcher and
+               Sepp Hochreiter},
+    title = {Contrastive Abstraction for Reinforcement Learning},
+  year      = {2023},
+  booktitle = {Generlisation in Planning Workshop, NeuRIPS},
+  url = 	 {https://openreview.net/forum?id=oMkUQKfsCU}
+}
+
+
+@article{alkin2024mimrefiner,
+      title={{MIM-Refiner}: A Contrastive Learning Boost from Intermediate Pre-Trained Representations}, 
+      author={Benedikt Alkin and Lukas Miklautz and Sepp Hochreiter and Johannes Brandstetter},
+      abstract={We introduce MIM (Masked Image Modeling)-Refiner, a contrastive learning boost for pre-trained MIM models.
+MIM-Refiner is motivated by the insight that strong representations within MIM models generally reside in intermediate layers. 
+Accordingly, MIM-Refiner leverages multiple contrastive heads that are connected to different intermediate layers. 
+In each head, a modified nearest neighbor objective constructs semantic clusters that capture semantic information which improves performance on downstream tasks, including off-the-shelf and fine-tuning settings.
+The refinement process is short and simple -  yet highly effective. Within a few epochs, we refine the features of MIM models from subpar to state-of-the-art, off-the-shelf features. Refining a ViT-H, pre-trained with data2vec 2.0 on ImageNet-1K, sets a new state-of-the-art in linear probing (84.7%) and low-shot classification among models that are pre-trained on ImageNet-1K. 
+MIM-Refiner efficiently combines the advantages of MIM and ID objectives and compares favorably against previous state-of-the-art SSL models on a variety of benchmarks such as low-shot classification, long-tailed classification, clustering and semantic segmentation.},
+      journal={arXiv preprint arXiv:2402.10093},
+      year={2024},
+      code={https://github.com/ml-jku/MIM-Refiner},
+      url={https://arxiv.org/abs/2402.10093},
+      selected = {true}
+}
+
+@article{alkin2024upt,
+      title={Universal Physics Transformers}, 
+      author={Benedikt Alkin and Andreas Fürst and Simon Schmid and Lukas Gruber and Markus Holzleitner and Johannes Brandstetter},
+      journal={arXiv preprint arXiv:2402.12365},
+      year={2024},
+      abstract={Neural operators, serving as physics surrogate models, have recently gained increased interest. With ever increasing problem complexity, the natural question arises: what is an efficient way to scale neural operators to larger and more complex simulations - most importantly by taking into account different types of simulation datasets. This is of special interest since, akin to their numerical counterparts, different techniques are used across applications, even if the underlying dynamics of the systems are similar. Whereas the flexibility of transformers has enabled unified architectures across domains, neural operators mostly follow a problem specific design, where GNNs are commonly used for Lagrangian simulations and grid-based models predominate Eulerian simulations. We introduce Universal Physics Transformers (UPTs), an efficient and unified learning paradigm for a wide range of spatio-temporal problems. UPTs operate without grid- or particle-based latent structures, enabling flexibility and scalability across meshes and particles. UPTs efficiently propagate dynamics in the latent space, emphasized by inverse encoding and decoding techniques. Finally, UPTs allow for queries of the latent space representation at any point in space-time. We demonstrate diverse applicability and efficacy of UPTs in mesh-based fluid simulations, and steady-state Reynolds averaged Navier-Stokes simulations, and Lagrangian-based dynamics.},
+      code={https://github.com/ml-jku/UPT},
+      url={https://arxiv.org/abs/2402.12365},
+      selected = {true}
+}
+
+@inproceedings{hoedt2023convex-init,
+  author = {Hoedt, Pieter-Jan and Klambauer, G\"{u}nter},
+  title = {Principled Weight Initialisation for Input-Convex Neural Networks},
+  abstract = {Input-Convex Neural Networks (ICNNs) are networks that guarantee convexity in their input-output mapping. These networks have been successfully applied for energy-based modelling, optimal transport problems and learning invariances.The convexity of ICNNs is achieved by using non-decreasing convex activation functions and non-negative weights. Because of these peculiarities, previous initialisation strategies, which implicitly assume centred weights, are not effective for ICNNs. By studying signal propagation through layers with non-negative weights, we are able to derive a principled weight initialisation for ICNNs. Concretely, we generalise signal propagation theory by removing the assumption that weights are sampled from a centred distribution. In a set of experiments, we demonstrate that our principled initialisation effectively accelerates learning in ICNNs and leads to better generalisation. Moreover, we find that, in contrast to common belief, ICNNs can be trained without skip-connections when initialised correctly. Finally, we apply ICNNs to a real-world drug discovery task and show that they allow for more effective molecular latent space exploration.},
+  editor = {A. Oh and T. Neumann and A. Globerson and K. Saenko and M. Hardt and S. Levine},
+  booktitle = {Advances in Neural Information Processing Systems},
+  volume = {36},
+  year = {2023},
+  pages = {46093--46104},
+  publisher = {Curran Associates, Inc.},
+  url = {https://proceedings.neurips.cc/paper_files/paper/2023/hash/9062b7d6e522dadf4f7d85d49b60d81e-Abstract.html},
+  pdf = {https://proceedings.neurips.cc/paper_files/paper/2023/file/9062b7d6e522dadf4f7d85d49b60d81e-Paper-Conference.pdf},
+  code = {https://github.com/ml-jku/convex-init},
+  category = {deep_learning},
+  software = {true},
+  selected = {true},
+  abbr = {NeurIPS},
+}
+
+
+@article{seidl2023clamp,
+   author = {Seidl, Philipp and Vall, Andreu and Hochreiter, Sepp and Klambauer, G{\"u}nter},
+   title = {Enhancing Activity Prediction Models in Drug Discovery with the Ability to Understand Human Language},
+   journal = {Proceedings of the 40th International Conference on Machine Learning (ICML)},
+   institution = {Institute for Machine Learning, Johannes Kepler University, Linz},
+   year = {2023},
+   month = {07},
+   eprint= {2303.03363},
+   abbr = {ICML},
+   code = {https://github.com/ml-jku/clamp},
+   doi = {},
+   selected = {true}
+}
+
 @misc{schweighofer2023quam,
       title={Quantification of Uncertainty with Adversarial Models}, 
       author={Kajetan Schweighofer and Lukas Aichberger and Mykyta Ielanski and G{\"u}nter Klambauer and Sepp Hochreiter},
@@ -15,8 +187,9 @@
 }
 
 @article{paischer2023semantic,
-   abstract={Reinforcement learning agents deployed in the real world often have to cope with partially observable environments. Therefore, most agents employ memory mechanisms to approximate the state of the environment. Recently, there have been impressive success stories in mastering partially observable environments, mostly in the realm of computer games like Dota 2, StarCraft II, or MineCraft. However, none of these methods are interpretable in the sense that it is not comprehensible for humans how the agent decides which actions to take based on its inputs. Yet, human understanding is necessary in order to deploy such methods in high-stake domains like autonomous driving or medical applications. We propose a novel memory mechanism that operates on human language to illuminate the decision-making process. First, we use CLIP to associate visual inputs with language tokens. Then we feed these tokens to a pretrained language model that serves the agent as memory and provides it with a coherent and interpretable representation of the past. Our memory mechanism achieves state-of-the-art performance in environments where memorizing the past is crucial to solve tasks. Further, we present situations where our memory component excels or fails to demonstrate strengths and weaknesses of our new approach.},
-   abbr={arXiv},
+   abstract={Reinforcement learning agents deployed in the real world often have to cope with partially observable environments. Therefore, most agents employ memory mechanisms to approximate the state of the environment. Recently, there have been impressive success stories in mastering partially observable environments, mostly in the realm of computer games like Dota 2, StarCraft II, or MineCraft. However, existing methods lack interpretability in the sense that it is not comprehensible for humans what the agent stores in its memory. In this regard, we propose a novel memory mechanism that represents past events in human language.
+Our method uses CLIP to associate visual inputs with language tokens. Then we feed these tokens to a pretrained language model that serves the agent as memory and provides it with a coherent and human-readable representation of the past. We train our memory mechanism on a set of partially observable environments and find that it excels on tasks that require a memory component, while mostly attaining performance on-par with strong baselines on tasks that do not. On a challenging continuous recognition task, where memorizing the past is crucial, our memory mechanism converges two orders of magnitude faster than prior methods. Since our memory mechanism is human-readable, we can peek at an agent's memory and check whether crucial pieces of information have been stored. This significantly enhances troubleshooting and paves the way toward more interpretable agents.},
+   abbr={NeurIPS},
    url={https://arxiv.org/abs/2306.09312},
    code={https://github.com/ml-jku/helm},
    category={deep_learning},
@@ -340,7 +513,6 @@ software = {true},
 code = {https://github.com/ml-jku/mhn-react},
 abbr={JCIM},
 category = {ai_drug},
-selected = {true},
 date = {2022-01-15},
 }
 
