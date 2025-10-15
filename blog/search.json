@@ -1,14 +1,99 @@
----
-layout: none
----
 [
-  {% for post in site.posts %}
+  
     {
-      "title"    : "{{ post.title | escape }}",
-      "categories" : "{{ post.categories }}",
-      "tags"     : "{{ post.tags | join: ', ' }}",
-      "url"      : {% if post.forward %} "{{ post.forward_url }}" {% else %} "{{ post.url | prepend: site.baseurl }}" {% endif %},
-      "date"     : "{{ post.date }}"
-    } {% unless forloop.last %},{% endunless %}
-  {% endfor %}
+      "title"    : "GyroSwin: 5D Surrogates for Gyrokinetic Plasma Turbulence Simulations",
+      "categories" : "Plasma PhysicsFusionNeural SurrogatesArticles",
+      "tags"     : "Fusion, Plasma, Physics",
+      "url"      :  "https://ml-jku.github.io/blog/2025/gyroswin/" ,
+      "date"     : "2025-10-13 00:00:00 +0200"
+    } ,
+  
+    {
+      "title"    : "A Dataset Perspective on Offline Reinforcement Learning",
+      "categories" : "ReinforcementArticles",
+      "tags"     : "Offline, Reinforcement",
+      "url"      :  "https://kschweig.github.io/OfflineRL/" ,
+      "date"     : "2022-09-13 00:00:00 +0200"
+    } ,
+  
+    {
+      "title"    : "Few-Shot Learning by Dimensionality Reduction in Gradient Space",
+      "categories" : "Few Shot LearningArticlesMeta Learning",
+      "tags"     : "Supervised, Few, Shot, Learning",
+      "url"      :  "https://ml-jku.github.io/subgd/" ,
+      "date"     : "2022-06-08 00:00:00 +0200"
+    } ,
+  
+    {
+      "title"    : "Hopular: Modern Hopfield Networks for Tabular Data",
+      "categories" : "HopfieldArticlesTransformersSupervised",
+      "tags"     : "Hopfield, Supervised, Transformers, Tabular",
+      "url"      :  "https://ml-jku.github.io/hopular/" ,
+      "date"     : "2022-06-04 00:00:00 +0200"
+    } ,
+  
+    {
+      "title"    : "History Compression via Language Models in Reinforcement Learning",
+      "categories" : "ReinforcementPartial ObservabilityLanguage ModelsTransformersArticles",
+      "tags"     : "Pretrained, Transformer, History, Compression, Reinforcement, Learning",
+      "url"      :  "/blog/2022/helm/" ,
+      "date"     : "2022-02-08 00:00:00 +0100"
+    } ,
+  
+    {
+      "title"    : "CLOOB: Modern Hopfield Networks with InfoLOOB Outperform CLIP",
+      "categories" : "HopfieldSelf-SupervisedFew Shot LearningArticlesTransformers",
+      "tags"     : "Hopfield, Self-Supervised",
+      "url"      :  "https://ml-jku.github.io/cloob/" ,
+      "date"     : "2021-10-22 00:00:00 +0200"
+    } ,
+  
+    {
+      "title"    : "Boundary Graph Neural Networks for 3D Simulations",
+      "categories" : "GNNArticles",
+      "tags"     : "BGNN, GNN, Simulation",
+      "url"      :  "https://ml-jku.github.io/bgnn/" ,
+      "date"     : "2021-06-21 00:00:00 +0200"
+    } ,
+  
+    {
+      "title"    : "Looking at the Performer from a Hopfield point of view",
+      "categories" : "HopfieldTransformersPerformersArticles",
+      "tags"     : "Hopfield, Attention, Transformers",
+      "url"      :  "https://ml-jku.github.io/blog-post-performer/" ,
+      "date"     : "2020-11-25 00:00:00 +0100"
+    } ,
+  
+    {
+      "title"    : "CHEF: Cross Domain Hebbian Ensemble Few-Shot Learning",
+      "categories" : "Few Shot LearningArticles",
+      "tags"     : "Few-Shot-Learning",
+      "url"      :  "https://ml-jku.github.io/chef/" ,
+      "date"     : "2020-11-20 00:00:00 +0100"
+    } ,
+  
+    {
+      "title"    : "Align-RUDDER: Learning from Few Demonstrations by Reward Redistribution",
+      "categories" : "ReinforcementRUDDERMinecraftDemonstrationsArticles",
+      "tags"     : "Reinforcement, Demonstrations, Minecraft",
+      "url"      :  "https://ml-jku.github.io/align-rudder/" ,
+      "date"     : "2020-10-08 00:00:00 +0200"
+    } ,
+  
+    {
+      "title"    : "RUDDER - Reinforcement Learning with Delayed Rewards",
+      "categories" : "ReinforcementRUDDERArticles",
+      "tags"     : "Reinforcement",
+      "url"      :  "https://ml-jku.github.io/rudder/" ,
+      "date"     : "2020-09-20 00:00:00 +0200"
+    } ,
+  
+    {
+      "title"    : "Hopfield Networks is All You Need",
+      "categories" : "HopfieldTransformersArticles",
+      "tags"     : "Hopfield, Attention, Transformers",
+      "url"      :  "https://ml-jku.github.io/hopfield-layers/" ,
+      "date"     : "2020-08-25 00:00:00 +0200"
+    } 
+  
 ]

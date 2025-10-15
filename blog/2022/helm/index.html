@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>Institute for Machine Learning @ JKU | History Compression via Language Models in Reinforcement Learning</title>
+<meta name="description" content="Research blog of the Institute for Machine Learning @ JKU.
+">
+
+<!-- Open Graph -->
+
+
+<!-- Bootstrap & MDB -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha512-MoRNloxbStBcD8z3M/2BmnT+rg4IsMxPkXaGh2zD6LGNNFE80W3onsAhRcMAMrSoyWL9xD7Ert0men7vR8LUZg==" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" integrity="sha512-RO38pBRxYH3SoOprtPTD86JFOclM51/XTIdEPh5j8sj4tp8jmQIx26twG52UaLi//hQldfrh7e51WzP9wuP32Q==" crossorigin="anonymous" />
+
+<!-- Fonts & Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"  integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css" integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
+
+<!-- Code Syntax Highlighting -->
+<link rel="stylesheet" href="https://gitcdn.link/repo/jwarby/jekyll-pygments-themes/master/github.css" />
+
+<!-- Styles -->
+<link rel="shortcut icon" href="/assets/img/favicon.ico">
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<link rel="canonical" href="/blog/2022/helm/">
+
+<!-- Theming-->
+
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KC0VGMCD6W"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-KC0VGMCD6W');
+  </script>
+
+
+    
+<!-- MathJax -->
+<script type="text/javascript">
+  window.MathJax = {
+    tex: {
+      tags: 'ams'
+    }
+  };
+</script>
+<script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.1.2/es5/tex-mml-chtml.js"></script>
+<script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+
+  </head>
+
+  <body class="fixed-top-nav ">
+
+    <!-- Header -->
+
+    <header>
+
+    <!-- Nav Bar -->
+    <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
+      <a class="navbar-brand title font-weight-lighter" href="ml-jku.github.io/">
+       <!-- <span>Institute</span> for Machine  Learning @ JKU -->
+       <img class="rounded" src="/assets/img/jku_ml_1.svg" width=100px height=45px>
+       <img class="rounded" src="/assets/img/ellis_linz.jpeg" width=200px height=45px>
+      </a>
+    <div class="container">
+      
+      <!-- Navbar Toogle -->
+      <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar top-bar"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>
+      </button>
+      <div class="collapse navbar-collapse text-right" id="navbarNav">
+        <ul class="navbar-nav ml-auto flex-nowrap">
+          <!-- About -->
+          <li class="nav-item ">
+            <a class="nav-link" href="/">
+              about
+              
+            </a>
+          </li>
+          
+          <!-- Blog -->
+          <li class="nav-item active">
+            <a class="nav-link" href="/blog/">
+              blog
+              
+            </a>
+          </li>
+          
+          <!-- Other pages -->
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="nav-item ">
+                
+                    <div class="dropdown">
+                      <a class="nav-link" href="/research/">
+                        research
+                        
+                      </a>
+                        <div class="dropdown-content">
+                          <a href="/research/deep_learning">Deep Learning</a>
+                          <a href="/research/ai_healthcare">AI in Health Care</a>
+                          <a href="/research/ai_drug">AI in Drug Discovery</a>
+                          <a href="/research/reinforcement_learning">Reinforcement Learning</a>
+                          <a href="/research/hopfield_networks">Modern Hopfield Networks</a>
+                          <a href="/research/ai4earth">AI 4 Earth</a>
+                          <a href="/research/ai4drive">AI 4 Driving</a>
+                        </div>
+                      </div>
+                    
+                
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          <li class="nav-item ">
+                
+                <a class="nav-link" href="/publications/">
+                  publications
+                  
+                </a>
+                
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="nav-item ">
+                
+                <a class="nav-link" href="/talks/">
+                  talks
+                  
+                </a>
+                
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          <li class="nav-item ">
+              <a class="nav-link" href="https://www.jku.at/en/institute-for-machine-learning/about-us/team/" target="_blank" rel="noopener noreferrer">
+                people
+                
+              </a>
+          </li>
+          
+          
+          
+          
+          
+          <li class="nav-item ">
+                
+                <a class="nav-link" href="/software/">
+                  software
+                  
+                </a>
+                
+          </li>
+          
+          
+          
+          
+          
+          <li class="nav-item ">
+              <a class="nav-link" href="https://www.jku.at/en/institute-for-machine-learning/" target="_blank" rel="noopener noreferrer">
+                contact
+                
+              </a>
+          </li>
+          
+          
+          
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+</header>
+
+
+    <!-- Content -->
+
+    <div class="container mt-5">
+      \[\newcommand{\Bo}{\boldsymbol{o}}
+\newcommand{\Bx}{\boldsymbol{x}}
+\newcommand{\BP}{\boldsymbol{P}}
+\newcommand{\BE}{\boldsymbol{E}}
+\newcommand{\Bh}{\boldsymbol{h}}
+\newcommand{\cN}{\mathcal{N}}
+\newcommand{\Be}{\boldsymbol{e}}
+\newcommand{\dR}{\mathbb{R}}\]
+
+<body>
+    <header class="page-header" role="banner">
+      <h1 class="project-name">History Compression via Language Models in Reinforcement Learning</h1>
+    </header>
+</body>
+
+<p>This blog post explains the paper <a href="https://arxiv.org/abs/2205.12258">History Compression via Language Models in Reinforcement Learning</a> (presented at ICML 2022).</p>
+
+<p><strong>HELM (History comprEssion via Language Models)</strong> is a novel framework for Reinforcement Learning (RL) in partially observable environments.
+Language is inherently well suited for abstraction and passing on experiences from one human to another.
+Therefore, we leverage a frozen pretrained language Transformer (PLT) to create abstract history representations for RL.</p>
+
+<p>To use a PLT for history compression we have to translate environment observations to the language domain.
+To this end, we introduce the <em>FrozenHopfield</em> mechanism.
+The key feature of the <em>FrozenHopfield</em> is that it does not require any training.
+Thus, we avoid propagating gradients through the huge Transformer model. 
+Therefore, no samples are required for finetuning the PLT.
+This makes our approach very sample efficient.</p>
+
+<h2 id="the-helm-framework">The HELM framework</h2>
+
+<p>Our proposed framework, HELM, as depicted below, consists of three main parts:</p>
+<ul>
+  <li>History compression via <em>FozenHopfield</em> and PLT</li>
+  <li>CNN trained for encoding the current timestep</li>
+  <li>Actor-critic head trained for policy optimization</li>
+</ul>
+
+<p><br /></p>
+<div class="align-images" style="text-align: center;">
+    <div>
+        <img class="img-fluid rounded z-depth-1" width="500" src="/assets/img/helm/methodology.gif" />
+    </div>
+</div>
+<p><br /></p>
+
+<p>We instantiate the PLT with a TransformerXL (<a href="https://arxiv.org/abs/1901.02860">Dai et al., 2019</a>), which strikes a reasonable balance between performance and complexity.
+We utilize a CNN based on the small Impala architecture (<a href="https://arxiv.org/abs/1802.01561">Espeholt et al., 2018</a>) since we mainly focus on image-based environments. 
+Finally, we utilize an MLP with one hidden layer for the actor-critic head.
+The only trainable components of HELM are the CNN encoder of the current timestep and the actor-critic head.</p>
+
+<h2 id="frozenhopfield"><em>FrozenHopfield</em></h2>
+
+<p>We solve the problem of translating environment observations to the language domain by the <em>FrozenHopfield</em> mechanism.
+It maps any type of observation vector to a suitable token embedding.
+<em>FrozenHopfield</em> utilizes <a href="https://arxiv.org/abs/2008.02217"><strong>modern Hopfield networks</strong></a> to associate observations with stored token embeddings.
+It leverages the <a href="https://en.wikipedia.org/wiki/Johnson%E2%80%93Lindenstrauss_lemma"><strong>Johnson-Lindenstrauss (JL) lemma</strong></a> which guarantees that random projections preserve mutual distances between datapoints to a large extent with high probability.
+The JL-lemma justifies the use of a random but fixed projection of observations.
+The <em>FrozenHopfield</em> mechanism uses these projections as queries to retrieve a convex combination of stored token embeddings.
+The retrievals live in the language domain and are therefore well-suited as inputs to the PLT.
+<br /></p>
+<div class="align-images" style="text-align: center;">
+    <div>
+        <img class="img-fluid rounded z-depth-1" width="500" src="/assets/img/helm/frozenpool.gif" />
+    </div>
+</div>
+<p><br />
+More formally, let \(\BE = (\Be_1, \dots, \Be_k)^\top \in \dR^{k \times m}\) be the token embedding matrix from the pretrained Transformer consisting of \(k\) embeddings \(\Be_i \in \dR^m\).
+Further, \(\BP \in \dR^{m \times n}\) is a random projection matrix whose entries are independently sampled from a \(\cN(0, n / m)\) normal distribution.
+The variance \(n / m\) is required by the JL lemma.
+At time \(t\), we obtain inputs \(\Bx_t \in \dR^m\) for the Transformer from observations \(\Bo_t \in \dR^n\) via the <em>FrozenHopfield</em> mechanism as in the figure below.
+<br /></p>
+<div class="align-images" style="text-align: center;">
+    <div>
+        <img class="img-fluid rounded z-depth-1" width="500" src="/assets/img/helm/frozenpool.svg" />
+    </div>
+</div>
+<p><br />
+The inputs \(\Bx_t\) represent Hopfield retrievals, where \(\BP \Bo_t\) are the state patterns or queries and \(\BE\) are the stored patterns (token embeddings).
+Equivalently, it can be viewed as a dot-product attention mechanism with query \(\BP \Bo_t\), and keys and values \(\BE\).
+Since the inputs \(\Bx_t\) are in the simplex spanned by the stored patterns \(\BE\), it is guaranteed that \(\Bx_t\) lies in the convex hull of the set \(\{\Be_1, \dots, \Be_k\}\). 
+Therefore the Transformer only receives inputs lying in the realm of the embedding space where it was pretrained on.</p>
+
+<h1 id="results">Results</h1>
+<p>We compare HELM to an LSTM (<a href="https://www.researchgate.net/publication/13853244_Long_Short-term_Memory">Hochreiter &amp; Schmidhuber, 1997</a>) baseline with a CNN backbone (Impala-PPO, <a href="https://arxiv.org/abs/1802.01561">Espeholt et al., 2018</a>) trained from scratch.
+Further, we add a comparison to a Markovian policy which consists of the small Impala CNN backbone and the actor-critic networks (CNN-PPO).</p>
+
+<h2 id="randommaze">RandomMaze</h2>
+<p>First, we show results on a simple procedurally generated random maze environment.
+<br /></p>
+<div class="align-images" style="text-align: center;">
+    <div>
+        <img class="img-fluid rounded z-depth-1" width="500" src="/assets/img/helm/RandomMaze.svg" />
+    </div>
+</div>
+<p><br />
+The aim of the agent is to navigate to a goal tile which is located in the lower right corner, while starting at a random position in the maze.
+The agent receives a large negative reward for bumping into a wall and a small negative reward for each step.
+HELM outperforms both competitors after training for 2M timesteps.
+See a few sample episodes of a trained HELM agent below.
+<br /></p>
+<div class="align-images" style="text-align: center;">
+    <div>
+        <img class="img-fluid rounded z-depth-1" width="410" src="/assets/img/helm/RandomMaze_HELM.gif" />
+    </div>
+</div>
+<p><br /></p>
+
+<h2 id="minigrid">Minigrid</h2>
+
+<p>We train on the KeyCorridor (MiniGrid-KeyCorridor-v0) environment in which the agent needs to collect a key behind a closed door to unlock another door and pick up an object.
+Additionally, the agent has a restricted field of view (light-gray area in the figure below) depending on which direction the agent is currently facing.
+<br /></p>
+<div class="align-images" style="text-align: center;">
+    <div>
+        <img class="img-fluid rounded z-depth-1" width="410" src="/assets/img/helm/KeyCorridor_HELM.gif" />
+    </div>
+</div>
+<p><br />
+Thus, the agent needs to memorize that it had already picked up the key before trying to unlock the door behind which the target object is located.
+Again, HELM significantly outperforms both Impala-PPO, and CNN-PPO.
+See a few sample episodes of the trained HELM agent above.
+<br /></p>
+<div class="align-images" style="text-align: center;">
+    <div>
+        <img class="img-fluid rounded z-depth-1" width="500" src="/assets/img/helm/rew_comparison_kc.svg" />
+    </div>
+</div>
+<p><br /></p>
+<h2 id="procgen">Procgen</h2>
+
+<p>We tested HELM on the very challenging <a href="https://openai.com/blog/procgen-benchmark/">Procgen</a> benchmark suite, which consists of 16 diverse environments.
+Six out of these 16 environments (caveflyer, dodgeball, heist, jumper, maze, miner) offer a <em>memory</em> mode which provides partial observability.
+<br /></p>
+<div class="align-images" style="text-align: center;">
+    <div>
+        <img class="img-fluid rounded z-depth-1" width="500" src="/assets/img/helm/env_plot_procgen.svg" />
+    </div>
+</div>
+<p><br />
+We train HELM, Impala-PPO, and CNN-PPO for 25M timesteps.
+HELM significantly outperforms both Impala-PPO and CNN-PPO in 4 out of 6 environments.</p>
+
+<p><br /></p>
+<div class="align-images" style="text-align: center;">
+    <div>
+        <img class="img-fluid rounded z-depth-1" width="800" src="/assets/img/helm/rew_comparison_procgen.svg" />
+    </div>
+</div>
+<p><br />
+The next figure shows the mean normalized scores across all six environments.
+HELM significantly outperforms Impala-PPO.
+<br /></p>
+<div class="align-images" style="text-align: center;">
+    <div>
+        <img class="img-fluid rounded z-depth-1" width="500" src="/assets/img/helm/mean_normalized_score.svg" />
+    </div>
+</div>
+<p><br />
+See some sample episodes for miner, maze, and dodgeball.</p>
+
+<div class="align-images">
+    <div>
+        <img class="img-fluid rounded z-depth-1" width="250" height="250" src="/assets/img/helm/miner.gif" />
+        <img class="img-fluid rounded z-depth-1" width="250" height="250" src="/assets/img/helm/maze.gif" />
+        <img class="img-fluid rounded z-depth-1" width="250" height="250" src="/assets/img/helm/dodgeball.gif" />
+    </div>
+</div>
+
+<h1 style="text-align: center;" id="analysis-of-representations">Analysis of representations</h1>
+
+<p>We take a closer look at the abstractions obtained by the <em>FrozenHopfield</em> mechanism and the PLT.
+First, we show the distance preserving property of <em>FrozenHopfield</em> by looking at two Minigrid environments, namely KeyCorridor and DynamicObstacles (MiniGrid-Dynamic-Obstacles-Random-5x5-v0).
+The figure below shows distance matrices in the observation space (i.e. input to <em>FrozenHopfield</em>) and the token embedding space.</p>
+
+<p><br /></p>
+<div class="align-images" style="text-align: center;">
+    <div>
+        <img class="img-fluid rounded z-depth-1" width="600" src="/assets/img/helm/dist_mat.png" />
+    </div>
+</div>
+<p><br />
+For \(\beta = 1\) (above) the distances are approximately preserved.
+With increasing \(\beta\) we can control the amount of dispersion in the embedding space and additionally enhance the distances to avoid representation collapse.
+Moreover, observations that are similar in pixel space map to the similar token embeddings.
+For \(\beta \rightarrow \infty\) we can retrieve a single token that represents the maximum contribution to the retrieved token embedding of <em>FrozenHopfield</em>:
+<br /></p>
+<div class="align-images" style="text-align: center;">
+    <div>
+        <img class="img-fluid rounded z-depth-1" width="600" src="/assets/img/helm/lang_abst.svg" />
+    </div>
+</div>
+<p><br />
+In both examples above the agent faces a door.
+<em>FrozenHopfield</em> maps these observations to the same word, in this case “recollection”.
+Again by varying the \(\beta\) parameter we can control the amount of clustering, which results in different levels of abstraction.</p>
+
+<p>Finally we take a look at the attention maps of different attention heads in different layers of the PLT.
+To this end we analyse a trajectory of the KeyCorridor environment and retrieve attention maps of an early, a middle, and the last layer.
+<br /></p>
+<div class="align-images" style="text-align: center;">
+    <div>
+        <img class="img-fluid rounded z-depth-1" width="600" src="/assets/img/helm/attn_maps_ep4.png" />
+    </div>
+</div>
+<p><br />
+We find that the attention maps show similar patterns, all of them attending to the second timestep which is where the agent encounters the key the first time.
+Furthermore, most heads attend to timestep 11 which is the first time the agent encounters the ball.
+This demonstrates that some attention heads respond to certain key events that are crucial for solving the task.</p>
+
+<p>For more details, please check out our <a href="https://arxiv.org/abs/2205.12258">paper</a>.</p>
+
+<h2 id="material">Material</h2>
+<p>Paper: <a href="https://arxiv.org/abs/2205.12258">History Compression via Language Models in Reinforcement Learning</a><br />
+Github repo: <a href="https://github.com/ml-jku/helm">HELM</a></p>
+
+<p>Contributions by Thomas Adler, Vihang Patil, Angela Bitto-Nemling, Markus Holzleitner, Sebastian Lehner, Hamid Eghbal-Zadeh, and Sepp Hochreiter.</p>
+
+<p>If you have any questions feel free to contact us at this <a href="paischer@ml.jku.at">email</a>.</p>
+
+
+    </div>
+
+    <!-- Footer -->
+
+    
+<footer class="fixed-bottom">
+  <div class="container mt-0">
+    &copy; Copyright 2025 Institute for Machine Learning @ JKU.
+    Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+
+    
+  </div>
+</footer>
+
+
+
+  </body>
+
+  <!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+
+  <!-- Bootsrap & MDB scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.4.4/umd/popper.min.js" integrity="sha512-eUQ9hGdLjBjY3F41CScH3UX+4JDSI9zXeroz7hJ+RteoCaY+GP/LDoM8AO+Pt+DRFw3nXqsjh9Zsts8hnYv8/A==" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha512-M5KW3ztuIICmVIhjSqXe01oV2bpe248gOxqmlcYrEzAvws7Pw3z6BK0iGbrwvdrUQUhi3eXgtxp5I8PDo9YfjQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js" integrity="sha512-Mug9KHKmroQFMLm93zGrjhibM2z2Obg9l6qFG2qKjXEXkMp/VDkI4uju9m4QKPjWSwQ6O2qzZEnJDEeCw0Blcw==" crossorigin="anonymous"></script>
+
+  
+<!-- Mansory & imagesLoaded -->
+<script defer src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script defer src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+<script defer src="/assets/js/mansory.js" type="text/javascript"></script>
+
+
+  
+
+
+<!-- Load Common JS -->
+<script src="/assets/js/common.js"></script>
+
+<!-- Load DarkMode JS -->
+<script src="/assets/js/dark_mode.js"></script>
+
+
+</html>
