@@ -1,0 +1,1748 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>Institute for Machine Learning @ JKU | Reinforcement Learning</title>
+<meta name="description" content="Research blog of the Institute for Machine Learning @ JKU.
+">
+
+<!-- Open Graph -->
+
+
+<!-- Bootstrap & MDB -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha512-MoRNloxbStBcD8z3M/2BmnT+rg4IsMxPkXaGh2zD6LGNNFE80W3onsAhRcMAMrSoyWL9xD7Ert0men7vR8LUZg==" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" integrity="sha512-RO38pBRxYH3SoOprtPTD86JFOclM51/XTIdEPh5j8sj4tp8jmQIx26twG52UaLi//hQldfrh7e51WzP9wuP32Q==" crossorigin="anonymous" />
+
+<!-- Fonts & Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"  integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css" integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
+
+<!-- Code Syntax Highlighting -->
+<link rel="stylesheet" href="https://gitcdn.link/repo/jwarby/jekyll-pygments-themes/master/github.css" />
+
+<!-- Styles -->
+<link rel="shortcut icon" href="/assets/img/favicon.ico">
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<link rel="canonical" href="/research/reinforcement_learning/">
+
+<!-- Theming-->
+
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KC0VGMCD6W"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-KC0VGMCD6W');
+  </script>
+
+
+    
+<!-- MathJax -->
+<script type="text/javascript">
+  window.MathJax = {
+    tex: {
+      tags: 'ams'
+    }
+  };
+</script>
+<script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.1.2/es5/tex-mml-chtml.js"></script>
+<script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+
+  </head>
+
+  <body class="fixed-top-nav ">
+
+    <!-- Header -->
+
+    <header>
+
+    <!-- Nav Bar -->
+    <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
+      <a class="navbar-brand title font-weight-lighter" href="ml-jku.github.io/">
+       <!-- <span>Institute</span> for Machine  Learning @ JKU -->
+       <img class="rounded" src="/assets/img/jku_ml_1.svg" width=100px height=45px>
+       <img class="rounded" src="/assets/img/ellis_linz.jpeg" width=200px height=45px>
+      </a>
+    <div class="container">
+      
+      <!-- Navbar Toogle -->
+      <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar top-bar"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>
+      </button>
+      <div class="collapse navbar-collapse text-right" id="navbarNav">
+        <ul class="navbar-nav ml-auto flex-nowrap">
+          <!-- About -->
+          <li class="nav-item ">
+            <a class="nav-link" href="/">
+              about
+              
+            </a>
+          </li>
+          
+          <!-- Blog -->
+          <li class="nav-item ">
+            <a class="nav-link" href="/blog/">
+              blog
+              
+            </a>
+          </li>
+          
+          <!-- Other pages -->
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="nav-item ">
+                
+                    <div class="dropdown">
+                      <a class="nav-link" href="/research/">
+                        research
+                        
+                      </a>
+                        <div class="dropdown-content">
+                          <a href="/research/deep_learning">Deep Learning</a>
+                          <a href="/research/ai_healthcare">AI in Health Care</a>
+                          <a href="/research/ai_drug">AI in Drug Discovery</a>
+                          <a href="/research/reinforcement_learning">Reinforcement Learning</a>
+                          <a href="/research/hopfield_networks">Modern Hopfield Networks</a>
+                          <a href="/research/ai4earth">AI 4 Earth</a>
+                          <a href="/research/ai4drive">AI 4 Driving</a>
+                        </div>
+                      </div>
+                    
+                
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          <li class="nav-item ">
+                
+                <a class="nav-link" href="/publications/">
+                  publications
+                  
+                </a>
+                
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="nav-item ">
+                
+                <a class="nav-link" href="/talks/">
+                  talks
+                  
+                </a>
+                
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          <li class="nav-item ">
+              <a class="nav-link" href="https://www.jku.at/en/institute-for-machine-learning/about-us/team/" target="_blank" rel="noopener noreferrer">
+                people
+                
+              </a>
+          </li>
+          
+          
+          
+          
+          
+          <li class="nav-item ">
+                
+                <a class="nav-link" href="/software/">
+                  software
+                  
+                </a>
+                
+          </li>
+          
+          
+          
+          
+          
+          <li class="nav-item ">
+              <a class="nav-link" href="https://www.jku.at/en/institute-for-machine-learning/" target="_blank" rel="noopener noreferrer">
+                contact
+                
+              </a>
+          </li>
+          
+          
+          
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+</header>
+
+
+    <!-- Content -->
+
+    <div class="container mt-5">
+      <div class="post">
+
+  <header class="post-header">
+    
+    <h1 class="post-title">Reinforcement Learning</h1>
+    <p class="post-description"></p>
+    
+  </header>
+
+  <article>
+    <div class="about-text">
+    <p>Sequential decision making and credit assignment under uncertainty and partial observability is central to developing Intelligent Systems. Reinforcement Learning (RL) provides a general and powerful computational framework for sequential decision making. It involves an agent interacting with the environment to maximize a reward function by selecting actions.</p>
+
+<div class="row justify-content-sm-center">
+    <div class="col-sm-5 mt-3 mt-md-0">
+        <img class="img-fluid research-img" src="/assets/img/research/reinforcement_learning/rudder_1.png" alt="" title="example image" />
+    </div>
+<p>
+
+Our research at the Institute of Machine Learning focuses on developing new algorithms and theory required to improve the state of the art in Reinforcement Learning. Credit assignment under delayed reward has been central to our work in recent years. We also actively pursue developing new function approximation methods for scaling Reinforcement Learning to high dimensional problems. Learning to take decisions based on stored data is another area of interest.
+
+We actively apply Reinforcement Learning to various applications including robotics, logistics, natural language processing and others.
+
+<div class="publications">
+<h4>recent publications in Reinforcement Learning:</h4>
+  <ol class="bibliography"><li><div class="row">
+  <div class="col-sm-2 abbr">
+  
+    
+    <abbr class="badge">RRL</abbr>
+    
+  
+  </div>
+
+  <div id="schmied2023learning" class="col-sm-8">
+    
+      <div class="title">Learning to Modulate pre-trained Models in RL</div>
+      <div class="author">
+        
+          
+            
+              
+                
+                  Schmied, T.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Hofmarcher, M.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Paischer, F.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Pascanu, R.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  and Hochreiter, S.
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+      
+        2023
+      
+      </div>
+    
+
+    <div class="links">
+    
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+    
+    
+    
+      <a href="https://openreview.net/forum?id=Us6BtPZGei3" class="btn btn-sm z-depth-0" role="button" target="_blank">url</a>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+    <div class="abstract hidden">
+      <p>Reinforcement Learning (RL) has experienced great success in complex games and simulations. However, RL agents are often highly specialized for a particular task, and it is difficult to adapt a trained agent to a new task. In supervised learning, an established paradigm is multi-task pre-training followed by fine-tuning. A similar trend is emerging in RL, where agents are pre-trained on data collections that comprise a multitude of tasks. Despite these developments, it remains an open challenge how to adapt such pre-trained agents to novel tasks while retaining performance on the pre-training tasks. In this regard, we pre-train an agent on a set of tasks from the Meta-World benchmark suite and adapt it to tasks from Continual-World. We conduct a comprehensive comparison of fine-tuning methods originating from supervised learning in our setup. Our findings show that fine-tuning is feasible, but for existing methods, performance on previously learned tasks often deteriorates. Therefore, we propose a novel approach that avoids forgetting by modulating the information flow of the pre-trained model. Our method outperforms existing fine-tuning approaches, and achieves state-of-the-art performance on the Continual-World benchmark. To facilitate future research in this direction, we collect datasets for all Meta-World tasks and make them publicly available.</p>
+    </div>
+    
+  </div>
+</div>
+</li>
+<li><div class="row">
+  <div class="col-sm-2 abbr">
+  
+  </div>
+
+  <div id="paischer2022toward" class="col-sm-8">
+    
+      <div class="title">Toward Semantic History Compression for Reinforcement Learning</div>
+      <div class="author">
+        
+          
+            
+              
+                
+                  Paischer, F.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Adler, T.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Radler, A.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Hofmarcher, M.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  and Hochreiter, S.
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+      
+        2022
+      
+      </div>
+    
+
+    <div class="links">
+    
+    
+    
+      <a href="https://openreview.net/forum?id=97C6klf5shp" class="btn btn-sm z-depth-0" role="button" target="_blank">url</a>
+    
+    
+    
+    
+    
+    
+      <a href="https://github.com/ml-jku/helm" class="btn btn-sm z-depth-0" role="button" target="_blank">Code</a>
+    
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+  </div>
+</div>
+</li>
+<li><div class="row">
+  <div class="col-sm-2 abbr">
+  
+    
+    <abbr class="badge">DeepRL</abbr>
+    
+  
+  </div>
+
+  <div id="siripurapu2022infodist" class="col-sm-8">
+    
+      <div class="title">InfODist: Online distillation with Informative rewards improves generalization in Curriculum Learning</div>
+      <div class="author">
+        
+          
+            
+              
+                
+                  Siripurapu, R.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Patil, V.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Schweighofer, K.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Dinu, M.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Schmied, T.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Diez, L.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Holzleitner, M.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Eghbal-zadeh, H.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Kopp, M.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  and Hochreiter, S.
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+      
+        2022
+      
+      </div>
+    
+
+    <div class="links">
+    
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+    
+    
+    
+      <a href="https://openreview.net/forum?id=9CvMkA8oi8O" class="btn btn-sm z-depth-0" role="button" target="_blank">url</a>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+    <div class="abstract hidden">
+      <p>Curriculum learning (CL) is an essential part of human learning, just as reinforcement learning (RL) is. However, CL agents that are trained using RL with neural networks produce limited generalization to later tasks in the curriculum. We show that online distillation using learned informative rewards tackles this problem. Here, we consider a reward to be informative if it is positive when the agent makes progress towards the goal and negative otherwise. Thus, an informative reward allows an agent to learn immediately to avoid states which are irrelevant to the task. And, the value and policy networks do not utilize their limited capacity to fit targets for these irrelevant states. Consequently, this improves generalization to later tasks. Our contributions: First, we propose InfODist, an online distillation method that makes use of informative rewards to significantly improve generalization in CL. Second, we show that training with informative rewards ameliorates the capacity loss phenomenon that was previously attributed to non-stationarities during the training process. Third, we show that learning from task-irrelevant states explains the capacity loss and subsequent impaired generalization. In conclusion, our work is a crucial step toward scaling curriculum learning to complex real world tasks</p>
+    </div>
+    
+  </div>
+</div>
+</li>
+<li><div class="row">
+  <div class="col-sm-2 abbr">
+  
+    
+    <abbr class="badge">FMDM</abbr>
+    
+  
+  </div>
+
+  <div id="paischer2022foundation" class="col-sm-8">
+    
+      <div class="title">Foundation Models for History Compression in Reinforcement Learning</div>
+      <div class="author">
+        
+          
+            
+              
+                
+                  Paischer, F.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Adler, T.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Radler, A.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Hofmarcher, M.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  and Hochreiter, S.
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+      
+        2022
+      
+      </div>
+    
+
+    <div class="links">
+    
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+    
+    
+    
+      <a href="https://openreview.net/forum?id=KmxQ3v7nMmd" class="btn btn-sm z-depth-0" role="button" target="_blank">url</a>
+    
+    
+    
+    
+    
+    
+      <a href="https://github.com/ml-jku/helm" class="btn btn-sm z-depth-0" role="button" target="_blank">Code</a>
+    
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+    <div class="abstract hidden">
+      <p>Agents interacting under partial observability require access to past observations via a memory mechanism in order to approximate the true state of the environment. Recent work suggests that leveraging language as abstraction provides benefits for creating a representation of past events. History Compression via Language Models (HELM) leverages a pretrained Language Model (LM) for representing the past. It relies on a randomized attention mechanism to translate environment observations to token embeddings. In this work, we show that the representations resulting from this attention mechanism can collapse under certain conditions. This causes blindness of the agent to subtle changes in the environment that may be crucial for solving a certain task. We propose a solution to this problem consisting of two parts. First, we improve upon HELM by substituting the attention mechanism with a feature-wise centering-and-scaling operation. Second, we take a step toward semantic history compression by leveraging foundation models, such as CLIP, to encode observations, which further improves performance. By combining foundation models, our agent is able to solve the challenging MiniGrid-Memory environment. Surprisingly, however, our experiments suggest that this is not due to the semantic enrichment of the representation presented to the LM, but rather due to the discriminative power provided by CLIP. We make our code publicly available at https://github.com/ml-jku/helm.</p>
+    </div>
+    
+  </div>
+</div>
+</li>
+<li><div class="row">
+  <div class="col-sm-2 abbr">
+  
+    
+    <abbr class="badge">CoLLAs</abbr>
+    
+  
+  </div>
+
+  <div id="schweighofer2022dataset" class="col-sm-8">
+    
+      <div class="title">A Dataset Perspective on Offline Reinforcement Learning</div>
+      <div class="author">
+        
+          
+            
+              
+                
+                  Schweighofer, K.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Radler, A.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Dinu, M.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Hofmarcher, M.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Patil, V.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Bitto-Nemling, A.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Eghbal-zadeh, H.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  and Hochreiter, S.
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+      
+        2022
+      
+      </div>
+    
+
+    <div class="links">
+    
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+    
+    
+    
+      <a href="https://arxiv.org/abs/2111.04714" class="btn btn-sm z-depth-0" role="button" target="_blank">url</a>
+    
+    
+    
+    
+    
+      <a href="https://kschweig.github.io/OfflineRL/" class="btn btn-sm z-depth-0" role="button" target="_blank">Blog</a>
+    
+    
+      <a href="https://github.com/ml-jku/OfflineRL" class="btn btn-sm z-depth-0" role="button" target="_blank">Code</a>
+    
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+    <div class="abstract hidden">
+      <p>The application of Reinforcement Learning (RL) in real world environments can be expensive or risky due to sub-optimal policies during training. In Offline RL, this problem is avoided since interactions with an environment are prohibited. Policies are learned from a given dataset, which solely determines their performance. Despite this fact, how dataset characteristics influence Offline RL algorithms is still hardly investigated. The dataset characteristics are determined by the behavioral policy that samples this dataset. Therefore, we define characteristics of behavioral policies as exploratory for yielding high expected information in their interaction with the Markov Decision Process (MDP) and as exploitative for having high expected return. We implement two corresponding empirical measures for the datasets sampled by the behavioral policy in deterministic MDPs. The first empirical measure SACo is defined by the normalized unique state-action pairs and captures exploration. The second empirical measure TQ is defined by the normalized average trajectory return and captures exploitation. Empirical evaluations show the effectiveness of TQ and SACo. In large-scale experiments using our proposed measures, we show that the unconstrained off-policy Deep Q-Network family requires datasets with high SACo to find a good policy. Furthermore, experiments show that policy constraint algorithms perform well on datasets with high TQ and SACo. Finally, the experiments show, that purely dataset-constrained Behavioral Cloning performs competitively to the best Offline RL algorithms for datasets with high TQ.</p>
+    </div>
+    
+  </div>
+</div>
+</li>
+<li><div class="row">
+  <div class="col-sm-2 abbr">
+  
+    
+    <abbr class="badge">CoLLAs</abbr>
+    
+  
+  </div>
+
+  <div id="steinparz2022reactive" class="col-sm-8">
+    
+      <div class="title">Reactive Exploration to Cope with Non-Stationarity in Lifelong Reinforcement Learning</div>
+      <div class="author">
+        
+          
+            
+              
+                
+                  Steinparz, C.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Schmied, T.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Paischer, F.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Dinu, M.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Patil, V.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Bitto-Nemling, A.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Eghbal-zadeh, H.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  and Hochreiter, S.
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+      
+        2022
+      
+      </div>
+    
+
+    <div class="links">
+    
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+    
+    
+    
+      <a href="https://arxiv.org/abs/2207.05742" class="btn btn-sm z-depth-0" role="button" target="_blank">url</a>
+    
+    
+    
+    
+    
+    
+      <a href="https://github.com/ml-jku/reactive-exploration" class="btn btn-sm z-depth-0" role="button" target="_blank">Code</a>
+    
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+    <div class="abstract hidden">
+      <p>In lifelong learning, an agent learns throughout its entire life without resets, in a constantly changing environment, as we humans do. Consequently, lifelong learning comes with a plethora of research problems such as continual domain shifts, which result in non-stationary rewards and environment dynamics. These non-stationarities are difficult to detect and cope with due to their continuous nature. Therefore, exploration strategies and learning methods are required that are capable of tracking the steady domain shifts, and adapting to them. We propose Reactive Exploration to track and react to continual domain shifts in lifelong reinforcement learning, and to update the policy correspondingly. To this end, we conduct experiments in order to investigate different exploration strategies. We empirically show that representatives of the policy-gradient family are better suited for lifelong learning, as they adapt more quickly to distribution shifts than Q-learning. Thereby, policy-gradient methods profit the most from Reactive Exploration and show good results in lifelong learning with continual domain shifts.</p>
+    </div>
+    
+  </div>
+</div>
+</li>
+<li><div class="row">
+  <div class="col-sm-2 abbr">
+  
+    
+    <abbr class="badge">ICML</abbr>
+    
+  
+  </div>
+
+  <div id="paischer2022helm" class="col-sm-8">
+    
+      <div class="title">History Compression via Language Models in Reinforcement Learning</div>
+      <div class="author">
+        
+          
+            
+              
+                
+                  Paischer, F.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Adler, T.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Patil, V.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Bitto-Nemling, A.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Holzleitner, M.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Lehner, S.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Eghbal-zadeh, H.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  and Hochreiter, S.
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+        <em>In </em>
+      
+      
+        2022
+      
+      </div>
+    
+
+    <div class="links">
+    
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+    
+    
+    
+      <a href="https://arxiv.org/abs/2205.12258" class="btn btn-sm z-depth-0" role="button" target="_blank">url</a>
+    
+    
+    
+    
+    
+      <a href="https://ml-jku.github.io/blog/2022/helm/" class="btn btn-sm z-depth-0" role="button" target="_blank">Blog</a>
+    
+    
+      <a href="https://github.com/ml-jku/helm" class="btn btn-sm z-depth-0" role="button" target="_blank">Code</a>
+    
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+    <div class="abstract hidden">
+      <p>In a partially observable Markov decision process (POMDP), an agent typically uses a representation of the past to approximate the underlying MDP. We propose to utilize a frozen Pretrained Language Transformer (PLT) for history representation and compression to improve sample efficiency. To avoid training of the Transformer, we introduce FrozenHopfield, which automatically associates observations with original token embeddings. To form these associations, a modern Hopfield network stores the original token embeddings, which are retrieved by queries that are obtained by a random but fixed projection of observations. Our new method, HELM, enables actor-critic network architectures that contain a pretrained language Transformer for history representation as a memory module. Since a representation of the past need not be learned, HELM is much more sample efficient than competitors. On Minigrid and Procgen environments HELM achieves new state-of-the-art results. Our code is available at https://github.com/ml-jku/helm.</p>
+    </div>
+    
+  </div>
+</div>
+</li>
+<li><div class="row">
+  <div class="col-sm-2 abbr">
+  
+    
+    <abbr class="badge">ICML</abbr>
+    
+  
+  </div>
+
+  <div id="patil2020alignrudder" class="col-sm-8">
+    
+      <div class="title">Align-RUDDER: Learning From Few Demonstrations by Reward Redistribution</div>
+      <div class="author">
+        
+          
+            
+              
+                
+                  Patil, V.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Hofmarcher, M.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Dinu, M.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Dorfer, M.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Blies, P.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Brandstetter, J.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Arjona-Medina, J.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  and Hochreiter, S.
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+        <em>arXiv preprint arXiv:2009.14108</em>
+      
+      
+        2022
+      
+      </div>
+    
+
+    <div class="links">
+    
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+    
+    
+    
+      <a href="https://arxiv.org/abs/2009.14108" class="btn btn-sm z-depth-0" role="button" target="_blank">url</a>
+    
+    
+    
+    
+    
+    
+      <a href="https://github.com/ml-jku/align-rudder" class="btn btn-sm z-depth-0" role="button" target="_blank">Code</a>
+    
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+    <div class="abstract hidden">
+      <p>Reinforcement Learning algorithms require a large number of samples to solve complex tasks with sparse and delayed rewards. Complex tasks can often be hierarchically decomposed into sub-tasks. A step in the Q-function can be associated with solving a sub-task, where the expectation of the return increases. RUDDER has been introduced to identify these steps and then redistribute reward to them, thus immediately giving reward if sub-tasks are solved. Since the problem of delayed rewards is mitigated, learning is considerably sped up. However, for complex tasks, current exploration strategies as deployed in RUDDER struggle with discovering episodes with high rewards. Therefore, we assume that episodes with high rewards are given as demonstrations and do not have to be discovered by exploration. Typically the number of demonstrations is small and RUDDER’s LSTM model as a deep learning method does not learn well. Hence, we introduce Align-RUDDER, which is RUDDER with two major modifications. First, Align-RUDDER assumes that episodes with high rewards are given as demonstrations, replacing RUDDER’s safe exploration and lessons replay buffer. Second, we replace RUDDER’s LSTM model by a profile model that is obtained from multiple sequence alignment of demonstrations. Profile models can be constructed from as few as two demonstrations as known from bioinformatics. Align-RUDDER inherits the concept of reward redistribution, which considerably reduces the delay of rewards, thus speeding up learning. Align-RUDDER outperforms competitors on complex artificial tasks with delayed reward and few demonstrations. On the MineCraft ObtainDiamond task, Align-RUDDER is able to mine a diamond, though not frequently.</p>
+    </div>
+    
+  </div>
+</div>
+</li>
+<li><div class="row">
+  <div class="col-sm-2 abbr">
+  
+    
+    <abbr class="badge">arXiv</abbr>
+    
+  
+  </div>
+
+  <div id="schweighofer:21" class="col-sm-8">
+    
+      <div class="title">Understanding the Effects of Dataset Characteristics on Offline Reinforcement Learning</div>
+      <div class="author">
+        
+          
+            
+              
+                
+                  Schweighofer, K.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Hofmarcher, M.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Dinu, M.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Renz, P.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Bitto-Nemling, A.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Patil, V.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  and Hochreiter, S.
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+      
+        2021
+      
+      </div>
+    
+
+    <div class="links">
+    
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+    
+    
+    
+      <a href="https://arxiv.org/abs/2111.04714" class="btn btn-sm z-depth-0" role="button" target="_blank">url</a>
+    
+    
+    
+    
+    
+    
+      <a href="https://github.com/ml-jku/OfflineRL" class="btn btn-sm z-depth-0" role="button" target="_blank">Code</a>
+    
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+    <div class="abstract hidden">
+      <p>In real world, affecting the environment by a weak policy can be expensive or very risky, therefore hampers real world applications of reinforcement learning. Offline Reinforcement Learning (RL) can learn policies from a given dataset without interacting with the environment. However, the dataset is the only source of information for an Offline RL algorithm and determines the performance of the learned policy. We still lack studies on how dataset characteristics influence different Offline RL algorithms. Therefore, we conducted a comprehensive empirical analysis of how dataset characteristics effect the performance of Offline RL algorithms for discrete action environments. A dataset is characterized by two metrics: (1) the average dataset return measured by the Trajectory Quality (TQ) and (2) the coverage measured by the State-Action Coverage (SACo). We found that variants of the off-policy Deep Q-Network family require datasets with high SACo to perform well. Algorithms that constrain the learned policy towards the given dataset perform well for datasets with high TQ or SACo. For datasets with high TQ, Behavior Cloning outperforms or performs similarly to the best Offline RL algorithms.
+</p>
+    </div>
+    
+  </div>
+</div>
+</li>
+<li><div class="row">
+  <div class="col-sm-2 abbr">
+  
+  </div>
+
+  <div id="widrich2021modern" class="col-sm-8">
+    
+      <div class="title">Modern Hopfield Networks for Return Decomposition for Delayed Rewards</div>
+      <div class="author">
+        
+          
+            
+              
+                
+                  Widrich, M.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Hofmarcher, M.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Patil, V.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Bitto-Nemling, A.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  and Hochreiter, S.
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+        <em>In Deep RL Workshop NeurIPS 2021</em>
+      
+      
+        2021
+      
+      </div>
+    
+
+    <div class="links">
+    
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+    
+    
+    
+      <a href="https://openreview.net/forum?id=t0PQSDcqAiy" class="btn btn-sm z-depth-0" role="button" target="_blank">url</a>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+    <div class="abstract hidden">
+      <p>Delayed rewards, which are separated from their causative actions by irrelevant actions, hamper learning in reinforcement learning (RL). Especially real world problems often contain such delayed and sparse rewards. Recently, return decomposition for delayed rewards (RUDDER) employed pattern recognition to remove or reduce delay in rewards, which dramatically simplifies the learning task of the underlying RL method. RUDDER was realized using a long short-term memory (LSTM). The LSTM was trained to identify important state-action pair patterns, responsible for the return. Reward was then redistributed to these important state-action pairs. However, training the LSTM is often difficult and requires a large number of episodes. In this work, we replace the LSTM with the recently proposed continuous modern Hopfield networks (MHN) and introduce Hopfield-RUDDER. MHN are powerful trainable associative memories with large storage capacity. They require only few training samples and excel at identifying and recognizing patterns. We use this property of MHN to identify important state-action pairs that are associated with low or high return episodes and directly redistribute reward to them. However, in partially observable environments, Hopfield-RUDDER requires additional information about the history of state-action pairs. Therefore, we evaluate several methods for compressing history and introduce reset-max history, a lightweight history compression using the max-operator in combination with a reset gate. We experimentally show that Hopfield-RUDDER is able to outperform LSTM-based RUDDER on various 1D environments with small numbers of episodes. Finally, we show in preliminary experiments that Hopfield-RUDDER scales to highly complex environments with the Minecraft ObtainDiamond task from the MineRL NeurIPS challenge.</p>
+    </div>
+    
+  </div>
+</div>
+</li>
+<li><div class="row">
+  <div class="col-sm-2 abbr">
+  
+    
+    <abbr class="badge">arXiv</abbr>
+    
+  
+  </div>
+
+  <div id="holzleitner2020convergence" class="col-sm-8">
+    
+      <div class="title">Convergence Proof for Actor-Critic Methods Applied to PPO and RUDDER</div>
+      <div class="author">
+        
+          
+            
+              
+                
+                  Holzleitner, M.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Gruber, L.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Arjona-Medina, J.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Brandstetter, J.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  and Hochreiter, S.
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+      
+        2020
+      
+      </div>
+    
+
+    <div class="links">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+  </div>
+</div>
+</li>
+<li><div class="row">
+  <div class="col-sm-2 abbr">
+  
+    
+    <abbr class="badge">NeurIPS</abbr>
+    
+  
+  </div>
+
+  <div id="Arjona:19" class="col-sm-8">
+    
+      <div class="title">RUDDER: Return Decomposition for Delayed Rewards</div>
+      <div class="author">
+        
+          
+            
+              
+                
+                  Arjona-Medina, J.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Gillhofer, M.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Widrich, M.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Unterthiner, T.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Brandstetter, J.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  and Hochreiter, S.
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+        <em>In Advances in Neural Information Processing Systems</em>
+      
+      
+        2019
+      
+      </div>
+    
+
+    <div class="links">
+    
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+    
+    
+    
+      <a href="https://papers.nips.cc/paper/2019/file/16105fb9cc614fc29e1bda00dab60d41-Paper.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank">url</a>
+    
+    
+    
+    
+    
+      <a href="https://ml-jku.github.io/rudder/" class="btn btn-sm z-depth-0" role="button" target="_blank">Blog</a>
+    
+    
+      <a href="https://github.com/ml-jku/rudder" class="btn btn-sm z-depth-0" role="button" target="_blank">Code</a>
+    
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+    <div class="abstract hidden">
+      <p>We propose RUDDER, a novel reinforcement learning approach for delayed rewards in finite Markov decision processes (MDPs). In MDPs the Q-values are equal to the expected immediate reward plus the expected future rewards. The latter are related to bias problems in temporal difference (TD) learning and to high variance problems in Monte Carlo (MC) learning. Both problems are even more severe when rewards are delayed. RUDDER aims at making the expected future rewards zero, which simplifies Q-value estimation to computing the mean of the immediate reward. We propose the following two new concepts to push the expected future rewards toward zero. (i) Reward redistribution that leads to return-equivalent decision processes with the same optimal policies and, when optimal, zero expected future rewards. (ii) Return decomposition via contribution analysis which transforms the reinforcement learning task into a regression task at which deep learning excels. On artificial tasks with delayed rewards, RUDDER is significantly faster than MC and exponentially faster than Monte Carlo Tree Search (MCTS), TD({λ}), and reward shaping approaches. At Atari games, RUDDER on top of a Proximal Policy Optimization (PPO) baseline improves the scores, which is most prominent at games with delayed rewards. Source code is available at \url{https://github.com/ml-jku/rudder} and demonstration videos at \url{https://goo.gl/EQerZV}.</p>
+    </div>
+    
+  </div>
+</div>
+</li></ol>
+</div>
+</p></div>
+
+  </div>
+  </article>
+
+</div>
+
+    </div>
+
+    <!-- Footer -->
+
+    
+<footer class="fixed-bottom">
+  <div class="container mt-0">
+    &copy; Copyright 2026 Institute for Machine Learning @ JKU.
+    Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+
+    
+  </div>
+</footer>
+
+
+
+  </body>
+
+  <!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+
+  <!-- Bootsrap & MDB scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.4.4/umd/popper.min.js" integrity="sha512-eUQ9hGdLjBjY3F41CScH3UX+4JDSI9zXeroz7hJ+RteoCaY+GP/LDoM8AO+Pt+DRFw3nXqsjh9Zsts8hnYv8/A==" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha512-M5KW3ztuIICmVIhjSqXe01oV2bpe248gOxqmlcYrEzAvws7Pw3z6BK0iGbrwvdrUQUhi3eXgtxp5I8PDo9YfjQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js" integrity="sha512-Mug9KHKmroQFMLm93zGrjhibM2z2Obg9l6qFG2qKjXEXkMp/VDkI4uju9m4QKPjWSwQ6O2qzZEnJDEeCw0Blcw==" crossorigin="anonymous"></script>
+
+  
+<!-- Mansory & imagesLoaded -->
+<script defer src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script defer src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+<script defer src="/assets/js/mansory.js" type="text/javascript"></script>
+
+
+  
+
+
+<!-- Load Common JS -->
+<script src="/assets/js/common.js"></script>
+
+<!-- Load DarkMode JS -->
+<script src="/assets/js/dark_mode.js"></script>
+
+
+</html>

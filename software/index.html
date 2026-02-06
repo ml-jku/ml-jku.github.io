@@ -1,0 +1,3284 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>Institute for Machine Learning @ JKU | software</title>
+<meta name="description" content="Research blog of the Institute for Machine Learning @ JKU.
+">
+
+<!-- Open Graph -->
+
+
+<!-- Bootstrap & MDB -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha512-MoRNloxbStBcD8z3M/2BmnT+rg4IsMxPkXaGh2zD6LGNNFE80W3onsAhRcMAMrSoyWL9xD7Ert0men7vR8LUZg==" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" integrity="sha512-RO38pBRxYH3SoOprtPTD86JFOclM51/XTIdEPh5j8sj4tp8jmQIx26twG52UaLi//hQldfrh7e51WzP9wuP32Q==" crossorigin="anonymous" />
+
+<!-- Fonts & Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"  integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css" integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
+
+<!-- Code Syntax Highlighting -->
+<link rel="stylesheet" href="https://gitcdn.link/repo/jwarby/jekyll-pygments-themes/master/github.css" />
+
+<!-- Styles -->
+<link rel="shortcut icon" href="/assets/img/favicon.ico">
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<link rel="canonical" href="/software/">
+
+<!-- Theming-->
+
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KC0VGMCD6W"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-KC0VGMCD6W');
+  </script>
+
+
+    
+<!-- MathJax -->
+<script type="text/javascript">
+  window.MathJax = {
+    tex: {
+      tags: 'ams'
+    }
+  };
+</script>
+<script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.1.2/es5/tex-mml-chtml.js"></script>
+<script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+
+  </head>
+
+  <body class="fixed-top-nav ">
+
+    <!-- Header -->
+
+    <header>
+
+    <!-- Nav Bar -->
+    <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
+      <a class="navbar-brand title font-weight-lighter" href="ml-jku.github.io/">
+       <!-- <span>Institute</span> for Machine  Learning @ JKU -->
+       <img class="rounded" src="/assets/img/jku_ml_1.svg" width=100px height=45px>
+       <img class="rounded" src="/assets/img/ellis_linz.jpeg" width=200px height=45px>
+      </a>
+    <div class="container">
+      
+      <!-- Navbar Toogle -->
+      <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar top-bar"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>
+      </button>
+      <div class="collapse navbar-collapse text-right" id="navbarNav">
+        <ul class="navbar-nav ml-auto flex-nowrap">
+          <!-- About -->
+          <li class="nav-item ">
+            <a class="nav-link" href="/">
+              about
+              
+            </a>
+          </li>
+          
+          <!-- Blog -->
+          <li class="nav-item ">
+            <a class="nav-link" href="/blog/">
+              blog
+              
+            </a>
+          </li>
+          
+          <!-- Other pages -->
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="nav-item ">
+                
+                    <div class="dropdown">
+                      <a class="nav-link" href="/research/">
+                        research
+                        
+                      </a>
+                        <div class="dropdown-content">
+                          <a href="/research/deep_learning">Deep Learning</a>
+                          <a href="/research/ai_healthcare">AI in Health Care</a>
+                          <a href="/research/ai_drug">AI in Drug Discovery</a>
+                          <a href="/research/reinforcement_learning">Reinforcement Learning</a>
+                          <a href="/research/hopfield_networks">Modern Hopfield Networks</a>
+                          <a href="/research/ai4earth">AI 4 Earth</a>
+                          <a href="/research/ai4drive">AI 4 Driving</a>
+                        </div>
+                      </div>
+                    
+                
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          <li class="nav-item ">
+                
+                <a class="nav-link" href="/publications/">
+                  publications
+                  
+                </a>
+                
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="nav-item ">
+                
+                <a class="nav-link" href="/talks/">
+                  talks
+                  
+                </a>
+                
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          <li class="nav-item ">
+              <a class="nav-link" href="https://www.jku.at/en/institute-for-machine-learning/about-us/team/" target="_blank" rel="noopener noreferrer">
+                people
+                
+              </a>
+          </li>
+          
+          
+          
+          
+          
+          <li class="nav-item active">
+                
+                <a class="nav-link" href="/software/">
+                  software
+                  
+                  <span class="sr-only">(current)</span>
+                  
+                </a>
+                
+          </li>
+          
+          
+          
+          
+          
+          <li class="nav-item ">
+              <a class="nav-link" href="https://www.jku.at/en/institute-for-machine-learning/" target="_blank" rel="noopener noreferrer">
+                contact
+                
+              </a>
+          </li>
+          
+          
+          
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+</header>
+
+
+    <!-- Content -->
+
+    <div class="container mt-5">
+      <div class="post">
+
+  <header class="post-header">
+    
+    <h1 class="post-title">software</h1>
+    <p class="post-description">software in reverse chronological order.</p>
+    
+  </header>
+
+  <article>
+    <div class="about-text">
+    <div class="publications">
+  <ol class="bibliography"><li><div class="row">
+  <div class="col-sm-2 abbr">
+  
+  </div>
+
+  <div id="galletti2026pinc" class="col-sm-8">
+    
+      <div class="title">Physics-Informed Neural Compression of High-Dimensional Plasma Data</div>
+      <div class="author">
+        
+          
+            
+              
+                
+                  Galletti, G.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Cranganore, G.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Hornsby, W.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Zanisi, L.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Carey, N.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Pamela, S.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Brandstetter, J.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  and Paischer, F.
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+        <em></em>
+      
+      
+        2026
+      
+      </div>
+    
+
+    <div class="links">
+    
+    
+    
+      <a href="https://arxiv.org/abs/2602.04758" class="btn btn-sm z-depth-0" role="button" target="_blank">url</a>
+    
+    
+    
+    
+    
+      <a href="https://ml-jku.github.io/blog/2026/pinc/" class="btn btn-sm z-depth-0" role="button" target="_blank">Blog</a>
+    
+    
+      <a href="https://github.com/ml-jku/neural-gyrokinetics" class="btn btn-sm z-depth-0" role="button" target="_blank">Code</a>
+    
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+  </div>
+</div>
+</li>
+<li><div class="row">
+  <div class="col-sm-2 abbr">
+  
+    
+    <abbr class="badge">NeurIPS</abbr>
+    
+  
+  </div>
+
+  <div id="paischer2025gyroswin" class="col-sm-8">
+    
+      <div class="title">GyroSwin: 5D Surrogates for Gyrokinetic Plasma Turbulence Simulations</div>
+      <div class="author">
+        
+          
+            
+              
+                
+                  Paischer, F.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Galletti, G.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Hornsby, W.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Setinek, P.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Zanisi, L.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Carey, N.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Pamela, S.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  and Brandstetter, J.
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+        <em>In </em>
+      
+      
+        2025
+      
+      </div>
+    
+
+    <div class="links">
+    
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+    
+    
+    
+      <a href="https://arxiv.org/abs/2510.07314" class="btn btn-sm z-depth-0" role="button" target="_blank">url</a>
+    
+    
+    
+    
+    
+      <a href="https://ml-jku.github.io/blog/2025/gyroswin/" class="btn btn-sm z-depth-0" role="button" target="_blank">Blog</a>
+    
+    
+      <a href="https://github.com/ml-jku/neural-gyrokinetics" class="btn btn-sm z-depth-0" role="button" target="_blank">Code</a>
+    
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+    <div class="abstract hidden">
+      <p>Nuclear fusion plays a pivotal role in the quest for reliable and sustainable energy production. A major roadblock to viable fusion power is understanding plasma turbulence, which significantly impairs plasma confinement, and is vital for next-generation reactor design. Plasma turbulence is governed by the nonlinear gyrokinetic equation, which evolves a 5D distribution function over time. Due to its high computational cost, reduced-order models are often employed in practice to approximate turbulent transport of energy. However, they omit nonlinear effects unique to the full 5D dynamics. To tackle this, we introduce GyroSwin, the first scalable 5D neural surrogate that can model 5D nonlinear gyrokinetic simulations, thereby capturing the physical phenomena neglected by reduced models, while providing accurate estimates of turbulent heat transport. GyroSwin (i) extends hierarchical Vision Transformers to 5D, (ii) introduces cross-attention and integration modules for latent 3D\leftrightarrow5D interactions between electrostatic potential fields and the distribution function, and (iii) performs channelwise mode separation inspired by nonlinear physics. We demonstrate that GyroSwin outperforms widely used reduced numerics on heat flux prediction, captures the turbulent energy cascade, and reduces the cost of fully resolved nonlinear gyrokinetics by three orders of magnitude while remaining physically verifiable. GyroSwin shows promising scaling laws, tested up to one billion parameters, paving the way for scalable neural surrogates for gyrokinetic simulations of plasma turbulence.</p>
+    </div>
+    
+  </div>
+</div>
+</li>
+<li><div class="row">
+  <div class="col-sm-2 abbr">
+  
+  </div>
+
+  <div id="paischer2025parameter" class="col-sm-8">
+    
+      <div class="title">Parameter Efficient Fine-tuning via Explained Variance Adaptation</div>
+      <div class="author">
+        
+          
+            
+              
+                
+                  Paischer, F.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Hauzenberger, L.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Schmied, T.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Alkin, B.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Deisenroth, M.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  and Hochreiter, S.
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+        <em>In The Thirty-ninth Annual Conference on Neural Information Processing Systems</em>
+      
+      
+        2025
+      
+      </div>
+    
+
+    <div class="links">
+    
+    
+    
+      <a href="https://arxiv.org/abs/2410.07170" class="btn btn-sm z-depth-0" role="button" target="_blank">url</a>
+    
+    
+    
+    
+    
+    
+      <a href="https://github.com/ml-jku/EVA" class="btn btn-sm z-depth-0" role="button" target="_blank">Code</a>
+    
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+  </div>
+</div>
+</li>
+<li><div class="row">
+  <div class="col-sm-2 abbr">
+  
+    
+    <abbr class="badge">ICML</abbr>
+    
+  
+  </div>
+
+  <div id="sanokowski2024diffusion" class="col-sm-8">
+    
+      <div class="title">A Diffusion Model Framework for Unsupervised Neural Combinatorial Optimization</div>
+      <div class="author">
+        
+          
+            
+              
+                
+                  Sanokowski, S.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Hochreiter, S.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  and Lehner, S.
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+        <em>Proceedings of the 41st International Conference on Machine Learning</em>
+      
+      
+        2024
+      
+      </div>
+    
+
+    <div class="links">
+    
+    
+    
+      <a href="https://arxiv.org/abs/2406.01661" class="btn btn-sm z-depth-0" role="button" target="_blank">url</a>
+    
+    
+    
+    
+    
+    
+      <a href="https://github.com/ml-jku/DIffUCO" class="btn btn-sm z-depth-0" role="button" target="_blank">Code</a>
+    
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+  </div>
+</div>
+</li>
+<li><div class="row">
+  <div class="col-sm-2 abbr">
+  
+    
+    <abbr class="badge">NeurIPS</abbr>
+    
+  
+  </div>
+
+  <div id="hoedt2023convex-init" class="col-sm-8">
+    
+      <div class="title">Principled Weight Initialisation for Input-Convex Neural Networks</div>
+      <div class="author">
+        
+          
+            
+              
+                
+                  Hoedt, P.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  and Klambauer, G.
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+        <em>In Advances in Neural Information Processing Systems</em>
+      
+      
+        2023
+      
+      </div>
+    
+
+    <div class="links">
+    
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+    
+    
+    
+      <a href="https://proceedings.neurips.cc/paper_files/paper/2023/hash/9062b7d6e522dadf4f7d85d49b60d81e-Abstract.html" class="btn btn-sm z-depth-0" role="button" target="_blank">url</a>
+    
+    
+    
+      
+      <a href="https://proceedings.neurips.cc/paper_files/paper/2023/file/9062b7d6e522dadf4f7d85d49b60d81e-Paper-Conference.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank">PDF</a>
+      
+    
+    
+    
+    
+      <a href="https://github.com/ml-jku/convex-init" class="btn btn-sm z-depth-0" role="button" target="_blank">Code</a>
+    
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+    <div class="abstract hidden">
+      <p>Input-Convex Neural Networks (ICNNs) are networks that guarantee convexity in their input-output mapping. These networks have been successfully applied for energy-based modelling, optimal transport problems and learning invariances.The convexity of ICNNs is achieved by using non-decreasing convex activation functions and non-negative weights. Because of these peculiarities, previous initialisation strategies, which implicitly assume centred weights, are not effective for ICNNs. By studying signal propagation through layers with non-negative weights, we are able to derive a principled weight initialisation for ICNNs. Concretely, we generalise signal propagation theory by removing the assumption that weights are sampled from a centred distribution. In a set of experiments, we demonstrate that our principled initialisation effectively accelerates learning in ICNNs and leads to better generalisation. Moreover, we find that, in contrast to common belief, ICNNs can be trained without skip-connections when initialised correctly. Finally, we apply ICNNs to a real-world drug discovery task and show that they allow for more effective molecular latent space exploration.</p>
+    </div>
+    
+  </div>
+</div>
+</li>
+<li><div class="row">
+  <div class="col-sm-2 abbr">
+  
+    
+    <abbr class="badge">arXiv</abbr>
+    
+  
+  </div>
+
+  <div id="lehner2023maect" class="col-sm-8">
+    
+      <div class="title">Contrastive Tuning: A Little Help to Make Masked Autoencoders Forget</div>
+      <div class="author">
+        
+          
+            
+              
+                
+                  Lehner, J.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Alkin, B.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Fürst, A.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Rumetshofer, E.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Miklautz, L.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  and Hochreiter, S.
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+      
+        2023
+      
+      </div>
+    
+
+    <div class="links">
+    
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+    
+    
+    
+      <a href="https://arxiv.org/abs/2304.10520" class="btn btn-sm z-depth-0" role="button" target="_blank">url</a>
+    
+    
+    
+    
+    
+    
+      <a href="https://github.com/ml-jku/MAE-CT" class="btn btn-sm z-depth-0" role="button" target="_blank">Code</a>
+    
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+    <div class="abstract hidden">
+      <p>Masked Image Modeling (MIM) methods, like Masked Autoencoders (MAE), efficiently learn a rich representation of the input. However, for adapting to downstream tasks, they require a sufficient amount of labeled data since their rich features code not only objects but also less relevant image background. In contrast, Instance Discrimination (ID) methods focus on objects. In this work, we study how to combine the efficiency and scalability of MIM with the ability of ID to perform downstream classification in the absence of large amounts of labeled data. To this end, we introduce Masked Autoencoder Contrastive Tuning (MAE-CT), a sequential approach that utilizes the implicit clustering of the Nearest Neighbor Contrastive Learning (NNCLR) objective to induce abstraction in the topmost layers of a pre-trained MAE. MAE-CT tunes the rich features such that they form semantic clusters of objects without using any labels. Notably, MAE-CT does not rely on hand-crafted augmentations and frequently achieves its best performances while using only minimal augmentations (crop &amp; flip). Further, MAE-CT is compute efficient as it requires at most 10% overhead compared to MAE pre-training. Applied to large and huge Vision Transformer (ViT) models, MAE–CT excels over previous self-supervised methods trained on ImageNet in linear probing, k-NN and low-shot classification accuracy as well as in unsupervised clustering accuracy. With ViT-H/16 MAE–CT achieves a new state-of-the-art in linear probing of 82.2%.</p>
+    </div>
+    
+  </div>
+</div>
+</li>
+<li><div class="row">
+  <div class="col-sm-2 abbr">
+  
+    
+    <abbr class="badge">CoLLAs</abbr>
+    
+  
+  </div>
+
+  <div id="gauch2022subgd" class="col-sm-8">
+    
+      <div class="title">Few-Shot Learning by Dimensionality Reduction in Gradient Space</div>
+      <div class="author">
+        
+          
+            
+              
+                
+                  Gauch, M.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Beck, M.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Adler, T.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Kotsur, D.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Fiel, S.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Eghbal-zadeh, H.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Brandstetter, J.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Kofler, J.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Holzleitner, M.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Zellinger, W.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Klotz, D.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Hochreiter, S.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  and Lehner, S.
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+      
+        2022
+      
+      </div>
+    
+
+    <div class="links">
+    
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+    
+    
+    
+      <a href="https://arxiv.org/abs/2206.03483" class="btn btn-sm z-depth-0" role="button" target="_blank">url</a>
+    
+    
+    
+    
+    
+      <a href="https://ml-jku.github.io/subgd/" class="btn btn-sm z-depth-0" role="button" target="_blank">Blog</a>
+    
+    
+      <a href="https://github.com/ml-jku/subgd" class="btn btn-sm z-depth-0" role="button" target="_blank">Code</a>
+    
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+    <div class="abstract hidden">
+      <p>We introduce SubGD, a novel few-shot learning method which is based on the recent finding that stochastic gradient descent updates tend to live in a low-dimensional parameter subspace. In experimental and theoretical analyses, we show that models confined to a suitable predefined subspace generalize well for few-shot learning. A suitable subspace fulfills three criteria across the given tasks: it (a) allows to reduce the training error by gradient flow, (b) leads to models that generalize well, and (c) can be identified by stochastic gradient descent. SubGD identifies these subspaces from an eigendecomposition of the auto-correlation matrix of update directions across different tasks. Demonstrably, we can identify low-dimensional suitable subspaces for few-shot learning of dynamical systems, which have varying properties described by one or few parameters of the analytical system description. Such systems are ubiquitous among real-world applications in science and engineering. We experimentally corroborate the advantages of SubGD on three distinct dynamical systems problem settings, significantly outperforming popular few-shot learning methods both in terms of sample efficiency and performance.</p>
+    </div>
+    
+  </div>
+</div>
+</li>
+<li><div class="row">
+  <div class="col-sm-2 abbr">
+  
+    
+    <abbr class="badge">JCIM</abbr>
+    
+  
+  </div>
+
+  <div id="seidlImproving2022" class="col-sm-8">
+    
+      <div class="title">Improving Few- and Zero-Shot Reaction Template Prediction Using Modern Hopfield Networks</div>
+      <div class="author">
+        
+          
+            
+              
+                
+                  Seidl, P.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Renz, P.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Dyubankova, N.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Neves, P.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Verhoeven, J.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Wegner, J.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Segler, M.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Hochreiter, S.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  and Klambauer, G.
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+        <em>Journal of Chemical Information and Modeling</em>
+      
+      
+        2022
+      
+      </div>
+    
+
+    <div class="links">
+    
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+    
+    
+    
+      <a href="https://doi.org/10.1021/acs.jcim.1c01065" class="btn btn-sm z-depth-0" role="button" target="_blank">url</a>
+    
+    
+    
+    
+    
+    
+      <a href="https://github.com/ml-jku/mhn-react" class="btn btn-sm z-depth-0" role="button" target="_blank">Code</a>
+    
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+    <div class="abstract hidden">
+      <p>Finding synthesis routes for molecules of interest is essential in the discovery of new drugs and materials. To find such routes, computer-assisted synthesis planning (CASP) methods are employed, which rely on a single-step model of chemical reactivity. In this study, we introduce a template-based single-step retrosynthesis model based on Modern Hopfield Networks, which learn an encoding of both molecules and reaction templates in order to predict the relevance of templates for a given molecule. The template representation allows generalization across different reactions and significantly improves the performance of template relevance prediction, especially for templates with few or zero training examples. With inference speed up to orders of magnitude faster than baseline methods, we improve or match the state-of-the-art performance for top-k exact match accuracy for k ≥ 3 in the retrosynthesis benchmark USPTO-50k. Code to reproduce the results is available at github.com/ml-jku/mhn-react.</p>
+    </div>
+    
+  </div>
+</div>
+</li>
+<li><div class="row">
+  <div class="col-sm-2 abbr">
+  
+    
+    <abbr class="badge">arXiv</abbr>
+    
+  
+  </div>
+
+  <div id="schaefl2022hopular" class="col-sm-8">
+    
+      <div class="title">Hopular: Modern Hopfield Networks for Tabular Data</div>
+      <div class="author">
+        
+          
+            
+              
+                
+                  Schäfl, B.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Gruber, L.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Bitto-Nemling, A.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  and Hochreiter, S.
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+      
+        2022
+      
+      </div>
+    
+
+    <div class="links">
+    
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+    
+    
+    
+      <a href="https://arxiv.org/abs/2206.00664" class="btn btn-sm z-depth-0" role="button" target="_blank">url</a>
+    
+    
+    
+    
+    
+      <a href="https://ml-jku.github.io/hopular/" class="btn btn-sm z-depth-0" role="button" target="_blank">Blog</a>
+    
+    
+      <a href="https://github.com/ml-jku/hopular" class="btn btn-sm z-depth-0" role="button" target="_blank">Code</a>
+    
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+    <div class="abstract hidden">
+      <p>While Deep Learning excels in structured data as encountered in vision and natural language processing, it failed to meet its expectations on tabular data. For tabular data, Support Vector Machines (SVMs), Random Forests, and Gradient Boosting are the best performing techniques with Gradient Boosting in the lead. Recently, we saw a surge of Deep Learning methods that were tailored to tabular data but still underperform compared to Gradient Boosting on small-sized datasets. We suggest "Hopular", a novel Deep Learning architecture for medium- and small-sized datasets, where each layer is equipped with continuous modern Hopfield networks. The modern Hopfield networks use stored data to identify feature-feature, feature-target, and sample-sample dependencies. Hopular’s novelty is that every layer can directly access the original input as well as the whole training set via stored data in the Hopfield networks. Therefore, Hopular can step-wise update its current model and the resulting prediction at every layer like standard iterative learning algorithms. In experiments on small-sized tabular datasets with less than 1,000 samples, Hopular surpasses Gradient Boosting, Random Forests, SVMs, and in particular several Deep Learning methods. In experiments on medium-sized tabular data with about 10,000 samples, Hopular outperforms XGBoost, CatBoost, LightGBM and a state-of-the art Deep Learning method designed for tabular data. Thus, Hopular is a strong alternative to these methods on tabular data.</p>
+    </div>
+    
+  </div>
+</div>
+</li>
+<li><div class="row">
+  <div class="col-sm-2 abbr">
+  
+  </div>
+
+  <div id="paischer2022toward" class="col-sm-8">
+    
+      <div class="title">Toward Semantic History Compression for Reinforcement Learning</div>
+      <div class="author">
+        
+          
+            
+              
+                
+                  Paischer, F.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Adler, T.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Radler, A.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Hofmarcher, M.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  and Hochreiter, S.
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+      
+        2022
+      
+      </div>
+    
+
+    <div class="links">
+    
+    
+    
+      <a href="https://openreview.net/forum?id=97C6klf5shp" class="btn btn-sm z-depth-0" role="button" target="_blank">url</a>
+    
+    
+    
+    
+    
+    
+      <a href="https://github.com/ml-jku/helm" class="btn btn-sm z-depth-0" role="button" target="_blank">Code</a>
+    
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+  </div>
+</div>
+</li>
+<li><div class="row">
+  <div class="col-sm-2 abbr">
+  
+    
+    <abbr class="badge">DeepRL</abbr>
+    
+  
+  </div>
+
+  <div id="siripurapu2022infodist" class="col-sm-8">
+    
+      <div class="title">InfODist: Online distillation with Informative rewards improves generalization in Curriculum Learning</div>
+      <div class="author">
+        
+          
+            
+              
+                
+                  Siripurapu, R.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Patil, V.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Schweighofer, K.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Dinu, M.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Schmied, T.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Diez, L.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Holzleitner, M.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Eghbal-zadeh, H.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Kopp, M.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  and Hochreiter, S.
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+      
+        2022
+      
+      </div>
+    
+
+    <div class="links">
+    
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+    
+    
+    
+      <a href="https://openreview.net/forum?id=9CvMkA8oi8O" class="btn btn-sm z-depth-0" role="button" target="_blank">url</a>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+    <div class="abstract hidden">
+      <p>Curriculum learning (CL) is an essential part of human learning, just as reinforcement learning (RL) is. However, CL agents that are trained using RL with neural networks produce limited generalization to later tasks in the curriculum. We show that online distillation using learned informative rewards tackles this problem. Here, we consider a reward to be informative if it is positive when the agent makes progress towards the goal and negative otherwise. Thus, an informative reward allows an agent to learn immediately to avoid states which are irrelevant to the task. And, the value and policy networks do not utilize their limited capacity to fit targets for these irrelevant states. Consequently, this improves generalization to later tasks. Our contributions: First, we propose InfODist, an online distillation method that makes use of informative rewards to significantly improve generalization in CL. Second, we show that training with informative rewards ameliorates the capacity loss phenomenon that was previously attributed to non-stationarities during the training process. Third, we show that learning from task-irrelevant states explains the capacity loss and subsequent impaired generalization. In conclusion, our work is a crucial step toward scaling curriculum learning to complex real world tasks</p>
+    </div>
+    
+  </div>
+</div>
+</li>
+<li><div class="row">
+  <div class="col-sm-2 abbr">
+  
+    
+    <abbr class="badge">FMDM</abbr>
+    
+  
+  </div>
+
+  <div id="paischer2022foundation" class="col-sm-8">
+    
+      <div class="title">Foundation Models for History Compression in Reinforcement Learning</div>
+      <div class="author">
+        
+          
+            
+              
+                
+                  Paischer, F.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Adler, T.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Radler, A.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Hofmarcher, M.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  and Hochreiter, S.
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+      
+        2022
+      
+      </div>
+    
+
+    <div class="links">
+    
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+    
+    
+    
+      <a href="https://openreview.net/forum?id=KmxQ3v7nMmd" class="btn btn-sm z-depth-0" role="button" target="_blank">url</a>
+    
+    
+    
+    
+    
+    
+      <a href="https://github.com/ml-jku/helm" class="btn btn-sm z-depth-0" role="button" target="_blank">Code</a>
+    
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+    <div class="abstract hidden">
+      <p>Agents interacting under partial observability require access to past observations via a memory mechanism in order to approximate the true state of the environment. Recent work suggests that leveraging language as abstraction provides benefits for creating a representation of past events. History Compression via Language Models (HELM) leverages a pretrained Language Model (LM) for representing the past. It relies on a randomized attention mechanism to translate environment observations to token embeddings. In this work, we show that the representations resulting from this attention mechanism can collapse under certain conditions. This causes blindness of the agent to subtle changes in the environment that may be crucial for solving a certain task. We propose a solution to this problem consisting of two parts. First, we improve upon HELM by substituting the attention mechanism with a feature-wise centering-and-scaling operation. Second, we take a step toward semantic history compression by leveraging foundation models, such as CLIP, to encode observations, which further improves performance. By combining foundation models, our agent is able to solve the challenging MiniGrid-Memory environment. Surprisingly, however, our experiments suggest that this is not due to the semantic enrichment of the representation presented to the LM, but rather due to the discriminative power provided by CLIP. We make our code publicly available at https://github.com/ml-jku/helm.</p>
+    </div>
+    
+  </div>
+</div>
+</li>
+<li><div class="row">
+  <div class="col-sm-2 abbr">
+  
+    
+    <abbr class="badge">CoLLAs</abbr>
+    
+  
+  </div>
+
+  <div id="schweighofer2022dataset" class="col-sm-8">
+    
+      <div class="title">A Dataset Perspective on Offline Reinforcement Learning</div>
+      <div class="author">
+        
+          
+            
+              
+                
+                  Schweighofer, K.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Radler, A.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Dinu, M.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Hofmarcher, M.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Patil, V.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Bitto-Nemling, A.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Eghbal-zadeh, H.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  and Hochreiter, S.
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+      
+        2022
+      
+      </div>
+    
+
+    <div class="links">
+    
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+    
+    
+    
+      <a href="https://arxiv.org/abs/2111.04714" class="btn btn-sm z-depth-0" role="button" target="_blank">url</a>
+    
+    
+    
+    
+    
+      <a href="https://kschweig.github.io/OfflineRL/" class="btn btn-sm z-depth-0" role="button" target="_blank">Blog</a>
+    
+    
+      <a href="https://github.com/ml-jku/OfflineRL" class="btn btn-sm z-depth-0" role="button" target="_blank">Code</a>
+    
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+    <div class="abstract hidden">
+      <p>The application of Reinforcement Learning (RL) in real world environments can be expensive or risky due to sub-optimal policies during training. In Offline RL, this problem is avoided since interactions with an environment are prohibited. Policies are learned from a given dataset, which solely determines their performance. Despite this fact, how dataset characteristics influence Offline RL algorithms is still hardly investigated. The dataset characteristics are determined by the behavioral policy that samples this dataset. Therefore, we define characteristics of behavioral policies as exploratory for yielding high expected information in their interaction with the Markov Decision Process (MDP) and as exploitative for having high expected return. We implement two corresponding empirical measures for the datasets sampled by the behavioral policy in deterministic MDPs. The first empirical measure SACo is defined by the normalized unique state-action pairs and captures exploration. The second empirical measure TQ is defined by the normalized average trajectory return and captures exploitation. Empirical evaluations show the effectiveness of TQ and SACo. In large-scale experiments using our proposed measures, we show that the unconstrained off-policy Deep Q-Network family requires datasets with high SACo to find a good policy. Furthermore, experiments show that policy constraint algorithms perform well on datasets with high TQ and SACo. Finally, the experiments show, that purely dataset-constrained Behavioral Cloning performs competitively to the best Offline RL algorithms for datasets with high TQ.</p>
+    </div>
+    
+  </div>
+</div>
+</li>
+<li><div class="row">
+  <div class="col-sm-2 abbr">
+  
+    
+    <abbr class="badge">CoLLAs</abbr>
+    
+  
+  </div>
+
+  <div id="steinparz2022reactive" class="col-sm-8">
+    
+      <div class="title">Reactive Exploration to Cope with Non-Stationarity in Lifelong Reinforcement Learning</div>
+      <div class="author">
+        
+          
+            
+              
+                
+                  Steinparz, C.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Schmied, T.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Paischer, F.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Dinu, M.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Patil, V.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Bitto-Nemling, A.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Eghbal-zadeh, H.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  and Hochreiter, S.
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+      
+        2022
+      
+      </div>
+    
+
+    <div class="links">
+    
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+    
+    
+    
+      <a href="https://arxiv.org/abs/2207.05742" class="btn btn-sm z-depth-0" role="button" target="_blank">url</a>
+    
+    
+    
+    
+    
+    
+      <a href="https://github.com/ml-jku/reactive-exploration" class="btn btn-sm z-depth-0" role="button" target="_blank">Code</a>
+    
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+    <div class="abstract hidden">
+      <p>In lifelong learning, an agent learns throughout its entire life without resets, in a constantly changing environment, as we humans do. Consequently, lifelong learning comes with a plethora of research problems such as continual domain shifts, which result in non-stationary rewards and environment dynamics. These non-stationarities are difficult to detect and cope with due to their continuous nature. Therefore, exploration strategies and learning methods are required that are capable of tracking the steady domain shifts, and adapting to them. We propose Reactive Exploration to track and react to continual domain shifts in lifelong reinforcement learning, and to update the policy correspondingly. To this end, we conduct experiments in order to investigate different exploration strategies. We empirically show that representatives of the policy-gradient family are better suited for lifelong learning, as they adapt more quickly to distribution shifts than Q-learning. Thereby, policy-gradient methods profit the most from Reactive Exploration and show good results in lifelong learning with continual domain shifts.</p>
+    </div>
+    
+  </div>
+</div>
+</li>
+<li><div class="row">
+  <div class="col-sm-2 abbr">
+  
+    
+    <abbr class="badge">ICML</abbr>
+    
+  
+  </div>
+
+  <div id="patil2020alignrudder" class="col-sm-8">
+    
+      <div class="title">Align-RUDDER: Learning From Few Demonstrations by Reward Redistribution</div>
+      <div class="author">
+        
+          
+            
+              
+                
+                  Patil, V.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Hofmarcher, M.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Dinu, M.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Dorfer, M.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Blies, P.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Brandstetter, J.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Arjona-Medina, J.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  and Hochreiter, S.
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+        <em>arXiv preprint arXiv:2009.14108</em>
+      
+      
+        2022
+      
+      </div>
+    
+
+    <div class="links">
+    
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+    
+    
+    
+      <a href="https://arxiv.org/abs/2009.14108" class="btn btn-sm z-depth-0" role="button" target="_blank">url</a>
+    
+    
+    
+    
+    
+    
+      <a href="https://github.com/ml-jku/align-rudder" class="btn btn-sm z-depth-0" role="button" target="_blank">Code</a>
+    
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+    <div class="abstract hidden">
+      <p>Reinforcement Learning algorithms require a large number of samples to solve complex tasks with sparse and delayed rewards. Complex tasks can often be hierarchically decomposed into sub-tasks. A step in the Q-function can be associated with solving a sub-task, where the expectation of the return increases. RUDDER has been introduced to identify these steps and then redistribute reward to them, thus immediately giving reward if sub-tasks are solved. Since the problem of delayed rewards is mitigated, learning is considerably sped up. However, for complex tasks, current exploration strategies as deployed in RUDDER struggle with discovering episodes with high rewards. Therefore, we assume that episodes with high rewards are given as demonstrations and do not have to be discovered by exploration. Typically the number of demonstrations is small and RUDDER’s LSTM model as a deep learning method does not learn well. Hence, we introduce Align-RUDDER, which is RUDDER with two major modifications. First, Align-RUDDER assumes that episodes with high rewards are given as demonstrations, replacing RUDDER’s safe exploration and lessons replay buffer. Second, we replace RUDDER’s LSTM model by a profile model that is obtained from multiple sequence alignment of demonstrations. Profile models can be constructed from as few as two demonstrations as known from bioinformatics. Align-RUDDER inherits the concept of reward redistribution, which considerably reduces the delay of rewards, thus speeding up learning. Align-RUDDER outperforms competitors on complex artificial tasks with delayed reward and few demonstrations. On the MineCraft ObtainDiamond task, Align-RUDDER is able to mine a diamond, though not frequently.</p>
+    </div>
+    
+  </div>
+</div>
+</li>
+<li><div class="row">
+  <div class="col-sm-2 abbr">
+  
+    
+    <abbr class="badge">arXiv</abbr>
+    
+  
+  </div>
+
+  <div id="fürst2021cloob" class="col-sm-8">
+    
+      <div class="title">CLOOB: Modern Hopfield Networks with InfoLOOB Outperform CLIP</div>
+      <div class="author">
+        
+          
+            
+              
+                
+                  Fürst, A.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Rumetshofer, E.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Tran, V.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Ramsauer, H.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Tang, F.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Lehner, J.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Kreil, D.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Kopp, M.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Klambauer, G.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Bitto-Nemling, A.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  and Hochreiter, S.
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+      
+        2021
+      
+      </div>
+    
+
+    <div class="links">
+    
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+    
+    
+    
+      <a href="https://arxiv.org/abs/2110.11316" class="btn btn-sm z-depth-0" role="button" target="_blank">url</a>
+    
+    
+    
+    
+    
+      <a href="https://ml-jku.github.io/cloob/" class="btn btn-sm z-depth-0" role="button" target="_blank">Blog</a>
+    
+    
+      <a href="https://github.com/ml-jku/cloob" class="btn btn-sm z-depth-0" role="button" target="_blank">Code</a>
+    
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+    <div class="abstract hidden">
+      <p>Contrastive learning with the InfoNCE objective is exceptionally successful in various self-supervised learning tasks. Recently, the CLIP model yielded impressive results on zero-shot transfer learning when using InfoNCE for learning visual representations from natural language supervision. However, InfoNCE as a lower bound on the mutual information has been shown to perform poorly for high mutual information. In contrast, the InfoLOOB upper bound (leave one out bound) works well for high mutual information but suffers from large variance and instabilities. We introduce "Contrastive Leave One Out Boost" (CLOOB), where modern Hopfield networks boost learning with the InfoLOOB objective. Modern Hopfield networks replace the original embeddings by retrieved embeddings in the InfoLOOB objective. The retrieved embeddings give InfoLOOB two assets. Firstly, the retrieved embeddings stabilize InfoLOOB, since they are less noisy and more similar to one another than the original embeddings. Secondly, they are enriched by correlations, since the covariance structure of embeddings is reinforced through retrievals. We compare CLOOB to CLIP after learning on the Conceptual Captions and the YFCC dataset with respect to their zero-shot transfer learning performance on other datasets. CLOOB consistently outperforms CLIP at zero-shot transfer learning across all considered architectures and datasets.
+</p>
+    </div>
+    
+  </div>
+</div>
+</li>
+<li><div class="row">
+  <div class="col-sm-2 abbr">
+  
+    
+    <abbr class="badge">ICML</abbr>
+    
+  
+  </div>
+
+  <div id="hoedtMCLSTM2021" class="col-sm-8">
+    
+      <div class="title">MC-LSTM: Mass-Conserving LSTM</div>
+      <div class="author">
+        
+          
+            
+              
+                
+                  Hoedt, P.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Kratzert, F.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Klotz, D.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Halmich, C.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Holzleitner, M.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Nearing, G.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Hochreiter, S.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  and Klambauer, G.
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+        <em>In Proceedings of the 38th International Conference on Machine Learning</em>
+      
+      
+        2021
+      
+      </div>
+    
+
+    <div class="links">
+    
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+    
+    
+    
+      <a href="https://proceedings.mlr.press/v139/hoedt21a.html" class="btn btn-sm z-depth-0" role="button" target="_blank">url</a>
+    
+    
+    
+      
+      <a href="https://proceedings.mlr.press/v139/hoedt21a/hoedt21a.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank">PDF</a>
+      
+    
+    
+    
+    
+      <a href="https://github.com/ml-jku/mc-lstm" class="btn btn-sm z-depth-0" role="button" target="_blank">Code</a>
+    
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+    <div class="abstract hidden">
+      <p>The success of Convolutional Neural Networks (CNNs) in computer vision is mainly driven by their strong inductive bias, which is strong enough to allow CNNs to solve vision-related tasks with random weights, meaning without learning. Similarly, Long Short-Term Memory (LSTM) has a strong inductive bias towards storing information over time. However, many real-world systems are governed by conservation laws, which lead to the redistribution of particular quantities – e.g. in physical and economical systems. Our novel Mass-Conserving LSTM (MC-LSTM) adheres to these conservation laws by extending the inductive bias of LSTM to model the redistribution of those stored quantities. MC-LSTMs set a new state-of-the-art for neural arithmetic units at learning arithmetic operations, such as addition tasks, which have a strong conservation law, as the sum is constant over time. Further, MC-LSTM is applied to traffic forecasting, modelling a pendulum, and a large benchmark dataset in hydrology, where it sets a new state-of-the-art for predicting peak flows. In the hydrology example, we show that MC-LSTM states correlate with real-world processes and are therefore interpretable.</p>
+    </div>
+    
+  </div>
+</div>
+</li>
+<li><div class="row">
+  <div class="col-sm-2 abbr">
+  
+    
+    <abbr class="badge">arXiv</abbr>
+    
+  
+  </div>
+
+  <div id="schweighofer:21" class="col-sm-8">
+    
+      <div class="title">Understanding the Effects of Dataset Characteristics on Offline Reinforcement Learning</div>
+      <div class="author">
+        
+          
+            
+              
+                
+                  Schweighofer, K.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Hofmarcher, M.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Dinu, M.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Renz, P.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Bitto-Nemling, A.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Patil, V.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  and Hochreiter, S.
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+      
+        2021
+      
+      </div>
+    
+
+    <div class="links">
+    
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+    
+    
+    
+      <a href="https://arxiv.org/abs/2111.04714" class="btn btn-sm z-depth-0" role="button" target="_blank">url</a>
+    
+    
+    
+    
+    
+    
+      <a href="https://github.com/ml-jku/OfflineRL" class="btn btn-sm z-depth-0" role="button" target="_blank">Code</a>
+    
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+    <div class="abstract hidden">
+      <p>In real world, affecting the environment by a weak policy can be expensive or very risky, therefore hampers real world applications of reinforcement learning. Offline Reinforcement Learning (RL) can learn policies from a given dataset without interacting with the environment. However, the dataset is the only source of information for an Offline RL algorithm and determines the performance of the learned policy. We still lack studies on how dataset characteristics influence different Offline RL algorithms. Therefore, we conducted a comprehensive empirical analysis of how dataset characteristics effect the performance of Offline RL algorithms for discrete action environments. A dataset is characterized by two metrics: (1) the average dataset return measured by the Trajectory Quality (TQ) and (2) the coverage measured by the State-Action Coverage (SACo). We found that variants of the off-policy Deep Q-Network family require datasets with high SACo to perform well. Algorithms that constrain the learned policy towards the given dataset perform well for datasets with high TQ or SACo. For datasets with high TQ, Behavior Cloning outperforms or performs similarly to the best Offline RL algorithms.
+</p>
+    </div>
+    
+  </div>
+</div>
+</li>
+<li><div class="row">
+  <div class="col-sm-2 abbr">
+  
+    
+    <abbr class="badge">arXiv</abbr>
+    
+  
+  </div>
+
+  <div id="adler2020cross" class="col-sm-8">
+    
+      <div class="title">Cross-Domain Few-Shot Learning by Representation Fusion</div>
+      <div class="author">
+        
+          
+            
+              
+                
+                  Adler, T.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Brandstetter, J.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Widrich, M.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Mayr, A.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Kreil, D.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Kopp, M.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Klambauer, G.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  and Hochreiter, S.
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+        <em>arXiv preprint arXiv:2010.06498</em>
+      
+      
+        2020
+      
+      </div>
+    
+
+    <div class="links">
+    
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+    
+    
+    
+      <a href="https://arxiv.org/abs/2010.06498" class="btn btn-sm z-depth-0" role="button" target="_blank">url</a>
+    
+    
+    
+    
+    
+      <a href="https://ml-jku.github.io/chef/" class="btn btn-sm z-depth-0" role="button" target="_blank">Blog</a>
+    
+    
+      <a href="https://github.com/ml-jku/chef" class="btn btn-sm z-depth-0" role="button" target="_blank">Code</a>
+    
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+    <div class="abstract hidden">
+      <p>In order to quickly adapt to new data, few-shot learning aims at learning from few examples, often by using already acquired knowledge. The new data often differs from the previously seen data due to a domain shift, that is, a change of the input-target distribution. While several methods perform well on small domain shifts like new target classes with similar inputs, larger domain shifts are still challenging. Large domain shifts may result in high-level concepts that are not shared between the original and the new domain. However, low-level concepts like edges in images might still be shared and useful. For cross-domain few-shot learning, we suggest representation fusion to unify different abstraction levels of a deep neural network into one representation. We propose Cross-domain Hebbian Ensemble Few-shot learning (CHEF), which achieves representation fusion by an ensemble of Hebbian learners acting on different layers of a deep neural network that was trained on the original domain. On the few-shot datasets miniImagenet and tieredImagenet, where the domain shift is small, CHEF is competitive with state-of-the-art methods. On cross-domain few-shot benchmark challenges with larger domain shifts, CHEF establishes novel state-of-the-art results in all categories. We further apply CHEF on a real-world cross-domain application in drug discovery. We consider a domain shift from bioactive molecules to environmental chemicals and drugs with twelve associated toxicity prediction tasks. On these tasks, that are highly relevant for computational drug discovery, CHEF significantly outperforms all its competitors.</p>
+    </div>
+    
+  </div>
+</div>
+</li>
+<li><div class="row">
+  <div class="col-sm-2 abbr">
+  
+  </div>
+
+  <div id="renzFailureModesMolecule2020a" class="col-sm-8">
+    
+      <div class="title">On Failure Modes in Molecule Generation and Optimization</div>
+      <div class="author">
+        
+          
+            
+              
+                
+                  Renz, P.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Van Rompaey, D.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Wegner, J.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Hochreiter, S.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  and Klambauer, G.
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+        <em></em>
+      
+      
+        2020
+      
+      </div>
+    
+
+    <div class="links">
+    
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+    
+    
+    
+      <a href="https://doi.org/10.1016/j.ddtec.2020.09.003" class="btn btn-sm z-depth-0" role="button" target="_blank">url</a>
+    
+    
+    
+    
+    
+    
+      <a href="https://github.com/ml-jku/mgenerators-failure-modes" class="btn btn-sm z-depth-0" role="button" target="_blank">Code</a>
+    
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+    <div class="abstract hidden">
+      <p>There has been a wave of generative models for molecules triggered by advances in the field of Deep Learning. These generative models are often used to optimize chemical compounds towards particular properties or a desired biological activity. The evaluation of generative models remains challenging and suggested performance metrics or scoring functions often do not cover all relevant aspects of drug design projects. In this work, we highlight some unintended failure modes in molecular generation and optimization and how these evade detection by current performance metrics.</p>
+    </div>
+    
+  </div>
+</div>
+</li>
+<li><div class="row">
+  <div class="col-sm-2 abbr">
+  
+    
+    <abbr class="badge">NeurIPS</abbr>
+    
+  
+  </div>
+
+  <div id="widrich2020modern" class="col-sm-8">
+    
+      <div class="title">Modern Hopfield networks and attention for immune repertoire classification</div>
+      <div class="author">
+        
+          
+            
+              
+                
+                  Widrich, M.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Schäfl, B.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Ramsauer, H.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Pavlović, M.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Gruber, L.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Holzleitner, M.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Brandstetter, J.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Sandve, G.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Greiff, V.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Hochreiter, S.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  and Klambauer, G.
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+        <em>In Advances in Neural Information Processing Systems</em>
+      
+      
+        2020
+      
+      </div>
+    
+
+    <div class="links">
+    
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+    
+    
+    
+      <a href="https://proceedings.neurips.cc/paper/2020/file/da4902cb0bc38210839714ebdcf0efc3-Paper.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank">url</a>
+    
+    
+    
+    
+    
+    
+      <a href="https://github.com/ml-jku/DeepRC" class="btn btn-sm z-depth-0" role="button" target="_blank">Code</a>
+    
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+    <div class="abstract hidden">
+      <p>A central mechanism in machine learning is to identify, store, and recognize patterns. How to learn, access, and retrieve such patterns is crucial in Hopfield networks and the more recent transformer architectures. We show that the attention mechanism of transformer architectures is actually the update rule of modern Hopfield networks that can store exponentially many patterns. We exploit this high storage capacity of modern Hopfield networks to solve a challenging multiple instance learning (MIL) problem in computational biology: immune repertoire classification. In immune repertoire classification, a vast number of immune receptors are used to predict the immune status of an individual. This constitutes a MIL problem with an unprecedentedly massive number of instances, two orders of magnitude larger than currently considered problems, and with an extremely low witness rate. Accurate and interpretable machine learning methods solving this problem could pave the way towards new vaccines and therapies, which is currently a very relevant research topic intensified by the COVID-19 crisis. In this work, we present our novel method DeepRC that integrates transformer-like attention, or equivalently modern Hopfield networks, into deep learning architectures for massive MIL such as immune repertoire classification. We demonstrate that DeepRC outperforms all other methods with respect to predictive performance on large-scale experiments including simulated and real-world virus infection data and enables the extraction of sequence motifs that are connected to a given disease class. Source code and datasets: https://github.com/ml-jku/DeepRC</p>
+    </div>
+    
+  </div>
+</div>
+</li>
+<li><div class="row">
+  <div class="col-sm-2 abbr">
+  
+    
+    <abbr class="badge">ICLR</abbr>
+    
+  
+  </div>
+
+  <div id="ramsauerHopfieldNetworksAll2020" class="col-sm-8">
+    
+      <div class="title">Hopfield Networks Is All You Need</div>
+      <div class="author">
+        
+          
+            
+              
+                
+                  Ramsauer, H.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Schäfl, B.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Lehner, J.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Seidl, P.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Widrich, M.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Gruber, L.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Holzleitner, M.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Pavlović, M.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Sandve, G.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Greiff, V.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Kreil, D.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Kopp, M.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Klambauer, G.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Brandstetter, J.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  and Hochreiter, S.
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+      
+        2020
+      
+      </div>
+    
+
+    <div class="links">
+    
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+    
+    
+    
+      <a href="http://arxiv.org/abs/2008.02217" class="btn btn-sm z-depth-0" role="button" target="_blank">url</a>
+    
+    
+    
+    
+    
+      <a href="https://ml-jku.github.io/hopfield-layers/" class="btn btn-sm z-depth-0" role="button" target="_blank">Blog</a>
+    
+    
+      <a href="https://github.com/ml-jku/hopfield-layers" class="btn btn-sm z-depth-0" role="button" target="_blank">Code</a>
+    
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+    <div class="abstract hidden">
+      <p>We show that the transformer attention mechanism is the update rule of a modern Hopfield network with continuous states. This new Hopfield network can store exponentially (with the dimension) many patterns, converges with one update, and has exponentially small retrieval errors. The number of stored patterns is traded off against convergence speed and retrieval error. The new Hopfield network has three types of energy minima (fixed points of the update): (1) global fixed point averaging over all patterns, (2) metastable states averaging over a subset of patterns, and (3) fixed points which store a single pattern. Transformer and BERT models operate in their first layers preferably in the global averaging regime, while they operate in higher layers in metastable states. The gradient in transformers is maximal for metastable states, is uniformly distributed for global averaging, and vanishes for a fixed point near a stored pattern. Using the Hopfield network interpretation, we analyzed learning of transformer and BERT models. Learning starts with attention heads that average and then most of them switch to metastable states. However, the majority of heads in the first layers still averages and can be replaced by averaging, e.g. our proposed Gaussian weighting. In contrast, heads in the last layers steadily learn and seem to use metastable states to collect information created in lower layers. These heads seem to be a promising target for improving transformers. Neural networks with Hopfield networks outperform other methods on immune repertoire classification, where the Hopfield net stores several hundreds of thousands of patterns. We provide a new PyTorch layer called "Hopfield", which allows to equip deep learning architectures with modern Hopfield networks as a new powerful concept comprising pooling, memory, and attention. GitHub: https://github.com/ml-jku/hopfield-layers</p>
+    </div>
+    
+  </div>
+</div>
+</li>
+<li><div class="row">
+  <div class="col-sm-2 abbr">
+  
+    
+    <abbr class="badge">NeurIPS</abbr>
+    
+  
+  </div>
+
+  <div id="Arjona:19" class="col-sm-8">
+    
+      <div class="title">RUDDER: Return Decomposition for Delayed Rewards</div>
+      <div class="author">
+        
+          
+            
+              
+                
+                  Arjona-Medina, J.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Gillhofer, M.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Widrich, M.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Unterthiner, T.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Brandstetter, J.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  and Hochreiter, S.
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+        <em>In Advances in Neural Information Processing Systems</em>
+      
+      
+        2019
+      
+      </div>
+    
+
+    <div class="links">
+    
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+    
+    
+    
+      <a href="https://papers.nips.cc/paper/2019/file/16105fb9cc614fc29e1bda00dab60d41-Paper.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank">url</a>
+    
+    
+    
+    
+    
+      <a href="https://ml-jku.github.io/rudder/" class="btn btn-sm z-depth-0" role="button" target="_blank">Blog</a>
+    
+    
+      <a href="https://github.com/ml-jku/rudder" class="btn btn-sm z-depth-0" role="button" target="_blank">Code</a>
+    
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+    <div class="abstract hidden">
+      <p>We propose RUDDER, a novel reinforcement learning approach for delayed rewards in finite Markov decision processes (MDPs). In MDPs the Q-values are equal to the expected immediate reward plus the expected future rewards. The latter are related to bias problems in temporal difference (TD) learning and to high variance problems in Monte Carlo (MC) learning. Both problems are even more severe when rewards are delayed. RUDDER aims at making the expected future rewards zero, which simplifies Q-value estimation to computing the mean of the immediate reward. We propose the following two new concepts to push the expected future rewards toward zero. (i) Reward redistribution that leads to return-equivalent decision processes with the same optimal policies and, when optimal, zero expected future rewards. (ii) Return decomposition via contribution analysis which transforms the reinforcement learning task into a regression task at which deep learning excels. On artificial tasks with delayed rewards, RUDDER is significantly faster than MC and exponentially faster than Monte Carlo Tree Search (MCTS), TD({λ}), and reward shaping approaches. At Atari games, RUDDER on top of a Proximal Policy Optimization (PPO) baseline improves the scores, which is most prominent at games with delayed rewards. Source code is available at \url{https://github.com/ml-jku/rudder} and demonstration videos at \url{https://goo.gl/EQerZV}.</p>
+    </div>
+    
+  </div>
+</div>
+</li></ol>
+</div>
+
+  </div>
+  </article>
+
+</div>
+
+    </div>
+
+    <!-- Footer -->
+
+    
+<footer class="fixed-bottom">
+  <div class="container mt-0">
+    &copy; Copyright 2026 Institute for Machine Learning @ JKU.
+    Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+
+    
+  </div>
+</footer>
+
+
+
+  </body>
+
+  <!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+
+  <!-- Bootsrap & MDB scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.4.4/umd/popper.min.js" integrity="sha512-eUQ9hGdLjBjY3F41CScH3UX+4JDSI9zXeroz7hJ+RteoCaY+GP/LDoM8AO+Pt+DRFw3nXqsjh9Zsts8hnYv8/A==" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha512-M5KW3ztuIICmVIhjSqXe01oV2bpe248gOxqmlcYrEzAvws7Pw3z6BK0iGbrwvdrUQUhi3eXgtxp5I8PDo9YfjQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js" integrity="sha512-Mug9KHKmroQFMLm93zGrjhibM2z2Obg9l6qFG2qKjXEXkMp/VDkI4uju9m4QKPjWSwQ6O2qzZEnJDEeCw0Blcw==" crossorigin="anonymous"></script>
+
+  
+<!-- Mansory & imagesLoaded -->
+<script defer src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script defer src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+<script defer src="/assets/js/mansory.js" type="text/javascript"></script>
+
+
+  
+
+
+<!-- Load Common JS -->
+<script src="/assets/js/common.js"></script>
+
+<!-- Load DarkMode JS -->
+<script src="/assets/js/dark_mode.js"></script>
+
+
+</html>

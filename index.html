@@ -1,0 +1,1535 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>Institute for Machine Learning @ JKU</title>
+<meta name="description" content="Research blog of the Institute for Machine Learning @ JKU.
+">
+
+<!-- Open Graph -->
+
+
+<!-- Bootstrap & MDB -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha512-MoRNloxbStBcD8z3M/2BmnT+rg4IsMxPkXaGh2zD6LGNNFE80W3onsAhRcMAMrSoyWL9xD7Ert0men7vR8LUZg==" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" integrity="sha512-RO38pBRxYH3SoOprtPTD86JFOclM51/XTIdEPh5j8sj4tp8jmQIx26twG52UaLi//hQldfrh7e51WzP9wuP32Q==" crossorigin="anonymous" />
+
+<!-- Fonts & Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"  integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css" integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
+
+<!-- Code Syntax Highlighting -->
+<link rel="stylesheet" href="https://gitcdn.link/repo/jwarby/jekyll-pygments-themes/master/github.css" />
+
+<!-- Styles -->
+<link rel="shortcut icon" href="/assets/img/favicon.ico">
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<link rel="canonical" href="/">
+
+<!-- Theming-->
+
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KC0VGMCD6W"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-KC0VGMCD6W');
+  </script>
+
+
+    
+<!-- MathJax -->
+<script type="text/javascript">
+  window.MathJax = {
+    tex: {
+      tags: 'ams'
+    }
+  };
+</script>
+<script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.1.2/es5/tex-mml-chtml.js"></script>
+<script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+
+  </head>
+
+  <body class="fixed-top-nav ">
+
+    <!-- Header -->
+
+    <header>
+
+    <!-- Nav Bar -->
+    <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
+      <a class="navbar-brand title font-weight-lighter" href="ml-jku.github.io/">
+       <!-- <span>Institute</span> for Machine  Learning @ JKU -->
+       <img class="rounded" src="/assets/img/jku_ml_1.svg" width=100px height=45px>
+       <img class="rounded" src="/assets/img/ellis_linz.jpeg" width=200px height=45px>
+      </a>
+    <div class="container">
+      
+      <!-- Navbar Toogle -->
+      <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar top-bar"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>
+      </button>
+      <div class="collapse navbar-collapse text-right" id="navbarNav">
+        <ul class="navbar-nav ml-auto flex-nowrap">
+          <!-- About -->
+          <li class="nav-item active">
+            <a class="nav-link" href="/">
+              about
+              
+                <span class="sr-only">(current)</span>
+              
+            </a>
+          </li>
+          
+          <!-- Blog -->
+          <li class="nav-item ">
+            <a class="nav-link" href="/blog/">
+              blog
+              
+            </a>
+          </li>
+          
+          <!-- Other pages -->
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="nav-item ">
+                
+                    <div class="dropdown">
+                      <a class="nav-link" href="/research/">
+                        research
+                        
+                      </a>
+                        <div class="dropdown-content">
+                          <a href="/research/deep_learning">Deep Learning</a>
+                          <a href="/research/ai_healthcare">AI in Health Care</a>
+                          <a href="/research/ai_drug">AI in Drug Discovery</a>
+                          <a href="/research/reinforcement_learning">Reinforcement Learning</a>
+                          <a href="/research/hopfield_networks">Modern Hopfield Networks</a>
+                          <a href="/research/ai4earth">AI 4 Earth</a>
+                          <a href="/research/ai4drive">AI 4 Driving</a>
+                        </div>
+                      </div>
+                    
+                
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          <li class="nav-item ">
+                
+                <a class="nav-link" href="/publications/">
+                  publications
+                  
+                </a>
+                
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="nav-item ">
+                
+                <a class="nav-link" href="/talks/">
+                  talks
+                  
+                </a>
+                
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          <li class="nav-item ">
+              <a class="nav-link" href="https://www.jku.at/en/institute-for-machine-learning/about-us/team/" target="_blank" rel="noopener noreferrer">
+                people
+                
+              </a>
+          </li>
+          
+          
+          
+          
+          
+          <li class="nav-item ">
+                
+                <a class="nav-link" href="/software/">
+                  software
+                  
+                </a>
+                
+          </li>
+          
+          
+          
+          
+          
+          <li class="nav-item ">
+              <a class="nav-link" href="https://www.jku.at/en/institute-for-machine-learning/" target="_blank" rel="noopener noreferrer">
+                contact
+                
+              </a>
+          </li>
+          
+          
+          
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+</header>
+
+
+    <!-- Content -->
+
+    <div class="container mt-5">
+      <div class="post">
+
+  <article>
+    
+    <div class="profile float-">
+      
+        <img class="img-fluid z-depth-1 rounded" src="/assets/img/group_pics/jku_sp3.jpg">
+      
+      
+    </div>
+    
+
+    <div class="clearfix">
+      <div class="about-text">
+      <p>The Institute for Machine Learning conducts research and provides profound education in machine learning. Its research focuses on development of machine learning and statistical methods. We further apply these methods to various domains like medicine, drug discovery, autonomous driving, earth science, natural language processing, control and others. The institute is led by <a href="https://en.wikipedia.org/wiki/Sepp_Hochreiter">Sepp Hochreiter</a> and is affiliated with Johannes Kepler University Linz and is also one of the founding units of European Lab for Learning and Intelligent Systems (<a href="https://ellis.eu/">ELLIS</a>).</p>
+
+<p>The Institute for Machine Learning is located in the beautiful city of Linz, Austria. Located near the amazing Austrian alps, the once European capital of culture mixes the right balance between nature and urban life. A part of the institute is also located in the city of Vienna, Austria.</p>
+
+    </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col-sm-4 col-xs-6 mt-3 mt-md-0 about-text">
+            
+              <div class="news">
+  <h2>news</h2>
+  
+    <div class="table-responsive">
+      <table class="table table-sm table-borderless">
+      
+      
+        <tr>
+          <td>
+            <p class="post-meta">Feb 5, 2026</p>
+            
+              Our new work on compressing 5D plasma turbulence simulations is available on arXiv: <a href="https://arxiv.org/abs/2602.04758" target="_blank">Physics-Informed Neural Compression of High-Dimensional Plasma Data</a>.
+See the blog post on PINC here: <a href="https://ml-jku.github.io/pinc/" target="_blank"> link </a>
+
+            
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <p class="post-meta">Oct 13, 2025</p>
+            
+              Paper accepted at NeurIPS 2025:
+<a href="https://arxiv.org/abs/2510.07314" target="_blank"> GyroSwin: 5D Surrogates for Gyrokinetic Plasma Turbulence Simulations </a>
+
+            
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <p class="post-meta">Oct 13, 2025</p>
+            
+              Paper accepted at NeurIPS 2025:
+<a href="https://arxiv.org/abs/2410.07170" target="_blank"> Parameter Efficient Fine-tuning via Explained Variance Adaptation </a>
+
+            
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <p class="post-meta">Apr 20, 2023</p>
+            
+              Paper accepted with oral talk at MIDL 2023: <a href="https://openreview.net/pdf?id=newlahoISt1" target="_blank">Learning Retinal Representations from Multi-modal Imaging via Contrastive Pre-training</a>
+
+            
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <p class="post-meta">Jan 10, 2023</p>
+            
+              Paper accepted with oral talk at AAAI 2023: <a href="https://ojs.aaai.org/index.php/AAAI/article/view/26092" target="_blank">Boundary Graph Neural Networks for 3D Simulations</a>
+
+            
+          </td>
+        </tr>
+      
+      </table>
+    </div>
+  
+</div>
+
+              
+        </div>
+        <div class="col-sm-8 col-xs-6 mt-3 mt-md-0 about-text">
+            
+              <div class="publications_about">
+  <h2>recent publications</h2>
+  <ol class="bibliography"><li><div class="row">
+  <div class="col-sm-2 abbr">
+  
+  </div>
+
+  <div id="galletti2026pinc" class="col-sm-8">
+    
+      <div class="title">Physics-Informed Neural Compression of High-Dimensional Plasma Data</div>
+      <div class="author">
+        
+          
+            
+              
+                
+                  Galletti, G.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Cranganore, G.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Hornsby, W.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Zanisi, L.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Carey, N.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Pamela, S.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Brandstetter, J.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  and Paischer, F.
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+        <em></em>
+      
+      
+        2026
+      
+      </div>
+    
+
+    <div class="links">
+    
+    
+    
+      <a href="https://arxiv.org/abs/2602.04758" class="btn btn-sm z-depth-0" role="button" target="_blank">url</a>
+    
+    
+    
+    
+    
+      <a href="https://ml-jku.github.io/blog/2026/pinc/" class="btn btn-sm z-depth-0" role="button" target="_blank">Blog</a>
+    
+    
+      <a href="https://github.com/ml-jku/neural-gyrokinetics" class="btn btn-sm z-depth-0" role="button" target="_blank">Code</a>
+    
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+  </div>
+</div>
+</li>
+<li><div class="row">
+  <div class="col-sm-2 abbr">
+  
+  </div>
+
+  <div id="schimunek2025mhnfs" class="col-sm-8">
+    
+      <div class="title">MHNfs: Prompting In-Context Bioactivity Predictions for Low-Data Drug Discovery</div>
+      <div class="author">
+        
+          
+            
+              
+                
+                  Schimunek, J.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Luukkonen, S.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  and Klambauer, G.
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+        <em>Journal of Chemical Information and Modeling</em>
+      
+      
+        2025
+      
+      </div>
+    
+
+    <div class="links">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+  </div>
+</div>
+</li>
+<li><div class="row">
+  <div class="col-sm-2 abbr">
+  
+  </div>
+
+  <div id="schmidinger2025bioxlstm" class="col-sm-8">
+    
+      <div class="title">Bio-xLSTM: Generative modeling, representation and in-context learning of biological and chemical sequences</div>
+      <div class="author">
+        
+          
+            
+              
+                
+                  Schmidinger, N.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Schneckenreiter, L.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Seidl, P.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Schimunek, J.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Hoedt, P.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Brandstetter, J.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Mayr, A.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Luukkonen, S.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Hochreiter, S.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  and Klambauer, G.
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+        <em>In The Thirteenth International Conference on Learning Representations</em>
+      
+      
+        2025
+      
+      </div>
+    
+
+    <div class="links">
+    
+    
+    
+      <a href="https://openreview.net/forum?id=IjbXZdugdj" class="btn btn-sm z-depth-0" role="button" target="_blank">url</a>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+  </div>
+</div>
+</li>
+<li><div class="row">
+  <div class="col-sm-2 abbr">
+  
+  </div>
+
+  <div id="paischer2025parameter" class="col-sm-8">
+    
+      <div class="title">Parameter Efficient Fine-tuning via Explained Variance Adaptation</div>
+      <div class="author">
+        
+          
+            
+              
+                
+                  Paischer, F.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Hauzenberger, L.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Schmied, T.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Alkin, B.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Deisenroth, M.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  and Hochreiter, S.
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+        <em>In The Thirty-ninth Annual Conference on Neural Information Processing Systems</em>
+      
+      
+        2025
+      
+      </div>
+    
+
+    <div class="links">
+    
+    
+    
+      <a href="https://arxiv.org/abs/2410.07170" class="btn btn-sm z-depth-0" role="button" target="_blank">url</a>
+    
+    
+    
+    
+    
+    
+      <a href="https://github.com/ml-jku/EVA" class="btn btn-sm z-depth-0" role="button" target="_blank">Code</a>
+    
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+  </div>
+</div>
+</li>
+<li><div class="row">
+  <div class="col-sm-2 abbr">
+  
+    
+    <abbr class="badge">NeurIPS</abbr>
+    
+  
+  </div>
+
+  <div id="paischer2025gyroswin" class="col-sm-8">
+    
+      <div class="title">GyroSwin: 5D Surrogates for Gyrokinetic Plasma Turbulence Simulations</div>
+      <div class="author">
+        
+          
+            
+              
+                
+                  Paischer, F.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Galletti, G.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Hornsby, W.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Setinek, P.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Zanisi, L.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Carey, N.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Pamela, S.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  and Brandstetter, J.
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+        <em>In </em>
+      
+      
+        2025
+      
+      </div>
+    
+
+    <div class="links">
+    
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+    
+    
+    
+      <a href="https://arxiv.org/abs/2510.07314" class="btn btn-sm z-depth-0" role="button" target="_blank">url</a>
+    
+    
+    
+    
+    
+      <a href="https://ml-jku.github.io/blog/2025/gyroswin/" class="btn btn-sm z-depth-0" role="button" target="_blank">Blog</a>
+    
+    
+      <a href="https://github.com/ml-jku/neural-gyrokinetics" class="btn btn-sm z-depth-0" role="button" target="_blank">Code</a>
+    
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+    <div class="abstract hidden">
+      <p>Nuclear fusion plays a pivotal role in the quest for reliable and sustainable energy production. A major roadblock to viable fusion power is understanding plasma turbulence, which significantly impairs plasma confinement, and is vital for next-generation reactor design. Plasma turbulence is governed by the nonlinear gyrokinetic equation, which evolves a 5D distribution function over time. Due to its high computational cost, reduced-order models are often employed in practice to approximate turbulent transport of energy. However, they omit nonlinear effects unique to the full 5D dynamics. To tackle this, we introduce GyroSwin, the first scalable 5D neural surrogate that can model 5D nonlinear gyrokinetic simulations, thereby capturing the physical phenomena neglected by reduced models, while providing accurate estimates of turbulent heat transport. GyroSwin (i) extends hierarchical Vision Transformers to 5D, (ii) introduces cross-attention and integration modules for latent 3D\leftrightarrow5D interactions between electrostatic potential fields and the distribution function, and (iii) performs channelwise mode separation inspired by nonlinear physics. We demonstrate that GyroSwin outperforms widely used reduced numerics on heat flux prediction, captures the turbulent energy cascade, and reduces the cost of fully resolved nonlinear gyrokinetics by three orders of magnitude while remaining physically verifiable. GyroSwin shows promising scaling laws, tested up to one billion parameters, paving the way for scalable neural surrogates for gyrokinetic simulations of plasma turbulence.</p>
+    </div>
+    
+  </div>
+</div>
+</li>
+<li><div class="row">
+  <div class="col-sm-2 abbr">
+  
+  </div>
+
+  <div id="alkin2024upt" class="col-sm-8">
+    
+      <div class="title">Universal Physics Transformers</div>
+      <div class="author">
+        
+          
+            
+              
+                
+                  Alkin, B.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Fürst, A.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Schmid, S.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Gruber, L.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Holzleitner, M.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  and Brandstetter, J.
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+        <em>arXiv preprint arXiv:2402.12365</em>
+      
+      
+        2024
+      
+      </div>
+    
+
+    <div class="links">
+    
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+    
+    
+    
+      <a href="https://arxiv.org/abs/2402.12365" class="btn btn-sm z-depth-0" role="button" target="_blank">url</a>
+    
+    
+    
+    
+    
+    
+      <a href="https://github.com/ml-jku/UPT" class="btn btn-sm z-depth-0" role="button" target="_blank">Code</a>
+    
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+    <div class="abstract hidden">
+      <p>Neural operators, serving as physics surrogate models, have recently gained increased interest. With ever increasing problem complexity, the natural question arises: what is an efficient way to scale neural operators to larger and more complex simulations - most importantly by taking into account different types of simulation datasets. This is of special interest since, akin to their numerical counterparts, different techniques are used across applications, even if the underlying dynamics of the systems are similar. Whereas the flexibility of transformers has enabled unified architectures across domains, neural operators mostly follow a problem specific design, where GNNs are commonly used for Lagrangian simulations and grid-based models predominate Eulerian simulations. We introduce Universal Physics Transformers (UPTs), an efficient and unified learning paradigm for a wide range of spatio-temporal problems. UPTs operate without grid- or particle-based latent structures, enabling flexibility and scalability across meshes and particles. UPTs efficiently propagate dynamics in the latent space, emphasized by inverse encoding and decoding techniques. Finally, UPTs allow for queries of the latent space representation at any point in space-time. We demonstrate diverse applicability and efficacy of UPTs in mesh-based fluid simulations, and steady-state Reynolds averaged Navier-Stokes simulations, and Lagrangian-based dynamics.</p>
+    </div>
+    
+  </div>
+</div>
+</li>
+<li><div class="row">
+  <div class="col-sm-2 abbr">
+  
+  </div>
+
+  <div id="tschoellitsch2024potential" class="col-sm-8">
+    
+      <div class="title">Potential predictors for deterioration of renal function after transfusion</div>
+      <div class="author">
+        
+          
+            
+              
+                
+                  Tschoellitsch, T.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Moser, P.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Maletzky, A.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Seidl, P.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Böck, C.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Roland, T.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Ludwig, H.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Süssner, S.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Hochreiter, S.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  and Meier, J.
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+        <em>Anesthesia & Analgesia</em>
+      
+      
+        2024
+      
+      </div>
+    
+
+    <div class="links">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+  </div>
+</div>
+</li>
+<li><div class="row">
+  <div class="col-sm-2 abbr">
+  
+  </div>
+
+  <div id="alkin2024mimrefiner" class="col-sm-8">
+    
+      <div class="title">MIM-Refiner: A Contrastive Learning Boost from Intermediate Pre-Trained Representations</div>
+      <div class="author">
+        
+          
+            
+              
+                
+                  Alkin, B.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Miklautz, L.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Hochreiter, S.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  and Brandstetter, J.
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+        <em>arXiv preprint arXiv:2402.10093</em>
+      
+      
+        2024
+      
+      </div>
+    
+
+    <div class="links">
+    
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+    
+    
+    
+      <a href="https://arxiv.org/abs/2402.10093" class="btn btn-sm z-depth-0" role="button" target="_blank">url</a>
+    
+    
+    
+    
+    
+    
+      <a href="https://github.com/ml-jku/MIM-Refiner" class="btn btn-sm z-depth-0" role="button" target="_blank">Code</a>
+    
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+    <div class="abstract hidden">
+      <p>We introduce MIM (Masked Image Modeling)-Refiner, a contrastive learning boost for pre-trained MIM models.
+MIM-Refiner is motivated by the insight that strong representations within MIM models generally reside in intermediate layers. 
+Accordingly, MIM-Refiner leverages multiple contrastive heads that are connected to different intermediate layers. 
+In each head, a modified nearest neighbor objective constructs semantic clusters that capture semantic information which improves performance on downstream tasks, including off-the-shelf and fine-tuning settings.
+The refinement process is short and simple -  yet highly effective. Within a few epochs, we refine the features of MIM models from subpar to state-of-the-art, off-the-shelf features. Refining a ViT-H, pre-trained with data2vec 2.0 on ImageNet-1K, sets a new state-of-the-art in linear probing (84.7%) and low-shot classification among models that are pre-trained on ImageNet-1K. 
+MIM-Refiner efficiently combines the advantages of MIM and ID objectives and compares favorably against previous state-of-the-art SSL models on a variety of benchmarks such as low-shot classification, long-tailed classification, clustering and semantic segmentation.</p>
+    </div>
+    
+  </div>
+</div>
+</li>
+<li><div class="row">
+  <div class="col-sm-2 abbr">
+  
+    
+    <abbr class="badge">ICML</abbr>
+    
+  
+  </div>
+
+  <div id="sanokowski2024diffusion" class="col-sm-8">
+    
+      <div class="title">A Diffusion Model Framework for Unsupervised Neural Combinatorial Optimization</div>
+      <div class="author">
+        
+          
+            
+              
+                
+                  Sanokowski, S.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Hochreiter, S.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  and Lehner, S.
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+        <em>Proceedings of the 41st International Conference on Machine Learning</em>
+      
+      
+        2024
+      
+      </div>
+    
+
+    <div class="links">
+    
+    
+    
+      <a href="https://arxiv.org/abs/2406.01661" class="btn btn-sm z-depth-0" role="button" target="_blank">url</a>
+    
+    
+    
+    
+    
+    
+      <a href="https://github.com/ml-jku/DIffUCO" class="btn btn-sm z-depth-0" role="button" target="_blank">Code</a>
+    
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+  </div>
+</div>
+</li>
+<li><div class="row">
+  <div class="col-sm-2 abbr">
+  
+    
+    <abbr class="badge">arXiv</abbr>
+    
+  
+  </div>
+
+  <div id="hofmann2024energy" class="col-sm-8">
+    
+      <div class="title">Energy-based hopfield boosting for out-of-distribution detection</div>
+      <div class="author">
+        
+          
+            
+              
+                
+                  Hofmann, C.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Schmid, S.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Lehner, B.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Klotz, D.,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  and Hochreiter, S.
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+        <em>arXiv preprint arXiv:2405.08766</em>
+      
+      
+        2024
+      
+      </div>
+    
+
+    <div class="links">
+    
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+    
+    
+    
+      <a href="https://arxiv.org/abs/2405.08766" class="btn btn-sm z-depth-0" role="button" target="_blank">url</a>
+    
+    
+    
+    
+    
+    
+      <a href="https://github.com/ml-jku/hopfield-boosting" class="btn btn-sm z-depth-0" role="button" target="_blank">Code</a>
+    
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+    <div class="abstract hidden">
+      <p>Out-of-distribution (OOD) detection is critical when deploying machine learning models in the real world. Outlier exposure methods, which incorporate auxiliary outlier data in the training process, can drastically improve OOD detection performance compared to approaches without advanced training strategies. We introduce Hopfield Boosting, a boosting approach, which leverages modern Hopfield energy (MHE) to sharpen the decision boundary between the in-distribution and OOD data. Hopfield Boosting encourages the model to concentrate on hard-to-distinguish auxiliary outlier examples that lie close to the decision boundary between in-distribution and auxiliary outlier data. Our method achieves a new state-of-the-art in OOD detection with outlier exposure, improving the FPR95 metric from 2.28 to 0.92 on CIFAR-10 and from 11.76 to 7.94 on CIFAR-100.</p>
+    </div>
+    
+  </div>
+</div>
+</li></ol>
+</div>
+
+              
+        </div>
+    </div>
+    
+    <div class="social">
+      <span class="contact-icon text-center">
+  <a href="mailto:%73%65%63%72%65%74%61%72%79@%6D%6C.%6A%6B%75.%61%74"><i class="fas fa-envelope"></i></a>
+  
+  
+  
+  
+  <a href="https://github.com/ml-jku" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+  
+  <a href="https://twitter.com/LITAILab" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+  
+  
+  
+  
+  
+</span>
+
+      <div class="contact-note"></div>
+    </div>
+    
+  </article>
+
+</div>
+
+    </div>
+
+    <!-- Footer -->
+
+    
+<footer class="fixed-bottom">
+  <div class="container mt-0">
+    &copy; Copyright 2026 Institute for Machine Learning @ JKU.
+    Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+
+    
+  </div>
+</footer>
+
+
+
+  </body>
+
+  <!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+
+  <!-- Bootsrap & MDB scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.4.4/umd/popper.min.js" integrity="sha512-eUQ9hGdLjBjY3F41CScH3UX+4JDSI9zXeroz7hJ+RteoCaY+GP/LDoM8AO+Pt+DRFw3nXqsjh9Zsts8hnYv8/A==" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha512-M5KW3ztuIICmVIhjSqXe01oV2bpe248gOxqmlcYrEzAvws7Pw3z6BK0iGbrwvdrUQUhi3eXgtxp5I8PDo9YfjQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js" integrity="sha512-Mug9KHKmroQFMLm93zGrjhibM2z2Obg9l6qFG2qKjXEXkMp/VDkI4uju9m4QKPjWSwQ6O2qzZEnJDEeCw0Blcw==" crossorigin="anonymous"></script>
+
+  
+<!-- Mansory & imagesLoaded -->
+<script defer src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script defer src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+<script defer src="/assets/js/mansory.js" type="text/javascript"></script>
+
+
+  
+
+
+<!-- Load Common JS -->
+<script src="/assets/js/common.js"></script>
+
+<!-- Load DarkMode JS -->
+<script src="/assets/js/dark_mode.js"></script>
+
+
+</html>
