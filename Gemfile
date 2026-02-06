@@ -9,4 +9,6 @@ group :jekyll_plugins do
     gem 'jekyll-twitter-plugin'
     gem 'jemoji'
     gem 'unicode_utils'
+    gem "ffi", "< 1.17"
+    gem "forwardable", "< 1.4"
 end
